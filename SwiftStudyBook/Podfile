@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+target 'SwiftStudyBook' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'BGFMDB'
+pod 'MBProgressHUD'
+pod 'JPush'
+pod 'SVPullToRefresh'
+end
