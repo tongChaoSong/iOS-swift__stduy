@@ -8,14 +8,17 @@
 
 import UIKit
 
-class ThirdVC: BaseViewController {
+class ThirdVC: TableTitleVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.upaDataArr = ["UIWebView和js的交互","8","9"]
         // Do any additional setup after loading the view.
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
     
     /*
      // MARK: - Navigation
