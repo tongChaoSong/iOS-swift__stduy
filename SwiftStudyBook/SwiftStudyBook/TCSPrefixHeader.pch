@@ -1,0 +1,19 @@
+//
+//  TCSPrefixHeader.pch
+//  SwiftStudyBook
+//
+//  Created by Apple on 2020/8/11.
+//  Copyright © 2020 tcs. All rights reserved.
+//
+
+#ifndef TCSPrefixHeader_pch
+#define TCSPrefixHeader_pch
+
+#import "TCSHeader.h"
+
+#define KThmeColor RGB(141, 224, 225)
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TCSPrefixHeader_pch */

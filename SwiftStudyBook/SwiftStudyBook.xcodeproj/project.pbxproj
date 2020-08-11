@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185CF61024E29B4600565CA4 /* testOCvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CF60F24E29B4600565CA4 /* testOCvc.m */; };
 		186A31F424DA997A0066CBE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A31F324DA997A0066CBE5 /* AppDelegate.swift */; };
 		186A31F624DA997A0066CBE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A31F524DA997A0066CBE5 /* SceneDelegate.swift */; };
 		186A31F824DA997A0066CBE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A31F724DA997A0066CBE5 /* ViewController.swift */; };
@@ -56,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185CF60E24E29B4600565CA4 /* testOCvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testOCvc.h; sourceTree = "<group>"; };
+		185CF60F24E29B4600565CA4 /* testOCvc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testOCvc.m; sourceTree = "<group>"; };
+		185CF61224E29D2C00565CA4 /* TCSPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSPrefixHeader.pch; sourceTree = "<group>"; };
+		185CF61324E29D7C00565CA4 /* TCSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSHeader.h; sourceTree = "<group>"; };
+		185CF61424E29DB300565CA4 /* TCSWEBHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSWEBHeader.h; sourceTree = "<group>"; };
+		185CF61824E29E0800565CA4 /* SwiftStudyBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudyBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		186A31F024DA997A0066CBE5 /* SwiftStudyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186A31F324DA997A0066CBE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186A31F524DA997A0066CBE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +128,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185CF60C24E29B1000565CA4 /* OCViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				185CF60E24E29B4600565CA4 /* testOCvc.h */,
+				185CF60F24E29B4600565CA4 /* testOCvc.m */,
+			);
+			path = OCViewControllers;
+			sourceTree = "<group>";
+		};
+		185CF61924E29EB600565CA4 /* Weak */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Weak;
+			sourceTree = "<group>";
+		};
 		186A31E724DA997A0066CBE5 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +169,7 @@
 		186A31F224DA997A0066CBE5 /* SwiftStudyBook */ = {
 			isa = PBXGroup;
 			children = (
+				185CF60C24E29B1000565CA4 /* OCViewControllers */,
 				186A324024DA9A0F0066CBE5 /* Common */,
 				186A324424DA9A0F0066CBE5 /* ThirtPart */,
 				186A322324DA9A0F0066CBE5 /* ViewControllers */,
@@ -156,6 +180,10 @@
 				186A31FC24DA99800066CBE5 /* Assets.xcassets */,
 				186A31FE24DA99800066CBE5 /* LaunchScreen.storyboard */,
 				186A320124DA99800066CBE5 /* Info.plist */,
+				185CF61824E29E0800565CA4 /* SwiftStudyBook-Bridging-Header.h */,
+				185CF61224E29D2C00565CA4 /* TCSPrefixHeader.pch */,
+				185CF61424E29DB300565CA4 /* TCSWEBHeader.h */,
+				185CF61324E29D7C00565CA4 /* TCSHeader.h */,
 			);
 			path = SwiftStudyBook;
 			sourceTree = "<group>";
@@ -257,6 +285,7 @@
 		186A323824DA9A0F0066CBE5 /* SecondVC */ = {
 			isa = PBXGroup;
 			children = (
+				185CF61924E29EB600565CA4 /* Weak */,
 				186A322524DA9A0F0066CBE5 /* GCD */,
 				186A323924DA9A0F0066CBE5 /* SecondDetailVC */,
 				186A323B24DA9A0F0066CBE5 /* SecondVC.swift */,
@@ -393,6 +422,7 @@
 				TargetAttributes = {
 					186A31EF24DA997A0066CBE5 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					186A320524DA99810066CBE5 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -499,6 +529,7 @@
 				186A324B24DA9A0F0066CBE5 /* CityButton.swift in Sources */,
 				186A325324DA9A0F0066CBE5 /* SecondVC.swift in Sources */,
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
+				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,
 				186A325024DA9A0F0066CBE5 /* ThirdVC.swift in Sources */,
 				186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */,
 				186A324524DA9A0F0066CBE5 /* GCDViewController.swift in Sources */,
@@ -677,6 +708,7 @@
 			baseConfigurationReference = F6A01FF6C82694507C108D6B /* Pods-SwiftStudyBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKT27TT6LS;
 				INFOPLIST_FILE = SwiftStudyBook/Info.plist;
@@ -687,6 +719,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tcs.love.fei.SwiftStudyBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudyBook/SwiftStudyBook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -697,6 +731,7 @@
 			baseConfigurationReference = 1DA3D70638DFA65DD4D714EB /* Pods-SwiftStudyBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKT27TT6LS;
 				INFOPLIST_FILE = SwiftStudyBook/Info.plist;
@@ -707,6 +742,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tcs.love.fei.SwiftStudyBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudyBook/SwiftStudyBook-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
