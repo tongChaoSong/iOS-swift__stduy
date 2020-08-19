@@ -1,22 +1,21 @@
 //
-//  testOCvc.m
+//  BaseOCVC.m
 //  SwiftStudyBook
 //
-//  Created by Apple on 2020/8/11.
+//  Created by Apple on 2020/8/19.
 //  Copyright © 2020 tcs. All rights reserved.
 //
 
-#import "testOCvc.h"
+#import "BaseOCVC.h"
 
-@interface testOCvc ()
+@interface BaseOCVC ()
 
 @end
 
-@implementation testOCvc
+@implementation BaseOCVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view.
 }
 

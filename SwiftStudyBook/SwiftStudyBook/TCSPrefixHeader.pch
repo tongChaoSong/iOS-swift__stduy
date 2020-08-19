@@ -9,10 +9,51 @@
 #ifndef TCSPrefixHeader_pch
 #define TCSPrefixHeader_pch
 
+
+#ifdef DEBUG
+#define MyLog(FORMAT, ...) fprintf(stderr, "%s:%zd\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+#else
+#define MyLog(FORMAT, ...) nil
+#endif
 #import "TCSHeader.h"
 
 #define KThmeColor RGB(141, 224, 225)
 
+
+//判断字符串是否为空
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
+//判断数组是否为空
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+//判断字典是否为空
+#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys.count == 0)
+//判断是否是空对象
+#define kObjectIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+
+// 导栏高度
+#define SafeStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+
+//存储路径
+#define FilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+// 导航栏 + 导览 高度  iPhoneX 88 其他 64
+#define kApplicationStatusBarHeight  ([UIApplication sharedApplication].statusBarFrame.size.height + 44)
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT  ([UIScreen mainScreen].bounds.size.height)
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+//对象弱引用
+#define WeakSelf __weak typeof(self) weakSelf = self;
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

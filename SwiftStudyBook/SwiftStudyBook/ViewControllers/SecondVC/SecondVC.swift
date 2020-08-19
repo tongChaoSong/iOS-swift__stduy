@@ -48,6 +48,10 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         colletion.backgroundColor = UIColor.white
         
         colletion.register(TripCarCollectionViewCell.self, forCellWithReuseIdentifier: "TripCarCollectionViewCell")
+        
+        colletion.register(UIView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
+//UICollectionElementKindSectionHeader
+//        elementKindSectionHeader
         return colletion
     }()
 
@@ -80,6 +84,7 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         cell.mainTitle.text = titleArr[indexPath.row]
         cell.backgroundColor = UIColor.red
         return cell
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -92,6 +97,12 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
+        case 1:
+            do{
+                let vc = weakStudyVC()
+                self.navigationController!.pushViewController(vc, animated: true)
+            }
+            break
         default:
             let vc:SecondDetailVC = SecondDetailVC()
             self.navigationController!.pushViewController(vc, animated: true)
@@ -99,7 +110,27 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         }
                        
     }
+    //设置headview高度
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        return CGSize.init(width: SCREEN_WIDTH, height: 20)
+        
+    }
+    //设置headview
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        var reusableview:UICollectionReusableView!
+        
+        if kind == UICollectionView.elementKindSectionHeader{
+            
+            reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+            reusableview.backgroundColor = UIColor.red
+        }
+        return reusableview
+        
 
+    }
+
+    
     func hw_SetCellHeight(layout: PuBuLiuLay, index: NSIndexPath, itemWidth: CGFloat) -> CGFloat {
 
 //        let count:UInt32 = UInt32(titleArr.count)

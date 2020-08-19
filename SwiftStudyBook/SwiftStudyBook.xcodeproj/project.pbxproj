@@ -36,6 +36,9 @@
 		186A325624DA9A0F0066CBE5 /* VariableDefineFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A324124DA9A0F0066CBE5 /* VariableDefineFile.swift */; };
 		186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A324224DA9A0F0066CBE5 /* BtnExtension.swift */; };
 		186A325824DA9A0F0066CBE5 /* BaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A324324DA9A0F0066CBE5 /* BaseExtension.swift */; };
+		18E9465424ED0DC400A9A0B8 /* weakStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465324ED0DC300A9A0B8 /* weakStudyVC.m */; };
+		18E9465724ED118200A9A0B8 /* BaseOCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465624ED118200A9A0B8 /* BaseOCVC.m */; };
+		18E9465A24ED11E400A9A0B8 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465924ED11E400A9A0B8 /* BaseTableVC.m */; };
 		5A3711F120CBD271A3000576 /* libPods-SwiftStudyBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861008AF9C5CF96FB6E0A67B /* libPods-SwiftStudyBook.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +100,12 @@
 		186A324124DA9A0F0066CBE5 /* VariableDefineFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableDefineFile.swift; sourceTree = "<group>"; };
 		186A324224DA9A0F0066CBE5 /* BtnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnExtension.swift; sourceTree = "<group>"; };
 		186A324324DA9A0F0066CBE5 /* BaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseExtension.swift; sourceTree = "<group>"; };
+		18E9465224ED0DC300A9A0B8 /* weakStudyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weakStudyVC.h; sourceTree = "<group>"; };
+		18E9465324ED0DC300A9A0B8 /* weakStudyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weakStudyVC.m; sourceTree = "<group>"; };
+		18E9465524ED118200A9A0B8 /* BaseOCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseOCVC.h; sourceTree = "<group>"; };
+		18E9465624ED118200A9A0B8 /* BaseOCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseOCVC.m; sourceTree = "<group>"; };
+		18E9465824ED11E400A9A0B8 /* BaseTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
+		18E9465924ED11E400A9A0B8 /* BaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 		1DA3D70638DFA65DD4D714EB /* Pods-SwiftStudyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyBook.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook.release.xcconfig"; sourceTree = "<group>"; };
 		861008AF9C5CF96FB6E0A67B /* libPods-SwiftStudyBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftStudyBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A01FF6C82694507C108D6B /* Pods-SwiftStudyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyBook.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +149,8 @@
 		185CF61924E29EB600565CA4 /* Weak */ = {
 			isa = PBXGroup;
 			children = (
+				18E9465224ED0DC300A9A0B8 /* weakStudyVC.h */,
+				18E9465324ED0DC300A9A0B8 /* weakStudyVC.m */,
 			);
 			path = Weak;
 			sourceTree = "<group>";
@@ -254,6 +265,10 @@
 				186A322F24DA9A0F0066CBE5 /* BaseViewController.swift */,
 				186A323024DA9A0F0066CBE5 /* TableTitleVC.swift */,
 				186A323124DA9A0F0066CBE5 /* BaseTabBarViewController.swift */,
+				18E9465524ED118200A9A0B8 /* BaseOCVC.h */,
+				18E9465624ED118200A9A0B8 /* BaseOCVC.m */,
+				18E9465824ED11E400A9A0B8 /* BaseTableVC.h */,
+				18E9465924ED11E400A9A0B8 /* BaseTableVC.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -514,11 +529,13 @@
 			files = (
 				186A325524DA9A0F0066CBE5 /* PuBuLiuLay.swift in Sources */,
 				186A31F824DA997A0066CBE5 /* ViewController.swift in Sources */,
+				18E9465A24ED11E400A9A0B8 /* BaseTableVC.m in Sources */,
 				186A324824DA9A0F0066CBE5 /* testXIB.swift in Sources */,
 				186A31F424DA997A0066CBE5 /* AppDelegate.swift in Sources */,
 				186A325624DA9A0F0066CBE5 /* VariableDefineFile.swift in Sources */,
 				186A324624DA9A0F0066CBE5 /* PersonOne.swift in Sources */,
 				186A325824DA9A0F0066CBE5 /* BaseExtension.swift in Sources */,
+				18E9465724ED118200A9A0B8 /* BaseOCVC.m in Sources */,
 				186A324724DA9A0F0066CBE5 /* HomeVC.swift in Sources */,
 				186A324C24DA9A0F0066CBE5 /* BaseViewController.swift in Sources */,
 				186A31F624DA997A0066CBE5 /* SceneDelegate.swift in Sources */,
@@ -530,6 +547,7 @@
 				186A325324DA9A0F0066CBE5 /* SecondVC.swift in Sources */,
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
 				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,
+				18E9465424ED0DC400A9A0B8 /* weakStudyVC.m in Sources */,
 				186A325024DA9A0F0066CBE5 /* ThirdVC.swift in Sources */,
 				186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */,
 				186A324524DA9A0F0066CBE5 /* GCDViewController.swift in Sources */,
@@ -711,6 +729,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKT27TT6LS;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SwiftStudyBook/TCSPrefixHeader.pch";
 				INFOPLIST_FILE = SwiftStudyBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -734,6 +755,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WKT27TT6LS;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SwiftStudyBook/TCSPrefixHeader.pch";
 				INFOPLIST_FILE = SwiftStudyBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (

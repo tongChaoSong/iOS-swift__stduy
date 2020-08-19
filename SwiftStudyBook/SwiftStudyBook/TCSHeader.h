@@ -8,6 +8,8 @@
 
 #ifndef TCSHeader_h
 #define TCSHeader_h
+#import "BaseTableVC.h"
+
 
 
 #endif /* TCSHeader_h */
