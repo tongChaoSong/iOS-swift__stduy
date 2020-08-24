@@ -7,6 +7,7 @@
 //
 
 #import "weakStudyVC.h"
+#import "SwiftStudyBook-Swift.h"
 
 @interface weakStudyVC ()
 

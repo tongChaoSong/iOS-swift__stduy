@@ -12,7 +12,7 @@ class GCDViewController: TableTitleVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.upaDataArr = ["GCD 任务和队列","死锁","主队列+异步任务","串行队列+同步任务(不在主线程)","串行队列+异步任务","并发队列+同步任务","并发队列+异步任务（最大并发数64)","GCD 栅栏","GCD group","信号量 semaphore","延时任务","DispatchWorkItem"]
+        self.upaDataArr = ["GCD 任务和队列-0","死锁-1","主队列+异步任务-2","串行队列+同步任务(不在主线程)-3","串行队列+异步任务-4","并发队列+同步任务-5","并发队列+异步任务（最大并发数64)-6","GCD 栅栏-7","GCD group-8","信号量 semaphore-9","延时任务-10","DispatchWorkItem-11"]
         // Do any additional setup after loading the view.
     }
     
@@ -269,17 +269,58 @@ class GCDViewController: TableTitleVC {
         group.enter()
         group.leave()
     }
-
+    
 //    信号量 semaphore
     func semaphorsNumber() -> Void{
         /**
          GCD 中的信号量是指 Dispatch Semaphore，是持有计数的信号。类似于过高速路收费站的栏杆。可以通过时，打开栏杆，不可以通过时，关闭栏杆。在 Dispatch Semaphore 中，使用计数来完成这个功能，计数为0时等待，不可通过。计数为1或大于1时，计数减1且不等待，可通过。
          */
-        let semaphore = DispatchSemaphore(value: 0)//创建一个信号量，并初始化信号总量
-        semaphore.signal()//发送一个信号让信号量加1
-        semaphore.wait()//可以使总信号量减1，当信号总量为0时就会一直等待（阻塞所在线程），否则就可以正常执行
         
+        let semaphore = DispatchSemaphore(value: 1)//创建一个信号量，并初始化信号总量
+//        semaphore.signal()//发送一个信号让信号量加1
+        let concurrent = DispatchQueue(label: "concurrent",attributes: .concurrent)
+        
+        let serial = DispatchQueue(label: "serial",attributes: .init(rawValue:0))
+        
+        
+        
+        concurrent.async {
+            print("concurrent.async -1")
+            //休眠1秒  保证数据正常打印
+            sleep(1)
+            semaphore.signal()
+            print("concurrent.async -2")
+        }
+        print("concurrent.async - 3")
+        semaphore.wait()
+        print("concurrent.async - 4")
+        
+        //休眠2秒 保证测试完成，信号量不等0，否则会阻塞主线程，导致程序crash
+        sleep(2)
+//        concurrent.sync {
+//
+//            print("concurrent.sync")
+//        }
+//        serial.async {
+//            print("serial.async")
+//        }
+//        serial.sync {
+//            print("serial.sync")
+//        }
+        print("开始了")
+        for i in 0...10{
+            print("a")
+            //可以使总信号量减1，当信号总量为0时就会一直等待（阻塞所在线程），否则就可以正常执行
+            concurrent.async {
 
+                print("iii=\(i)")
+                
+                print("wait")
+            }
+             print("d")
+        }
+        print("fish")
+        
         //信号量处理线程同步 将异步执行任务转化为同步执行任务。如必须等待异步的网络请求返回后才能执行后续任务时。
         DispatchQueue.global().async {
             sleep(arc4random()%5)//休眠时间随机
@@ -293,7 +334,7 @@ class GCDViewController: TableTitleVC {
             print("timeout")
         }
         print("over")
-        
+
         //信号量控制最大并发数 在Operation中可以通过maxConcurrentOperationCount轻松实现控制最大并发数，GCD中需要借助信号量实现。以下代码就限制了最多两个任务并发执行。
         let semaphore2Number = DispatchSemaphore(value: 2)
         for i in 0...10 {
@@ -305,9 +346,9 @@ class GCDViewController: TableTitleVC {
             }
             print("=======================")
         }
-        
+
         //使用DispatchSemaphore加锁 非线程安全，即当一个变量可能同时被多个线程修改。以下代码如果不使用信号量输出是随机值。
-   
+
         var i = 0
         for _ in 1...10 {
             DispatchQueue.global().async {

@@ -36,6 +36,7 @@
 		186A325624DA9A0F0066CBE5 /* VariableDefineFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A324124DA9A0F0066CBE5 /* VariableDefineFile.swift */; };
 		186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A324224DA9A0F0066CBE5 /* BtnExtension.swift */; };
 		186A325824DA9A0F0066CBE5 /* BaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A324324DA9A0F0066CBE5 /* BaseExtension.swift */; };
+		18B6E40E24EE577E001B7BE3 /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E40D24EE577E001B7BE3 /* CopyVC.m */; };
 		18E9465424ED0DC400A9A0B8 /* weakStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465324ED0DC300A9A0B8 /* weakStudyVC.m */; };
 		18E9465724ED118200A9A0B8 /* BaseOCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465624ED118200A9A0B8 /* BaseOCVC.m */; };
 		18E9465A24ED11E400A9A0B8 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465924ED11E400A9A0B8 /* BaseTableVC.m */; };
@@ -65,7 +66,6 @@
 		185CF61224E29D2C00565CA4 /* TCSPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSPrefixHeader.pch; sourceTree = "<group>"; };
 		185CF61324E29D7C00565CA4 /* TCSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSHeader.h; sourceTree = "<group>"; };
 		185CF61424E29DB300565CA4 /* TCSWEBHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSWEBHeader.h; sourceTree = "<group>"; };
-		185CF61824E29E0800565CA4 /* SwiftStudyBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudyBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		186A31F024DA997A0066CBE5 /* SwiftStudyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186A31F324DA997A0066CBE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186A31F524DA997A0066CBE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,12 +100,15 @@
 		186A324124DA9A0F0066CBE5 /* VariableDefineFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableDefineFile.swift; sourceTree = "<group>"; };
 		186A324224DA9A0F0066CBE5 /* BtnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnExtension.swift; sourceTree = "<group>"; };
 		186A324324DA9A0F0066CBE5 /* BaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseExtension.swift; sourceTree = "<group>"; };
+		18B6E40C24EE577E001B7BE3 /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
+		18B6E40D24EE577E001B7BE3 /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
 		18E9465224ED0DC300A9A0B8 /* weakStudyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weakStudyVC.h; sourceTree = "<group>"; };
 		18E9465324ED0DC300A9A0B8 /* weakStudyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weakStudyVC.m; sourceTree = "<group>"; };
 		18E9465524ED118200A9A0B8 /* BaseOCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseOCVC.h; sourceTree = "<group>"; };
 		18E9465624ED118200A9A0B8 /* BaseOCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseOCVC.m; sourceTree = "<group>"; };
 		18E9465824ED11E400A9A0B8 /* BaseTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		18E9465924ED11E400A9A0B8 /* BaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
+		18FEF4C724F3AD0F000D2811 /* SwiftStudyBook-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftStudyBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		1DA3D70638DFA65DD4D714EB /* Pods-SwiftStudyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyBook.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook.release.xcconfig"; sourceTree = "<group>"; };
 		861008AF9C5CF96FB6E0A67B /* libPods-SwiftStudyBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftStudyBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A01FF6C82694507C108D6B /* Pods-SwiftStudyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyBook.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,12 +189,12 @@
 				186A322324DA9A0F0066CBE5 /* ViewControllers */,
 				186A31F324DA997A0066CBE5 /* AppDelegate.swift */,
 				186A31F524DA997A0066CBE5 /* SceneDelegate.swift */,
+				18FEF4C724F3AD0F000D2811 /* SwiftStudyBook-Bridging-Header.h */,
 				186A31F724DA997A0066CBE5 /* ViewController.swift */,
 				186A31F924DA997A0066CBE5 /* Main.storyboard */,
 				186A31FC24DA99800066CBE5 /* Assets.xcassets */,
 				186A31FE24DA99800066CBE5 /* LaunchScreen.storyboard */,
 				186A320124DA99800066CBE5 /* Info.plist */,
-				185CF61824E29E0800565CA4 /* SwiftStudyBook-Bridging-Header.h */,
 				185CF61224E29D2C00565CA4 /* TCSPrefixHeader.pch */,
 				185CF61424E29DB300565CA4 /* TCSWEBHeader.h */,
 				185CF61324E29D7C00565CA4 /* TCSHeader.h */,
@@ -300,6 +303,7 @@
 		186A323824DA9A0F0066CBE5 /* SecondVC */ = {
 			isa = PBXGroup;
 			children = (
+				18B6E40B24EE5742001B7BE3 /* copyMuCopy */,
 				185CF61924E29EB600565CA4 /* Weak */,
 				186A322524DA9A0F0066CBE5 /* GCD */,
 				186A323924DA9A0F0066CBE5 /* SecondDetailVC */,
@@ -349,6 +353,15 @@
 			children = (
 			);
 			path = ThirtPart;
+			sourceTree = "<group>";
+		};
+		18B6E40B24EE5742001B7BE3 /* copyMuCopy */ = {
+			isa = PBXGroup;
+			children = (
+				18B6E40C24EE577E001B7BE3 /* CopyVC.h */,
+				18B6E40D24EE577E001B7BE3 /* CopyVC.m */,
+			);
+			path = copyMuCopy;
 			sourceTree = "<group>";
 		};
 		51ED3110EF7ED7C982C5ECA3 /* Frameworks */ = {
@@ -548,6 +561,7 @@
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
 				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,
 				18E9465424ED0DC400A9A0B8 /* weakStudyVC.m in Sources */,
+				18B6E40E24EE577E001B7BE3 /* CopyVC.m in Sources */,
 				186A325024DA9A0F0066CBE5 /* ThirdVC.swift in Sources */,
 				186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */,
 				186A324524DA9A0F0066CBE5 /* GCDViewController.swift in Sources */,
@@ -728,6 +742,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WKT27TT6LS;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -740,7 +755,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tcs.love.fei.SwiftStudyBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudyBook/SwiftStudyBook-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SwiftStudyBook/SwiftStudyBook-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -754,6 +769,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WKT27TT6LS;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -766,7 +782,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tcs.love.fei.SwiftStudyBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudyBook/SwiftStudyBook-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/SwiftStudyBook/SwiftStudyBook-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

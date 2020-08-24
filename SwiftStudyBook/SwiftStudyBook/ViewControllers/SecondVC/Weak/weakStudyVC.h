@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseTableVC.h"
-#import "SwiftStudyBook-Swift.h"
+//#import "SwiftStudyBook-Bridging-Header.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
