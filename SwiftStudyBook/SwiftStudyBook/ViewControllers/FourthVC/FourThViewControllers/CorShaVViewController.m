@@ -31,14 +31,14 @@
     
     shadowView.layer.shadowRadius = 5.0;
     
-    shadowView.layer.cornerRadius = shadowView.width;
+    shadowView.layer.cornerRadius = shadowView.width/2;
     
     shadowView.clipsToBounds = NO;
     
     //圆角
     UIView * radView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, shadowView.width, shadowView.height)];
     radView.backgroundColor = [UIColor purpleColor];
-    radView.layer.cornerRadius = shadowView.width;
+    radView.layer.cornerRadius = shadowView.width/2;
     radView.layer.masksToBounds = YES;
     
     [shadowView addSubview:radView];
