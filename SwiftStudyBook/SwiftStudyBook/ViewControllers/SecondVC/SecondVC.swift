@@ -21,7 +21,7 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         
         let flowly:PuBuLiuLay = PuBuLiuLay()
 
-        flowly.itemSize = CGSize(width:SCREEN_WIDTH/2 - 15 , height: 100)
+        flowly.itemSize = CGSize(width:(SCREEN_WIDTH - 30)/2  , height: 100)
 
         flowly.delegate = self
         //设置最小行间距
@@ -50,11 +50,22 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         colletion.register(TripCarCollectionViewCell.self, forCellWithReuseIdentifier: "TripCarCollectionViewCell")
         
         colletion.register(UIView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
-//UICollectionElementKindSectionHeader
-//        elementKindSectionHeader
+        //UICollectionElementKindSectionHeader
+        //        elementKindSectionHeader
+        colletion.addInfiniteScrolling {
+            DispatchQueue.global().asyncAfter(deadline: DispatchTime.now()+2) {
+                colletion.infiniteScrollingView.stopAnimating()
+            }
+        }
+        colletion.addPullToRefresh {
+            DispatchQueue.global().asyncAfter(deadline: DispatchTime.now()+2) {
+
+                colletion.infiniteScrollingView.stopAnimating()
+            }
+        }
         return colletion
     }()
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
