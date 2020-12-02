@@ -147,7 +147,9 @@ class FifthVC: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.view = View(frame: UIScreen.main.bounds)
+    }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headView:UIView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: kApplicationStatusBarHeight + 202 + 119 ))
         headView.backgroundColor = UIColor.white

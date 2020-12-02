@@ -16,11 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initView];
+    [self radius];
+    
     // Do any additional setup after loading the view.
 }
 
--(void)initView{
+-(void)radius{
     //阴影
     UIView * shadowView = [[UIView alloc]initWithFrame:CGRectMake(50, kApplicationStatusBarHeight + 100, SCREEN_WIDTH - 50 * 2, SCREEN_WIDTH - 50 * 2)];
     shadowView.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -44,6 +45,7 @@
     [shadowView addSubview:radView];
     [self.view addSubview:shadowView];
 }
+
 
 /*
 #pragma mark - Navigation

@@ -274,6 +274,13 @@ class GCDViewController: TableTitleVC {
     func semaphorsNumber() -> Void{
         /**
          GCD 中的信号量是指 Dispatch Semaphore，是持有计数的信号。类似于过高速路收费站的栏杆。可以通过时，打开栏杆，不可以通过时，关闭栏杆。在 Dispatch Semaphore 中，使用计数来完成这个功能，计数为0时等待，不可通过。计数为1或大于1时，计数减1且不等待，可通过。
+         
+         // semaphore.wait()
+         // 如果信号量的值>0，就减1，然后往下执行后面的代码
+         // 如果信号量的值<=0，当前线程就会进入休眠等待，直到信号量的值>0
+         
+         // semaphore.signal()
+         // 让信号量的值增加1，信号量值不等于零时，前面的等待的代码会执行
          */
         
         let semaphore = DispatchSemaphore(value: 1)//创建一个信号量，并初始化信号总量
@@ -283,20 +290,21 @@ class GCDViewController: TableTitleVC {
         let serial = DispatchQueue(label: "serial",attributes: .init(rawValue:0))
         
         
-        
         concurrent.async {
+             print("concurrent.async -0")
+            semaphore.wait()
             print("concurrent.async -1")
             //休眠1秒  保证数据正常打印
-            sleep(1)
+//            sleep(1)
             semaphore.signal()
             print("concurrent.async -2")
         }
         print("concurrent.async - 3")
-        semaphore.wait()
+//        semaphore.wait()
         print("concurrent.async - 4")
         
         //休眠2秒 保证测试完成，信号量不等0，否则会阻塞主线程，导致程序crash
-        sleep(2)
+//        sleep(2)
 //        concurrent.sync {
 //
 //            print("concurrent.sync")
@@ -307,66 +315,162 @@ class GCDViewController: TableTitleVC {
 //        serial.sync {
 //            print("serial.sync")
 //        }
-        print("开始了")
-        for i in 0...10{
-            print("a")
-            //可以使总信号量减1，当信号总量为0时就会一直等待（阻塞所在线程），否则就可以正常执行
-            concurrent.async {
-
-                print("iii=\(i)")
-                
-                print("wait")
-            }
-             print("d")
-        }
-        print("fish")
+//        print("开始了")
+//        for i in 0...10{
+//            print("a")
+//            //可以使总信号量减1，当信号总量为0时就会一直等待（阻塞所在线程），否则就可以正常执行
+//            concurrent.async {
+//
+//                print("iii=\(i)")
+//
+//                print("wait")
+//            }
+//             print("d")
+//        }
+//        print("fish")
+//
+//        //信号量处理线程同步 将异步执行任务转化为同步执行任务。如必须等待异步的网络请求返回后才能执行后续任务时。
+//        DispatchQueue.global().async {
+//            sleep(arc4random()%5)//休眠时间随机
+//            print("completed")
+//            semaphore.signal()
+//        }
+//        switch semaphore.wait(timeout: DispatchTime.now()+10) {//信号量为0，调用wait后阻塞线程
+//        case .success:
+//            print("success")
+//        case .timedOut:
+//            print("timeout")
+//        }
+//        print("over")
+//
+//        //信号量控制最大并发数 在Operation中可以通过maxConcurrentOperationCount轻松实现控制最大并发数，GCD中需要借助信号量实现。以下代码就限制了最多两个任务并发执行。
+//        let semaphore2Number = DispatchSemaphore(value: 2)
+//        for i in 0...10 {
+//            semaphore2Number.wait()//当信号量为0时，阻塞在此
+//            DispatchQueue.global().async {
+//                sleep(3)
+//                print(i,Thread.current)
+//                semaphore2Number.signal()//信号量加1
+//            }
+//            print("=======================")
+//        }
+//
+//        //使用DispatchSemaphore加锁 非线程安全，即当一个变量可能同时被多个线程修改。以下代码如果不使用信号量输出是随机值。
+//
+//        var i = 0
+//        for _ in 1...10 {
+//            print("xunhuankaihi")
+//            DispatchQueue.global().async {
+//                print("kaishi")
+//                semaphore.wait()//当信号量为0时，阻塞在此
+//                for _ in 1...10 {
+//                    i += 1
+//                }
+//                print(i)
+//                print("zhongjian")
+//                semaphore.signal()//信号量加1
+//                print("jiesu")
+//
+//            }
+//            print("xunhuanjiesu")
+//
+//        }
         
-        //信号量处理线程同步 将异步执行任务转化为同步执行任务。如必须等待异步的网络请求返回后才能执行后续任务时。
-        DispatchQueue.global().async {
-            sleep(arc4random()%5)//休眠时间随机
-            print("completed")
-            semaphore.signal()
-        }
-        switch semaphore.wait(timeout: DispatchTime.now()+10) {//信号量为0，调用wait后阻塞线程
-        case .success:
-            print("success")
-        case .timedOut:
-            print("timeout")
-        }
-        print("over")
-
-        //信号量控制最大并发数 在Operation中可以通过maxConcurrentOperationCount轻松实现控制最大并发数，GCD中需要借助信号量实现。以下代码就限制了最多两个任务并发执行。
-        let semaphore2Number = DispatchSemaphore(value: 2)
-        for i in 0...10 {
-            semaphore2Number.wait()//当信号量为0时，阻塞在此
-            DispatchQueue.global().async {
-                sleep(3)
-                print(i,Thread.current)
-                semaphore2Number.signal()//信号量加1
-            }
-            print("=======================")
-        }
-
-        //使用DispatchSemaphore加锁 非线程安全，即当一个变量可能同时被多个线程修改。以下代码如果不使用信号量输出是随机值。
-
-        var i = 0
-        for _ in 1...10 {
-            DispatchQueue.global().async {
-                semaphore.wait()//当信号量为0时，阻塞在此
-                for _ in 1...10 {
-                    i += 1
-                }
-                print(i)
-                semaphore.signal()//信号量加1
-            }
-        }
+//        //异步变同步
+//        semaphoreSync()
+//        //线程不安全，未加锁
+//        initTicketStatusNotSave()
+//        //线程安全，已经枷锁
+//        initTicketStatusSaveAnquan()
     }
+//    func semaphoreSync(){
+//        print("mainThread---\(Thread.current)")
+//        print("begin")
+//        let semaphore = DispatchSemaphore.init(value: 0)
+//        var number = 0
+//        DispatchQueue.global().async {
+//            sleep(2)//耗时操作
+//            print("1---\(Thread.current)")
+//            number = 100
+//            semaphore.signal()
+//        }
+//        semaphore.wait()//等待异步任务执行完成才可以继续执行
+//        print("end,number = \(number)")
+//    }
+//    /**
+//    * 非线程安全：不使用 semaphore
+//    * 初始化火车票数量、卖票窗口（非线程安全）、并开始卖票
+//    */
+//    func initTicketStatusNotSave(){
+//        print("mainThread---\(Thread.current)")
+//        
+//        let queue1 = DispatchQueue.init(label: "queue1")//窗口1
+//        let queue2 = DispatchQueue.init(label: "queue2")//窗口2
+//        queue1.async {
+//            self.saleTickeNotSafe()//开始卖票
+//        }
+//        queue2.async {
+//            self.saleTickeNotSafe()//开始卖票
+//        }
+//    }
+//    /**
+//    * 售卖火车票（非线程安全）
+//    */
+//    var snums:Int = 0
+//    var num:Int = 0
+//    func saleTickeNotSafe(){
+//        while true {
+//            if self.snums > 0{
+//                self.snums = self.snums - 1
+//                print("剩余票数：\(self.snums), 窗口：\(Thread.current)")
+//                Thread.sleep(forTimeInterval: 0.2)
+//            }else{
+//                print("所有火车票已卖完")
+//                break
+//            }
+//        }
+//    }
+//    var semaphoreSave:DispatchSemaphore
+//    func initTicketStatusSaveAnquan(){
+//        print("mainThread---\(Thread.current)")
+//        
+//        let queue1 = DispatchQueue.init(label: "queue1")//窗口1
+//        let queue2 = DispatchQueue.init(label: "queue2")//窗口2
+//        self.semaphoreSave = DispatchSemaphore.init(value: 1)//初始化信号量值为1
+//        queue1.async {
+//            self.saleTickeSafeAnquan()//开始卖票
+//        }
+//        queue2.async {
+//            self.saleTickeSafeAnquan()//开始卖票
+//        }
+//    }
+//    /**
+//    * 售卖火车票
+//    */
+//    func saleTickeSafeAnquan(){
+//        while true {
+//            self.semaphoreSave.wait()//检测信号量：大于0减1继续执行，少于等于0则等待
+//            if self.num > 0{
+//                self.num = self.num - 1
+//                print("剩余票数：\(self.num), 窗口：\(Thread.current)")
+//                Thread.sleep(forTimeInterval: 0.2)
+//            }else{
+//                print("所有火车票已卖完")
+//                self.semaphoreSave.signal()//信号量加1
+//                break
+//            }
+//            self.semaphoreSave.signal()//信号量加1
+//        }
+//    }
     //延迟任务
     func dispacthAfter() ->Void{
         
         //使用GCD执行延时任务指定的并不是任务的执行时间，而是加入队列的时间。所以执行时间可能不太精确。但是任务是通过闭包加入，相较performSelectorAfterDelay可读性更好，也更安全
         DispatchQueue.global().asyncAfter(deadline: DispatchTime.now()+2) {
             print("延时任务")
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            print("延时主线程任务")
         }
     }
     

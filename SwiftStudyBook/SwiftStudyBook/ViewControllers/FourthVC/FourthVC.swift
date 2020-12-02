@@ -13,13 +13,25 @@ class FourthVC: TableTitleVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.upaDataArr = ["圆角阴影共同存在","8","9"]
+        self.upaDataArr = ["圆角阴影共同存在","context上下文画布","9"]
         // Do any additional setup after loading the view.
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         switch indexPath.row {
         case 0:
+            do{
+                let vc = CorShaVViewController.init()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            break
+        case 1:
+            do{
+                let vc = LayerViewController.init()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            break
+        case 2:
             do{
                 let vc = CorShaVViewController.init()
                 self.navigationController?.pushViewController(vc, animated: true)

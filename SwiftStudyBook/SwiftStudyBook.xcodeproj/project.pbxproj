@@ -53,6 +53,9 @@
 		186CE659251065DB00B84E9B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE646251065DB00B84E9B /* UIView+Extension.m */; };
 		186CE65A251065DB00B84E9B /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE649251065DB00B84E9B /* NSArray+Safe.m */; };
 		186CE65B251065DB00B84E9B /* UILabel+BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186CE64A251065DB00B84E9B /* UILabel+BaseLabel.m */; };
+		1886CF9A2577691C00EC06EB /* LayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886CF992577691C00EC06EB /* LayerViewController.m */; };
+		1886CF9D2577770600EC06EB /* TestViewContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886CF9C2577770600EC06EB /* TestViewContext.m */; };
+		188773B925319C46004AE0FE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188773B825319C46004AE0FE /* View.swift */; };
 		18B6E40E24EE577E001B7BE3 /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E40D24EE577E001B7BE3 /* CopyVC.m */; };
 		18E9465424ED0DC400A9A0B8 /* weakStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465324ED0DC300A9A0B8 /* weakStudyVC.m */; };
 		18E9465724ED118200A9A0B8 /* BaseOCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465624ED118200A9A0B8 /* BaseOCVC.m */; };
@@ -152,6 +155,11 @@
 		186CE648251065DB00B84E9B /* UIColor+extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extend.h"; sourceTree = "<group>"; };
 		186CE649251065DB00B84E9B /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		186CE64A251065DB00B84E9B /* UILabel+BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BaseLabel.m"; sourceTree = "<group>"; };
+		1886CF982577691C00EC06EB /* LayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerViewController.h; sourceTree = "<group>"; };
+		1886CF992577691C00EC06EB /* LayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerViewController.m; sourceTree = "<group>"; };
+		1886CF9B2577770600EC06EB /* TestViewContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewContext.h; sourceTree = "<group>"; };
+		1886CF9C2577770600EC06EB /* TestViewContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewContext.m; sourceTree = "<group>"; };
+		188773B825319C46004AE0FE /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		18B6E40C24EE577E001B7BE3 /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
 		18B6E40D24EE577E001B7BE3 /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
 		18E9465224ED0DC300A9A0B8 /* weakStudyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weakStudyVC.h; sourceTree = "<group>"; };
@@ -235,6 +243,7 @@
 		186A31F224DA997A0066CBE5 /* SwiftStudyBook */ = {
 			isa = PBXGroup;
 			children = (
+				1886CF9725775FD400EC06EB /* Resours */,
 				186CE627251065DA00B84E9B /* Category */,
 				185CF60C24E29B1000565CA4 /* OCViewControllers */,
 				186A324024DA9A0F0066CBE5 /* Common */,
@@ -349,6 +358,7 @@
 		186A323624DA9A0F0066CBE5 /* FifthVC */ = {
 			isa = PBXGroup;
 			children = (
+				188773B825319C46004AE0FE /* View.swift */,
 				186A323724DA9A0F0066CBE5 /* FifthVC.swift */,
 			);
 			path = FifthVC;
@@ -414,6 +424,10 @@
 			children = (
 				186CE624251064E900B84E9B /* CorShaVViewController.h */,
 				186CE625251064E900B84E9B /* CorShaVViewController.m */,
+				1886CF982577691C00EC06EB /* LayerViewController.h */,
+				1886CF992577691C00EC06EB /* LayerViewController.m */,
+				1886CF9B2577770600EC06EB /* TestViewContext.h */,
+				1886CF9C2577770600EC06EB /* TestViewContext.m */,
 			);
 			path = FourThViewControllers;
 			sourceTree = "<group>";
@@ -456,6 +470,13 @@
 				186CE647251065DB00B84E9B /* Swzzling.h */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		1886CF9725775FD400EC06EB /* Resours */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resours;
 			sourceTree = "<group>";
 		};
 		18B6E40B24EE5742001B7BE3 /* copyMuCopy */ = {
@@ -663,6 +684,7 @@
 				186A31F624DA997A0066CBE5 /* SceneDelegate.swift in Sources */,
 				186CE65B251065DB00B84E9B /* UILabel+BaseLabel.m in Sources */,
 				186A325224DA9A0F0066CBE5 /* SecondDetailVC.swift in Sources */,
+				1886CF9A2577691C00EC06EB /* LayerViewController.m in Sources */,
 				186A325424DA9A0F0066CBE5 /* TripCarCollectionViewCell.swift in Sources */,
 				186A324A24DA9A0F0066CBE5 /* BaseNavController.swift in Sources */,
 				186A325124DA9A0F0066CBE5 /* FifthVC.swift in Sources */,
@@ -675,11 +697,13 @@
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
 				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,
 				186CE656251065DB00B84E9B /* NSObject+UndefineKey.m in Sources */,
+				188773B925319C46004AE0FE /* View.swift in Sources */,
 				18E9465424ED0DC400A9A0B8 /* weakStudyVC.m in Sources */,
 				186CE657251065DB00B84E9B /* NSString+SwitchData.m in Sources */,
 				18B6E40E24EE577E001B7BE3 /* CopyVC.m in Sources */,
 				186A325024DA9A0F0066CBE5 /* ThirdVC.swift in Sources */,
 				186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */,
+				1886CF9D2577770600EC06EB /* TestViewContext.m in Sources */,
 				186A324524DA9A0F0066CBE5 /* GCDViewController.swift in Sources */,
 				186CE64B251065DB00B84E9B /* NSTimer+timerBlock.m in Sources */,
 				186CE652251065DB00B84E9B /* NSData+SwitchData.m in Sources */,
