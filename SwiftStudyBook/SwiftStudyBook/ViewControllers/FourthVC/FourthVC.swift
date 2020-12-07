@@ -13,7 +13,7 @@ class FourthVC: TableTitleVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.upaDataArr = ["圆角阴影共同存在","context上下文画布","9"]
+        self.upaDataArr = ["圆角阴影共同存在","context上下文画布","3d筛子（CATransform3DRotate）"]
         // Do any additional setup after loading the view.
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -33,7 +33,7 @@ class FourthVC: TableTitleVC {
             break
         case 2:
             do{
-                let vc = CorShaVViewController.init()
+                let vc = Transfoem3DVC.init()
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             break
