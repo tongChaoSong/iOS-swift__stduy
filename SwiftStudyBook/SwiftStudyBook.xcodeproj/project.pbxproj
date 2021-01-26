@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1846904725BFFB10009E879B /* FNPAFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846903625BFFB10009E879B /* FNPAFSecurityPolicy.m */; };
+		1846904825BFFB10009E879B /* FNPAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846903925BFFB10009E879B /* FNPAFURLRequestSerialization.m */; };
+		1846904925BFFB10009E879B /* FNPAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846903C25BFFB10009E879B /* FNPAFURLResponseSerialization.m */; };
+		1846904A25BFFB10009E879B /* FNPAFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846904025BFFB10009E879B /* FNPAFNetworkReachabilityManager.m */; };
+		1846904B25BFFB10009E879B /* FNPAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846904225BFFB10009E879B /* FNPAFHTTPSessionManager.m */; };
+		1846904C25BFFB10009E879B /* FNPAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846904325BFFB10009E879B /* FNPAFURLSessionManager.m */; };
 		18505AC92578DCAA00C88CB1 /* icon_xiaoma@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18505AC72578DCAA00C88CB1 /* icon_xiaoma@3x.png */; };
 		18505ACA2578DCAA00C88CB1 /* icon_xiaoma@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18505AC82578DCAA00C88CB1 /* icon_xiaoma@2x.png */; };
 		185CF61024E29B4600565CA4 /* testOCvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CF60F24E29B4600565CA4 /* testOCvc.m */; };
@@ -84,6 +90,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1846903525BFFB10009E879B /* FNPAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNPAFSecurityPolicy.h; sourceTree = "<group>"; };
+		1846903625BFFB10009E879B /* FNPAFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNPAFSecurityPolicy.m; sourceTree = "<group>"; };
+		1846903925BFFB10009E879B /* FNPAFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNPAFURLRequestSerialization.m; sourceTree = "<group>"; };
+		1846903A25BFFB10009E879B /* FNPAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNPAFURLResponseSerialization.h; sourceTree = "<group>"; };
+		1846903B25BFFB10009E879B /* FNPAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNPAFURLRequestSerialization.h; sourceTree = "<group>"; };
+		1846903C25BFFB10009E879B /* FNPAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNPAFURLResponseSerialization.m; sourceTree = "<group>"; };
+		1846903D25BFFB10009E879B /* FNPAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNPAFNetworking.h; sourceTree = "<group>"; };
+		1846903F25BFFB10009E879B /* FNPAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNPAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		1846904025BFFB10009E879B /* FNPAFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNPAFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		1846904225BFFB10009E879B /* FNPAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNPAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		1846904325BFFB10009E879B /* FNPAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNPAFURLSessionManager.m; sourceTree = "<group>"; };
+		1846904425BFFB10009E879B /* FNPAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNPAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		1846904525BFFB10009E879B /* FNPAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNPAFURLSessionManager.h; sourceTree = "<group>"; };
 		18505AC72578DCAA00C88CB1 /* icon_xiaoma@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_xiaoma@3x.png"; sourceTree = "<group>"; };
 		18505AC82578DCAA00C88CB1 /* icon_xiaoma@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_xiaoma@2x.png"; sourceTree = "<group>"; };
 		185CF60E24E29B4600565CA4 /* testOCvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testOCvc.h; sourceTree = "<group>"; };
@@ -207,6 +226,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1846903325BFFB10009E879B /* FNPAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1846903425BFFB10009E879B /* Security */,
+				1846903725BFFB10009E879B /* UIKit */,
+				1846903825BFFB10009E879B /* Serialization */,
+				1846903D25BFFB10009E879B /* FNPAFNetworking.h */,
+				1846903E25BFFB10009E879B /* Reachability */,
+				1846904125BFFB10009E879B /* NSURLSession */,
+				1846904625BFFB10009E879B /* Supportfiles */,
+			);
+			path = FNPAFNetworking;
+			sourceTree = "<group>";
+		};
+		1846903425BFFB10009E879B /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				1846903525BFFB10009E879B /* FNPAFSecurityPolicy.h */,
+				1846903625BFFB10009E879B /* FNPAFSecurityPolicy.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		1846903725BFFB10009E879B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1846903825BFFB10009E879B /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				1846903925BFFB10009E879B /* FNPAFURLRequestSerialization.m */,
+				1846903A25BFFB10009E879B /* FNPAFURLResponseSerialization.h */,
+				1846903B25BFFB10009E879B /* FNPAFURLRequestSerialization.h */,
+				1846903C25BFFB10009E879B /* FNPAFURLResponseSerialization.m */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		1846903E25BFFB10009E879B /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1846903F25BFFB10009E879B /* FNPAFNetworkReachabilityManager.h */,
+				1846904025BFFB10009E879B /* FNPAFNetworkReachabilityManager.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		1846904125BFFB10009E879B /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				1846904225BFFB10009E879B /* FNPAFHTTPSessionManager.m */,
+				1846904325BFFB10009E879B /* FNPAFURLSessionManager.m */,
+				1846904425BFFB10009E879B /* FNPAFHTTPSessionManager.h */,
+				1846904525BFFB10009E879B /* FNPAFURLSessionManager.h */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
+		1846904625BFFB10009E879B /* Supportfiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Supportfiles;
+			sourceTree = "<group>";
+		};
 		18505AC62578DCAA00C88CB1 /* LayerVCImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +518,7 @@
 		186A324424DA9A0F0066CBE5 /* ThirtPart */ = {
 			isa = PBXGroup;
 			children = (
+				1846903325BFFB10009E879B /* FNPAFNetworking */,
 			);
 			path = ThirtPart;
 			sourceTree = "<group>";
@@ -691,9 +779,13 @@
 				186A324824DA9A0F0066CBE5 /* testXIB.swift in Sources */,
 				186CE651251065DB00B84E9B /* UIColor+extend.m in Sources */,
 				186A31F424DA997A0066CBE5 /* AppDelegate.swift in Sources */,
+				1846904B25BFFB10009E879B /* FNPAFHTTPSessionManager.m in Sources */,
 				186CE658251065DB00B84E9B /* NSString+MD5.m in Sources */,
+				1846904A25BFFB10009E879B /* FNPAFNetworkReachabilityManager.m in Sources */,
 				186CE65A251065DB00B84E9B /* NSArray+Safe.m in Sources */,
+				1846904825BFFB10009E879B /* FNPAFURLRequestSerialization.m in Sources */,
 				186A325624DA9A0F0066CBE5 /* VariableDefineFile.swift in Sources */,
+				1846904C25BFFB10009E879B /* FNPAFURLSessionManager.m in Sources */,
 				1899FB92257DF8DA00931DD5 /* Transfoem3DVC.m in Sources */,
 				186A324624DA9A0F0066CBE5 /* PersonOne.swift in Sources */,
 				186CE650251065DB00B84E9B /* UILabel+LeftTopAlign.m in Sources */,
@@ -707,6 +799,7 @@
 				186CE65B251065DB00B84E9B /* UILabel+BaseLabel.m in Sources */,
 				186A325224DA9A0F0066CBE5 /* SecondDetailVC.swift in Sources */,
 				1886CF9A2577691C00EC06EB /* LayerViewController.m in Sources */,
+				1846904725BFFB10009E879B /* FNPAFSecurityPolicy.m in Sources */,
 				186A325424DA9A0F0066CBE5 /* TripCarCollectionViewCell.swift in Sources */,
 				186A324A24DA9A0F0066CBE5 /* BaseNavController.swift in Sources */,
 				186A325124DA9A0F0066CBE5 /* FifthVC.swift in Sources */,
@@ -716,6 +809,7 @@
 				186CE64F251065DB00B84E9B /* UIImage+LightColor.m in Sources */,
 				186CE659251065DB00B84E9B /* UIView+Extension.m in Sources */,
 				186A325324DA9A0F0066CBE5 /* SecondVC.swift in Sources */,
+				1846904925BFFB10009E879B /* FNPAFURLResponseSerialization.m in Sources */,
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
 				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,
 				186CE656251065DB00B84E9B /* NSObject+UndefineKey.m in Sources */,
