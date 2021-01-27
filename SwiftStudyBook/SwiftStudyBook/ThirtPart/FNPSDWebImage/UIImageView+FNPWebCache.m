@@ -58,7 +58,7 @@
                                           options:(FNPSDWebImageOptions)options
                                          progress:(nullable FNPSDWebImageDownloaderProgressBlock)progressBlock
                                         completed:(nullable FNPSDExternalCompletionBlock)completedBlock {
-    NSString *key = [[SDWebImageManager sharedManager] cacheKeyForURL:url];
+    NSString *key = [[FNPSDWebImageManager sharedManager] cacheKeyForURL:url];
     UIImage *lastPreviousCachedImage = [[FNPSDImageCache sharedImageCache] imageFromCacheForKey:key];
     
     [self sd_setImageWithURL:url placeholderImage:lastPreviousCachedImage ?: placeholder options:options progress:progressBlock completed:completedBlock];

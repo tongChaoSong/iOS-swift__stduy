@@ -6,11 +6,11 @@
 //  Copyright © 2021 tcs. All rights reserved.
 //
 
-#import "SDWebImageCompat.h"
+#import "FNPSDWebImageCompat.h"
 
 #if SD_UIKIT || SD_MAC
 
-#import "SDWebImageManager.h"
+#import "FNPSDWebImageManager.h"
 
 
 @interface UIView (FNPWebCacheOperation)

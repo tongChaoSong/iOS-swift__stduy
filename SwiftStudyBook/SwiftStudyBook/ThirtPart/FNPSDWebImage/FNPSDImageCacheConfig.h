@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SDWebImageCompat.h"
+#import "FNPSDWebImageCompat.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
