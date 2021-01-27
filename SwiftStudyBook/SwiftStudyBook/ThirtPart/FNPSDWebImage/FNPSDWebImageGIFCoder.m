@@ -1,0 +1,181 @@
+//
+//  FNPSDWebImageGIFCoder.m
+//  SwiftStudyBook
+//
+//  Created by Apple on 2021/1/27.
+//  Copyright © 2021 tcs. All rights reserved.
+//
+
+#import "FNPSDWebImageGIFCoder.h"
+#import "NSImage+FNPWebCache.h"
+#import <ImageIO/ImageIO.h>
+#import "NSData+FNPImageContentType.h"
+#import "UIImage+FNPMultiFormat.h"
+#import "FNPSDWebImageCoderHelper.h"
+@implementation FNPSDWebImageGIFCoder
++ (instancetype)sharedCoder {
+    static FNPSDWebImageGIFCoder *coder;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        coder = [[FNPSDWebImageGIFCoder alloc] init];
+    });
+    return coder;
+}
+
+#pragma mark - Decode
+- (BOOL)canDecodeFromData:(nullable NSData *)data {
+    return ([NSData sd_imageFormatForImageData:data] == FNPSDImageFormatGIF);
+}
+
+- (UIImage *)decodedImageWithData:(NSData *)data {
+    if (!data) {
+        return nil;
+    }
+    
+#if SD_MAC
+    return [[UIImage alloc] initWithData:data];
+#else
+    
+    CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)data, NULL);
+    if (!source) {
+        return nil;
+    }
+    size_t count = CGImageSourceGetCount(source);
+    
+    UIImage *animatedImage;
+    
+    if (count <= 1) {
+        animatedImage = [[UIImage alloc] initWithData:data];
+    } else {
+        NSMutableArray<FNPSDWebImageFrame *> *frames = [NSMutableArray array];
+        
+        for (size_t i = 0; i < count; i++) {
+            CGImageRef imageRef = CGImageSourceCreateImageAtIndex(source, i, NULL);
+            if (!imageRef) {
+                continue;
+            }
+            
+            float duration = [self sd_frameDurationAtIndex:i source:source];
+#if SD_WATCH
+            CGFloat scale = 1;
+            scale = [WKInterfaceDevice currentDevice].screenScale;
+#elif SD_UIKIT
+            CGFloat scale = 1;
+            scale = [UIScreen mainScreen].scale;
+#endif
+            UIImage *image = [UIImage imageWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp];
+            CGImageRelease(imageRef);
+            
+            FNPSDWebImageFrame *frame = [FNPSDWebImageFrame frameWithImage:image duration:duration];
+            [frames addObject:frame];
+        }
+        
+        NSUInteger loopCount = 0;
+        NSDictionary *imageProperties = (__bridge_transfer NSDictionary *)CGImageSourceCopyProperties(source, nil);
+        NSDictionary *gifProperties = [imageProperties valueForKey:(__bridge_transfer NSString *)kCGImagePropertyGIFDictionary];
+        if (gifProperties) {
+            NSNumber *gifLoopCount = [gifProperties valueForKey:(__bridge_transfer NSString *)kCGImagePropertyGIFLoopCount];
+            if (gifLoopCount) {
+                loopCount = gifLoopCount.unsignedIntegerValue;
+            }
+        }
+        
+        animatedImage = [FNPSDWebImageCoderHelper animatedImageWithFrames:frames];
+        animatedImage.sd_imageLoopCount = loopCount;
+    }
+    
+    CFRelease(source);
+    
+    return animatedImage;
+#endif
+}
+
+- (float)sd_frameDurationAtIndex:(NSUInteger)index source:(CGImageSourceRef)source {
+    float frameDuration = 0.1f;
+    CFDictionaryRef cfFrameProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil);
+    NSDictionary *frameProperties = (__bridge NSDictionary *)cfFrameProperties;
+    NSDictionary *gifProperties = frameProperties[(NSString *)kCGImagePropertyGIFDictionary];
+    
+    NSNumber *delayTimeUnclampedProp = gifProperties[(NSString *)kCGImagePropertyGIFUnclampedDelayTime];
+    if (delayTimeUnclampedProp) {
+        frameDuration = [delayTimeUnclampedProp floatValue];
+    } else {
+        NSNumber *delayTimeProp = gifProperties[(NSString *)kCGImagePropertyGIFDelayTime];
+        if (delayTimeProp) {
+            frameDuration = [delayTimeProp floatValue];
+        }
+    }
+    
+    // Many annoying ads specify a 0 duration to make an image flash as quickly as possible.
+    // We follow Firefox's behavior and use a duration of 100 ms for any frames that specify
+    // a duration of <= 10 ms. See <rdar://problem/7689300> and <http://webkit.org/b/36082>
+    // for more information.
+    
+    if (frameDuration < 0.011f) {
+        frameDuration = 0.100f;
+    }
+    
+    CFRelease(cfFrameProperties);
+    return frameDuration;
+}
+
+- (UIImage *)decompressedImageWithImage:(UIImage *)image
+                                   data:(NSData *__autoreleasing  _Nullable *)data
+                                options:(nullable NSDictionary<NSString*, NSObject*>*)optionsDict {
+    // GIF do not decompress
+    return image;
+}
+
+#pragma mark - Encode
+- (BOOL)canEncodeToFormat:(FNPSDImageFormat)format {
+    return (format == FNPSDImageFormatGIF);
+}
+
+- (NSData *)encodedDataWithImage:(UIImage *)image format:(FNPSDImageFormat)format {
+    if (!image) {
+        return nil;
+    }
+    
+    if (format != FNPSDImageFormatGIF) {
+        return nil;
+    }
+    
+    NSMutableData *imageData = [NSMutableData data];
+    CFStringRef imageUTType = [NSData sd_UTTypeFromSDImageFormat:FNPSDImageFormatGIF];
+    NSArray<FNPSDWebImageFrame *> *frames = [FNPSDWebImageCoderHelper framesFromAnimatedImage:image];
+    
+    // Create an image destination. GIF does not support EXIF image orientation
+    CGImageDestinationRef imageDestination = CGImageDestinationCreateWithData((__bridge CFMutableDataRef)imageData, imageUTType, frames.count, NULL);
+    if (!imageDestination) {
+        // Handle failure.
+        return nil;
+    }
+    if (frames.count == 0) {
+        // for static single GIF images
+        CGImageDestinationAddImage(imageDestination, image.CGImage, nil);
+    } else {
+        // for animated GIF images
+        NSUInteger loopCount = image.sd_imageLoopCount;
+        NSDictionary *gifProperties = @{(__bridge_transfer NSString *)kCGImagePropertyGIFDictionary: @{(__bridge_transfer NSString *)kCGImagePropertyGIFLoopCount : @(loopCount)}};
+        CGImageDestinationSetProperties(imageDestination, (__bridge CFDictionaryRef)gifProperties);
+        
+        for (size_t i = 0; i < frames.count; i++) {
+            FNPSDWebImageFrame *frame = frames[i];
+            float frameDuration = frame.duration;
+            CGImageRef frameImageRef = frame.image.CGImage;
+            NSDictionary *frameProperties = @{(__bridge_transfer NSString *)kCGImagePropertyGIFDictionary : @{(__bridge_transfer NSString *)kCGImagePropertyGIFUnclampedDelayTime : @(frameDuration)}};
+            CGImageDestinationAddImage(imageDestination, frameImageRef, (__bridge CFDictionaryRef)frameProperties);
+        }
+    }
+    // Finalize the destination.
+    if (CGImageDestinationFinalize(imageDestination) == NO) {
+        // Handle failure.
+        imageData = nil;
+    }
+    
+    CFRelease(imageDestination);
+    
+    return [imageData copy];
+}
+
+@end
