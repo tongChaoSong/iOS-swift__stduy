@@ -7,7 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "SwiftStudyBook-Bridging-Header.h"
+//#import "SwiftStudyBook-Bridging-Header.h"
 //#import "SwiftStudyBook-Swift.h"
 NS_ASSUME_NONNULL_BEGIN
 

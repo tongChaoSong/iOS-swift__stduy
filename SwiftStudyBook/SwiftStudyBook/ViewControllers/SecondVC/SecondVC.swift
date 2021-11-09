@@ -108,12 +108,38 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
+            
+            
+            
         case 1:
             do{
                 let vc = weakStudyVC()
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
+            
+        case 2:
+            do{
+                let vc = RuntimeViewController()
+                self.navigationController!.pushViewController(vc, animated: true)
+            }
+            break
+            
+        case 3:
+            do{
+                let vc = RunloopViewController()
+                self.navigationController!.pushViewController(vc, animated: true)
+            }
+            break
+        case 4:
+            do{
+                let vc = BlockViewController()
+                self.navigationController!.pushViewController(vc, animated: true)
+            }
+            break
+            
+            
+            
         default:
             let vc:SecondDetailVC = SecondDetailVC()
             self.navigationController!.pushViewController(vc, animated: true)
@@ -159,7 +185,7 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
        
     }
     
-    let titleArr = ["GCD","weak","runtime","runloop"]
+    let titleArr = ["GCD","weak","runtime","runloop","block"]
     /*
     // MARK: - Navigation
 

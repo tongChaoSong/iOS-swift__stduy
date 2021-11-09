@@ -27,7 +27,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.selectionStyle = UITableViewScrollPositionNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     switch (indexPath.row) {
         case 0:
         {

@@ -35,8 +35,15 @@
 
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 
+#define kIs_iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define kIs_iPhoneX kScreenWidth >=375.0f && kScreenHeight >=812.0f&& kIs_iphone
+/*状态栏高度*/
+#define kStatusBarHeight (CGFloat)(kIs_iPhoneX?(44.0):(20.0))
+#define kNavBarAndStatusBarHeight (CGFloat)(kIs_iPhoneX?(88.0):(64.0))
+
 // 导栏高度
 #define SafeStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+
 
 //存储路径
 #define FilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]

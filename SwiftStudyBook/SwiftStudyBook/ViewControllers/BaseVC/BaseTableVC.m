@@ -54,7 +54,7 @@
         //        if ([_mainTable respondsToSelector:@selector(contentInsetAdjustmentBehavior)]) {
         //            _mainTable.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         //        }
-        _mainTable.frame = CGRectMake(0, -(kApplicationStatusBarHeight-44), SCREEN_WIDTH, SCREEN_HEIGHT - 50 + (kApplicationStatusBarHeight-44));
+//        _mainTable.frame = CGRectMake(0, -(kApplicationStatusBarHeight-44), SCREEN_WIDTH, SCREEN_HEIGHT - 50 + (kApplicationStatusBarHeight-44));
 #else
         self.automaticallyAdjustsScrollViewInsets = NO;
 #endif
@@ -81,14 +81,19 @@
     }
     cell.textLabel.text = self.mainTitleArr[indexPath.row];
     // Configure the cell...
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return  60;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 0.01;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
