@@ -12,7 +12,7 @@ class GCDViewController: TableTitleVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.upaDataArr = ["GCD 任务和队列-0","死锁-1","主队列+异步任务-2","串行队列+同步任务(不在主线程)-3","串行队列+异步任务-4","并发队列+同步任务-5","并发队列+异步任务（最大并发数64)-6","GCD 栅栏-7","GCD group-8","信号量 semaphore-9","延时任务-10","DispatchWorkItem-11"]
+        self.upaDataArr = ["GCD 任务和队列-0","死锁-1","主队列+异步任务-2","串行队列+同步任务(不在主线程)-3","串行队列+异步任务-4","并发队列+同步任务-5","并发队列+异步任务（最大并发数64)-6","GCD 栅栏-7","GCD group-8","信号量 semaphore-9","延时任务-10","DispatchWorkItem-11","线程常驻"]
         // Do any additional setup after loading the view.
     }
     
@@ -81,6 +81,10 @@ class GCDViewController: TableTitleVC {
                 gcdDispatchWorkItem()
             }
             break
+        case 12:
+            do{
+                longThread()
+            }
         default:
             break
         }
@@ -509,6 +513,35 @@ class GCDViewController: TableTitleVC {
             print("completed")
         }
        
+    }
+    var thread:Thread!;
+    func longThread(){
+        // 需要在某个地方初始化
+        thread = Thread.init(target: self, selector:#selector(startRunlooThread(beacons: )), object: nil)
+        thread.start()
+        //需要长时间处理数据的地方使用此方式
+        self.perform(#selector(startRunlooThread(beacons: )), on: thread, with: nil, waitUntilDone: false)
+        
+        //关闭线程常住
+//        RunLoop.current.remove(NSMachPort(), forMode: .common)
+//        thread.cancel()
+    }
+    
+    @objc func startRunlooThread(beacons:Array<AnyObject>){
+        
+        print("当前线程 =poart= \(Thread.current)  == beacons==\(beacons)")
+//        autoreleasepool {
+            
+            print("当前线程 =poart= \(Thread.current)")
+            
+            let currentThread: Thread = Thread.current
+            currentThread.name = "常驻线程"
+            
+            RunLoop.current.add(NSMachPort(), forMode: .common)
+            RunLoop.current.run()
+//        }
+        
+        
     }
     func currentTreadLog() ->Void{
         let cureent = Thread.current

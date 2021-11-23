@@ -38,6 +38,7 @@
 		18481610273A1AAE009CAFB3 /* icon_qq_pre1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1848160A273A1AAE009CAFB3 /* icon_qq_pre1@2x.png */; };
 		18481611273A1AAE009CAFB3 /* btn_pengyouquan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1848160B273A1AAE009CAFB3 /* btn_pengyouquan@3x.png */; };
 		18481612273A1AAE009CAFB3 /* icon_qq_pre1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1848160C273A1AAE009CAFB3 /* icon_qq_pre1@3x.png */; };
+		18481615273B688B009CAFB3 /* MYCustumText.m in Sources */ = {isa = PBXBuildFile; fileRef = 18481614273B688B009CAFB3 /* MYCustumText.m */; };
 		18505AC92578DCAA00C88CB1 /* icon_xiaoma@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18505AC72578DCAA00C88CB1 /* icon_xiaoma@3x.png */; };
 		18505ACA2578DCAA00C88CB1 /* icon_xiaoma@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18505AC82578DCAA00C88CB1 /* icon_xiaoma@2x.png */; };
 		185CF61024E29B4600565CA4 /* testOCvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CF60F24E29B4600565CA4 /* testOCvc.m */; };
@@ -177,6 +178,8 @@
 		1848160A273A1AAE009CAFB3 /* icon_qq_pre1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_qq_pre1@2x.png"; sourceTree = "<group>"; };
 		1848160B273A1AAE009CAFB3 /* btn_pengyouquan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_pengyouquan@3x.png"; sourceTree = "<group>"; };
 		1848160C273A1AAE009CAFB3 /* icon_qq_pre1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_qq_pre1@3x.png"; sourceTree = "<group>"; };
+		18481613273B688B009CAFB3 /* MYCustumText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCustumText.h; sourceTree = "<group>"; };
+		18481614273B688B009CAFB3 /* MYCustumText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCustumText.m; sourceTree = "<group>"; };
 		18505AC72578DCAA00C88CB1 /* icon_xiaoma@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_xiaoma@3x.png"; sourceTree = "<group>"; };
 		18505AC82578DCAA00C88CB1 /* icon_xiaoma@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_xiaoma@2x.png"; sourceTree = "<group>"; };
 		185CF60E24E29B4600565CA4 /* testOCvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testOCvc.h; sourceTree = "<group>"; };
@@ -672,6 +675,8 @@
 				1886CF9C2577770600EC06EB /* TestViewContext.m */,
 				1899FB90257DF8DA00931DD5 /* Transfoem3DVC.h */,
 				1899FB91257DF8DA00931DD5 /* Transfoem3DVC.m */,
+				18481613273B688B009CAFB3 /* MYCustumText.h */,
+				18481614273B688B009CAFB3 /* MYCustumText.m */,
 			);
 			path = FourThViewControllers;
 			sourceTree = "<group>";
@@ -967,6 +972,7 @@
 				1899FB92257DF8DA00931DD5 /* Transfoem3DVC.m in Sources */,
 				186A324624DA9A0F0066CBE5 /* PersonOne.swift in Sources */,
 				1846912125C1613F009E879B /* FNPSDWebImageCompat.m in Sources */,
+				18481615273B688B009CAFB3 /* MYCustumText.m in Sources */,
 				1846912325C1613F009E879B /* UIView+FNPWebCacheOperation.m in Sources */,
 				186CE650251065DB00B84E9B /* UILabel+LeftTopAlign.m in Sources */,
 				186A325824DA9A0F0066CBE5 /* BaseExtension.swift in Sources */,

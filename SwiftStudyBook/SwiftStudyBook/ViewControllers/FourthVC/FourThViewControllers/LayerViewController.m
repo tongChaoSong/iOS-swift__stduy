@@ -18,6 +18,7 @@
     [super viewDidLoad];
     [self clayer];
     [self addView];
+    [self drawText:CGRectMake(10, SCREEN_HEIGHT - 100, SCREEN_WIDTH - 20, 80)];
     // Do any additional setup after loading the view.
 }
 -(void)clayer{
@@ -98,6 +99,56 @@
     sender.selected =!sender.selected;
 
 }
+
+-(void)drawText:(CGRect)rect{
+
+    NSString *str = @"姜灵凤姜灵凤姜灵凤姜灵凤姜灵凤姜灵凤姜灵凤姜灵凤";
+
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+
+    //字体大小
+
+    dict[NSFontAttributeName] = [UIFont systemFontOfSize:30];
+
+    //设置颜色
+
+    dict[NSForegroundColorAttributeName] = [UIColor greenColor];
+
+    //设置描边
+
+    dict[NSStrokeColorAttributeName] = [UIColor redColor];
+
+    dict[NSStrokeWidthAttributeName] = @2;
+
+
+
+    //设置阴影
+
+    NSShadow*shadow = [[NSShadow alloc]init];
+
+    shadow.shadowColor = [UIColor blueColor];
+
+    //设置阴影偏移量
+
+    shadow.shadowOffset=CGSizeMake(1,1);
+
+    //设置阴影模糊度
+
+    shadow.shadowBlurRadius = 2;
+
+    dict[NSShadowAttributeName] = shadow;
+
+    //[str drawAtPoint:CGPointMake(50, 50) withAttributes:dict];//不会自动换行
+
+    //会自动换行
+
+    [str drawInRect:rect withAttributes:dict];
+
+}
+
+
+
+
 /*
 #pragma mark - Navigation
 

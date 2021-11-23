@@ -8,12 +8,14 @@
 
 #import "CorShaVViewController.h"
 #import "UIColor+extend.h"
+#import "MYCustumText.h"
 @interface CorShaVViewController ()
 @property(nonatomic,strong)CALayer* myLayer;
 
 @property(nonatomic,strong)NSMutableArray* colorArray;
 @property(nonatomic,strong)NSMutableArray* imageArray;
 
+@property(nonatomic,strong)MYCustumText * mycust;
 @end
 
 @implementation CorShaVViewController
@@ -27,8 +29,10 @@
     [super viewDidLoad];
     [self radius];
     [self initLayer:nil];
+    [self initMYCustumText];
     // Do any additional setup after loading the view.
 }
+
 -(void)initData{
     self.colorArray = [[NSMutableArray alloc]init];
     
@@ -73,6 +77,15 @@
 //    [self initLayer:radView];
 
     [self.view addSubview:shadowView];
+}
+-(void)initMYCustumText{
+    self.mycust = [[MYCustumText alloc]initWithFrame:CGRectMake(10, SCREEN_HEIGHT - 400, SCREEN_WIDTH - 20, 350)];
+//    self.mycust = [[MYCustumText alloc]initWithFrame:CGRectMake(10, 88, SCREEN_WIDTH - 20, SCREEN_HEIGHT - 88 - 50)];
+
+    self.mycust.backgroundColor = [UIColor grayColor];
+    [self.mycust setNeedsLayout];
+    [self.view addSubview:self.mycust];
+    
 }
 
 -(void)closeCATransation{
