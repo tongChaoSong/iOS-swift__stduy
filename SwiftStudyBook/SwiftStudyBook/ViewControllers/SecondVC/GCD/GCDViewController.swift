@@ -520,7 +520,7 @@ class GCDViewController: TableTitleVC {
         thread = Thread.init(target: self, selector:#selector(startRunlooThread(beacons: )), object: nil)
         thread.start()
         //需要长时间处理数据的地方使用此方式
-        self.perform(#selector(startRunlooThread(beacons: )), on: thread, with: nil, waitUntilDone: false)
+        self.perform(#selector(otherNeedMoreTime), on: thread, with: nil, waitUntilDone: false)
         
         //关闭线程常住
 //        RunLoop.current.remove(NSMachPort(), forMode: .common)
@@ -542,6 +542,12 @@ class GCDViewController: TableTitleVC {
 //        }
         
         
+    }
+    @objc func otherNeedMoreTime() ->Void{
+        autoreleasepool {
+        //chuli
+        }
+        currentTreadLog()
     }
     func currentTreadLog() ->Void{
         let cureent = Thread.current
