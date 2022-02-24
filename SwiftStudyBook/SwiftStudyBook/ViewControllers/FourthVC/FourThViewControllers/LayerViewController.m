@@ -21,6 +21,7 @@
     [self drawText:CGRectMake(10, SCREEN_HEIGHT - 100, SCREEN_WIDTH - 20, 80)];
     // Do any additional setup after loading the view.
 }
+
 -(void)clayer{
 //    UIView * shadowView = [[UIView alloc]initWithFrame:CGRectMake(50, kApplicationStatusBarHeight + 100, SCREEN_WIDTH - 50 * 2, SCREEN_WIDTH - 50 * 2)];
 //    shadowView.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -36,6 +37,9 @@
 //    shadowView.clipsToBounds = NO;
 //    shadowView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@""].CGImage);
     TestViewContext * view = [[TestViewContext alloc]initWithFrame:CGRectMake(0, kApplicationStatusBarHeight, SCREEN_WIDTH, (SCREEN_HEIGHT - kApplicationStatusBarHeight)/2)];
+    [view setNeedsLayout];
+//    [view layoutIfNeeded];
+//    [view layoutSubviews];
     [self.view addSubview:view];
 }
 -(void)addView{

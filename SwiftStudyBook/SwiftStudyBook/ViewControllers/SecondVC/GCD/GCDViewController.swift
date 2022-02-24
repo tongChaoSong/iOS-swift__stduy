@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class GCDViewController: TableTitleVC {
 
@@ -97,9 +98,9 @@ class GCDViewController: TableTitleVC {
 
          */
         //串行队列
-        let serial = DispatchQueue(label: "serial",attributes: .init(rawValue:0))
+        let serial = DispatchQueue(label: "serial")
         //并发队列
-        let concurrent = DispatchQueue(label: "serial",attributes: .concurrent)
+        let concurrent = DispatchQueue(label: "concurrent",attributes: .concurrent)
         //主队列
         let mainQueue = DispatchQueue.main
         //全局队列

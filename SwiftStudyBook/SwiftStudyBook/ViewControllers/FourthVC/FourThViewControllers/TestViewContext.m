@@ -20,7 +20,7 @@
 */
 -(instancetype)initWithFrame:(CGRect)frame{
     if ([super initWithFrame:frame]) {
-        
+        NSLog(@"TestViewContext== initWithFrame");
     }
     return self;
 }
@@ -28,6 +28,8 @@
 // 覆盖drawRect方法，你可以在此自定义绘画和动画
 - (void)drawRect:(CGRect)rect
 {
+    NSLog(@"TestViewContext== drawRect");
+
     //An opaque type that represents a Quartz 2D drawing environment.
     //一个不透明类型的Quartz 2D绘画环境,相当于一个画布,你可以在上面任意绘画
     CGContextRef context = UIGraphicsGetCurrentContext();

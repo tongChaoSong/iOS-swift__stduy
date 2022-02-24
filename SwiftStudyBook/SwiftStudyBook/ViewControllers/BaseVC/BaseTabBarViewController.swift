@@ -44,14 +44,15 @@ class BaseTabBarViewController: UITabBarController {
 
             baseNav.hidesBottomBarWhenPushed = false
             baseNav.tabBarItem.title = title
-            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red], for: .normal)
-            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.yellow], for: .selected)
+            baseNav.tabBarItem.image = UIImage.init(named: "icon_xiaoma");
+            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20)], for: .normal)
+            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.yellow,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20)], for: .selected)
 
 
 
         }
         
-        self.tabBar.backgroundColor = UIColor.green
+        self.tabBar.backgroundColor = UIColor.white
     }
 
     /*

@@ -92,6 +92,9 @@
 		188773B925319C46004AE0FE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188773B825319C46004AE0FE /* View.swift */; };
 		1899DE7A26F2E2DB00C54B03 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899DE7926F2E2DB00C54B03 /* BlockViewController.m */; };
 		1899FB92257DF8DA00931DD5 /* Transfoem3DVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899FB91257DF8DA00931DD5 /* Transfoem3DVC.m */; };
+		189D071B27C365260073D004 /* LayIfneedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D071A27C365260073D004 /* LayIfneedViewController.m */; };
+		189D071E27C365660073D004 /* LayNeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D071D27C365660073D004 /* LayNeedView.m */; };
+		18AC7D8527683B0800366326 /* CoreAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC7D8427683B0800366326 /* CoreAnimationVC.m */; };
 		18B6E40E24EE577E001B7BE3 /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E40D24EE577E001B7BE3 /* CopyVC.m */; };
 		18B8EA79272A459C00825B0E /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8EA78272A459B00825B0E /* RunloopViewController.m */; };
 		18C6B85E26E0C50900805922 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B85D26E0C50800805922 /* RuntimeViewController.m */; };
@@ -265,6 +268,12 @@
 		1899DE7926F2E2DB00C54B03 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		1899FB90257DF8DA00931DD5 /* Transfoem3DVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transfoem3DVC.h; sourceTree = "<group>"; };
 		1899FB91257DF8DA00931DD5 /* Transfoem3DVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transfoem3DVC.m; sourceTree = "<group>"; };
+		189D071927C365250073D004 /* LayIfneedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayIfneedViewController.h; sourceTree = "<group>"; };
+		189D071A27C365260073D004 /* LayIfneedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayIfneedViewController.m; sourceTree = "<group>"; };
+		189D071C27C365660073D004 /* LayNeedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayNeedView.h; sourceTree = "<group>"; };
+		189D071D27C365660073D004 /* LayNeedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayNeedView.m; sourceTree = "<group>"; };
+		18AC7D8327683B0800366326 /* CoreAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationVC.h; sourceTree = "<group>"; };
+		18AC7D8427683B0800366326 /* CoreAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationVC.m; sourceTree = "<group>"; };
 		18B6E40C24EE577E001B7BE3 /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
 		18B6E40D24EE577E001B7BE3 /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
 		18B8EA77272A459B00825B0E /* RunloopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
@@ -677,6 +686,12 @@
 				1899FB91257DF8DA00931DD5 /* Transfoem3DVC.m */,
 				18481613273B688B009CAFB3 /* MYCustumText.h */,
 				18481614273B688B009CAFB3 /* MYCustumText.m */,
+				18AC7D8327683B0800366326 /* CoreAnimationVC.h */,
+				18AC7D8427683B0800366326 /* CoreAnimationVC.m */,
+				189D071927C365250073D004 /* LayIfneedViewController.h */,
+				189D071A27C365260073D004 /* LayIfneedViewController.m */,
+				189D071C27C365660073D004 /* LayNeedView.h */,
+				189D071D27C365660073D004 /* LayNeedView.m */,
 			);
 			path = FourThViewControllers;
 			sourceTree = "<group>";
@@ -955,6 +970,7 @@
 				186A31F824DA997A0066CBE5 /* ViewController.swift in Sources */,
 				18E9465A24ED11E400A9A0B8 /* BaseTableVC.m in Sources */,
 				186A324824DA9A0F0066CBE5 /* testXIB.swift in Sources */,
+				189D071E27C365660073D004 /* LayNeedView.m in Sources */,
 				186CE651251065DB00B84E9B /* UIColor+extend.m in Sources */,
 				1846912725C1613F009E879B /* NSImage+FNPWebCache.m in Sources */,
 				186A31F424DA997A0066CBE5 /* AppDelegate.swift in Sources */,
@@ -1019,8 +1035,10 @@
 				1846912A25C1613F009E879B /* UIButton+FNPWebCache.m in Sources */,
 				1886CF9D2577770600EC06EB /* TestViewContext.m in Sources */,
 				1846912525C1613F009E879B /* FNPSDWebImageImageIOCoder.m in Sources */,
+				189D071B27C365260073D004 /* LayIfneedViewController.m in Sources */,
 				186A324524DA9A0F0066CBE5 /* GCDViewController.swift in Sources */,
 				186CE64B251065DB00B84E9B /* NSTimer+timerBlock.m in Sources */,
+				18AC7D8527683B0800366326 /* CoreAnimationVC.m in Sources */,
 				18B8EA79272A459C00825B0E /* RunloopViewController.m in Sources */,
 				1846911B25C1613F009E879B /* FNPSDWebImageCodersManager.m in Sources */,
 				186CE652251065DB00B84E9B /* NSData+SwitchData.m in Sources */,
@@ -1133,7 +1151,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1187,7 +1205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
