@@ -75,9 +75,19 @@
             break;
         case 4:
         {
-            self.currentTag = 0;
+            self.currentTag = 5;
             [sender setTitle:@"调用setNeedsDisplay" forState:UIControlStateNormal];
             [self.layView setNeedsDisplay];
+
+        }
+            break;
+        case 5:
+        {
+            self.currentTag = 0;
+            [sender setTitle:@"修改farme" forState:UIControlStateNormal];
+//            [UIView animateWithDuration:0.5 animations:^{
+                self.layView.frame = CGRectMake(30, 158, SCREEN_WIDTH - 60, 40);
+//            }];
 
         }
             break;

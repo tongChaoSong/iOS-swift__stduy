@@ -185,7 +185,7 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
        
     }
     
-    let titleArr = ["GCD","weak","runtime","runloop","block"]
+    let titleArr = ["GCD","weak","runtime","runloop、类簇","block"]
     /*
     // MARK: - Navigation
 

@@ -14,4 +14,10 @@
                                          block:(void(^)())block
                                        repeats:(BOOL)repeats;
 
++ (NSTimer *)scheduledWeakTimerWithTimeInterval:(NSTimeInterval)interval
+                                         target:(id)aTarget
+                                       selector:(SEL)aSelector
+                                       userInfo:(id)userInfo
+                                        repeats:(BOOL)repeats;
+
 @end

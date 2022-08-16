@@ -2,8 +2,8 @@
 //  NSArray+Safe.m
 //  NSArrayTest
 //
-//  Created by 蓝布鲁 on 2017/11/28.
-//  Copyright © 2017年 蓝布鲁. All rights reserved.
+//  Created by tcs on 2017/11/28.
+//  Copyright © 2017年 tcs. All rights reserved.
 //
 
 #import "NSArray+Safe.h"

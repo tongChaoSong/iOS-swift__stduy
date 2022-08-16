@@ -17,8 +17,8 @@ class BaseTabBarViewController: UITabBarController {
     }
     
     func createUI() -> Void {
-        let titleArr = ["首页","活动","卡片","地址","个人"]
-        let selectTitleArr = ["首页","活动","卡片","地址","个人"]
+        let titleArr = ["首页","底层","常用","视图","个人"]
+        let selectTitleArr = ["首页","底层","常用","视图","个人"]
 
         let homeVC = HomeVC()
         homeVC.navigationController?.title = "首页"

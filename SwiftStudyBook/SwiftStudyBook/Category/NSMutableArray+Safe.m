@@ -2,8 +2,8 @@
 //  NSMutableArray+Safe.m
 //  testArray
 //
-//  Created by suishen.mobi on 13-12-26.
-//  Copyright (c) 2013年 suishen.mobi. All rights reserved.
+//  Created by tcs on 13-12-26.
+//  Copyright (c) 2013年 tcs All rights reserved.
 //
 
 #import "NSMutableArray+Safe.h"

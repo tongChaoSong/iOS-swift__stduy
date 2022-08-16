@@ -2,8 +2,8 @@
 //  UILabel+BaseLabel.m
 //  一起自驾游
 //
-//  Created by apple-CXTX on 18/10/19.
-//  Copyright © 2018年 apple. All rights reserved.
+//  Created by tcs on 18/10/19.
+//  Copyright © 2018年 tcs. All rights reserved.
 //
 
 #import "UILabel+BaseLabel.h"
