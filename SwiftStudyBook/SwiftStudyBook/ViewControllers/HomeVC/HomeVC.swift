@@ -24,7 +24,8 @@ class HomeVC: BaseViewController {
         self.view.backgroundColor = UIColor.purple
         // Do any additional setup after loading the view.
     
-        testData()
+        loadData()
+//        testData()
     }
     
     func loadData() -> Void {
@@ -60,7 +61,8 @@ class HomeVC: BaseViewController {
     """
         
         if let jsonData = jsonString.data(using: String.Encoding.utf8) {
-            if let group = try? JSONDecoder().decode(Department.self, from: jsonData) {
+            if let group:Department = try? JSONDecoder().decode(Department.self, from: jsonData) {
+                print("groupgroup==\(group)");
                 dump(group)
             }
         }

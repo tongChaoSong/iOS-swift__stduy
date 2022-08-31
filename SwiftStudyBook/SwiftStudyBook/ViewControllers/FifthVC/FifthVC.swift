@@ -61,35 +61,7 @@ class FifthVC: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func loadData() -> Void {
-        //        let mudict:NSMutableDictionary = NSMutableDictionary.init()
-        //
-        //        let upDict:NSDictionary = ToolHelper.appendHashParamsDictEJY((mudict as! [AnyHashable : Any]))! as NSDictionary
-        //
-        //        let netWorking = WebService.sharedInstance()
-        //        netWorking?.wsGetUserAitabi(upDict, success: { ( data) in
-        //
-        //            let dataDict:NSDictionary = data! as NSDictionary
-        //
-        //            print("qqqqq -- )\(dataDict) +===\(data)")
-        //
-        //            let errCoder:NSString = dataDict.value(forKey: "resCode") as! NSString
-        //            if errCoder.isEqual(to: "0"){
-        //                let resData:NSDictionary = dataDict.value(forKey: "resData") as! NSDictionary
-        //                let aitabi:Int = resData.value(forKey: "aitabi") as! Int
-        //                let aitaibiStr = "\(aitabi)"
-        //                self.aitabiNmber.text = aitaibiStr as String
-        //                UserDefaults.standard.setValue(aitaibiStr , forKey: "aitabi")
-        //            }
-        //            //            let netData:City = try! LsqDecoder.decode(City.self, param:data as! [String : Any])
-        //            //
-        //            //            let arrCity:NSArray = netData.resData as NSArray
-        //            //
-        //            //            print("kjfkdjfkl -- )\(arrCity) 第一个是== \(arrCity[0]) ")
-        //
-        //        }, failure: { (error) in
-        //
-        //        })
-        
+//                    let netData:City = try! LsqDecoder.decode(City.self, param:data as! [String : Any])
         
     }
     override func viewWillAppear(_ animated: Bool) {

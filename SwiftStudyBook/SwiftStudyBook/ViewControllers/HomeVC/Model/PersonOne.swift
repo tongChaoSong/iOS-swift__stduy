@@ -12,6 +12,8 @@ import UIKit
 class Department: Codable {
     var name: String
     var id: Int
+//    var tableHg: Int
+
     var members: [PersonOne] = []
     var manager: PersonOne?
 }

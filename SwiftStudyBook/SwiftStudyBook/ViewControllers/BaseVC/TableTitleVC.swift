@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class TableTitleVC: BaseViewController,UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titleArr.count
@@ -51,6 +52,15 @@ class TableTitleVC: BaseViewController,UITableViewDataSource,UITableViewDelegate
             // Fallback on earlier versions
         }
         table.separatorStyle = UITableViewCell.SeparatorStyle.none
+//        table.firstReload = true;
+//        table.reloadBlock = {(getStr) -> Void in
+//            print("ddddddd");
+//
+//        };
+        table.reloadBlock = {() -> Void in
+            print("点击默认刷新ui");
+
+        };
         return table
     }()
     

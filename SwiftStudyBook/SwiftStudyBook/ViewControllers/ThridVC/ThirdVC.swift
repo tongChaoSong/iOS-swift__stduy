@@ -12,7 +12,11 @@ class ThirdVC: TableTitleVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.upaDataArr = ["UIWebView和js的交互","8","9"]
+//        self.upaDataArr = ["UIWebView和js的交互","8","9"]
+        
+        //打开测试全局tab添加无数据图案 使用runtime方式，学习使用
+        self.upaDataArr = NSArray.init();
+
         // Do any additional setup after loading the view.
     }
     
