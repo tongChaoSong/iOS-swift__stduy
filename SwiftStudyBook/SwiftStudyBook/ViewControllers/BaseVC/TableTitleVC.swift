@@ -46,6 +46,7 @@ class TableTitleVC: BaseViewController,UITableViewDataSource,UITableViewDelegate
         table.delegate = self;
         table.dataSource = self
         
+        
         if #available(iOS 11.0, *) {
             table.contentInsetAdjustmentBehavior = .never
         } else {
