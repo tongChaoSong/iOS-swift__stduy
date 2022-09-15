@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewDataSource,PuBuLiuCustFlowLayoutDelegate {
     
     
@@ -137,7 +138,14 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
-            
+        case 5:
+            do{
+                var dict:Dictionary<String,String> = [:]
+                var dict3: Dictionary<String, String> = [:]
+                let dict1 = ["zhangsan": 18, "lisi": 19]
+                ToolClass.createPropetyCode(dict1);
+            }
+            break
             
             
         default:
@@ -185,7 +193,7 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
        
     }
     
-    let titleArr = ["GCD","weak","runtime","runloop、类簇","block"]
+    let titleArr = ["GCD","weak","runtime","runloop、类簇","block","自动生成后台返回dict属性"]
     /*
     // MARK: - Navigation
 

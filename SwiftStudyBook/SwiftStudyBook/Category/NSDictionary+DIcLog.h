@@ -8,3 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+@interface NSDictionary (Log)
+
+///打印接口返回属性
+- (void)createPropetyCode;
+
+@end

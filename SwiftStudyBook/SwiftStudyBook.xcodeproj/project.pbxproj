@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		043F86D228ABBF22003268EC /* NSArray+TCSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */; };
 		043F86D628ABC641003268EC /* UIButton+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D428ABC641003268EC /* UIButton+Ex.m */; };
+		0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461C3DC28D2C7B40071D5DC /* ToolClass.m */; };
 		04EC655228BF588700742E08 /* UIButton+DelaySwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655128BF588600742E08 /* UIButton+DelaySwizzling.m */; };
 		04EC655528BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655428BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m */; };
 		04EC655828BF61AF00742E08 /* TCSTabPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655728BF61AF00742E08 /* TCSTabPlaceholderView.swift */; };
@@ -132,6 +133,8 @@
 		043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TCSSafe.m"; sourceTree = "<group>"; };
 		043F86D428ABC641003268EC /* UIButton+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Ex.m"; sourceTree = "<group>"; };
 		043F86D528ABC641003268EC /* UIButton+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Ex.h"; sourceTree = "<group>"; };
+		0461C3DB28D2C7B40071D5DC /* ToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolClass.h; sourceTree = "<group>"; };
+		0461C3DC28D2C7B40071D5DC /* ToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolClass.m; sourceTree = "<group>"; };
 		04EC655028BF588600742E08 /* UIButton+DelaySwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DelaySwizzling.h"; sourceTree = "<group>"; };
 		04EC655128BF588600742E08 /* UIButton+DelaySwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DelaySwizzling.m"; sourceTree = "<group>"; };
 		04EC655328BF60ED00742E08 /* UITableView+ReloadDataSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ReloadDataSwizzling.h"; sourceTree = "<group>"; };
@@ -682,6 +685,8 @@
 				186A324124DA9A0F0066CBE5 /* VariableDefineFile.swift */,
 				186A324224DA9A0F0066CBE5 /* BtnExtension.swift */,
 				186A324324DA9A0F0066CBE5 /* BaseExtension.swift */,
+				0461C3DB28D2C7B40071D5DC /* ToolClass.h */,
+				0461C3DC28D2C7B40071D5DC /* ToolClass.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1055,6 +1060,7 @@
 				186CE64F251065DB00B84E9B /* UIImage+LightColor.m in Sources */,
 				1846911C25C1613F009E879B /* FNPSDWebImageGIFCoder.m in Sources */,
 				186CE659251065DB00B84E9B /* UIView+Extension.m in Sources */,
+				0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */,
 				186A325324DA9A0F0066CBE5 /* SecondVC.swift in Sources */,
 				1846904925BFFB10009E879B /* FNPAFURLResponseSerialization.m in Sources */,
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
