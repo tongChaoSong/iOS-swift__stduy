@@ -9,7 +9,6 @@
 #import "BaseTableVC.h"
 
 @interface BaseTableVC ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView * mainTable;
 @end
 
 @implementation BaseTableVC
@@ -50,7 +49,9 @@
         _mainTable.estimatedRowHeight = 0;
         _mainTable.estimatedSectionFooterHeight = 0;
         _mainTable.estimatedSectionHeaderHeight = 0;
-        
+        _mainTable.reloadBlock = ^{
+            
+        };
         //        if ([_mainTable respondsToSelector:@selector(contentInsetAdjustmentBehavior)]) {
         //            _mainTable.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         //        }

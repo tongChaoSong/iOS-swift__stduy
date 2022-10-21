@@ -73,6 +73,7 @@ Class functionForClassMethod(id self, SEL _cmd)
             objc_property_t property = properties[i];
             //通过property_getName函数获得属性的名字
             NSString * propertyName = [NSString stringWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+            NSLog(@"当前属性是==%@",propertyName);
             [keys addObject:propertyName];
             //通过property_getAttributes函数可以获得属性的名字和@encode编码
             NSString * propertyAttribute = [NSString stringWithCString:property_getAttributes(property) encoding:NSUTF8StringEncoding];
