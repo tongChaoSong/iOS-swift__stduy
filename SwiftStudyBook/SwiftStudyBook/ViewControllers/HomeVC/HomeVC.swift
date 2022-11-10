@@ -25,6 +25,8 @@ class HomeVC: BaseViewController {
         // Do any additional setup after loading the view.
     
         loadData()
+//        self.upaDataArr = ["struct、Class、enum","runtime方式测试全局tab添加无数据图案","9"];
+
 //        testData()
     }
     

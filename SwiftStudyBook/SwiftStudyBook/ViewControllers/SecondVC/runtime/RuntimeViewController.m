@@ -34,7 +34,7 @@
     @WeakObj(self);
     self.mainTable.reloadBlock = ^{
         NSLog(@"无图新增刷新");
-        selfWeak.mainTitleArr = selfWeak.mainTitleArr;
+        selfWeak.mainTitleArr = @[@"清除数据",@"json-->model、消息转发机制",@"runtime-方式测试全局tab添加无数据图案",@"runtime-04实现自动解归档",@"runtime-万能界面跳转方法"];
 
     };
 }

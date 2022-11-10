@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		043F86D228ABBF22003268EC /* NSArray+TCSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */; };
 		043F86D628ABC641003268EC /* UIButton+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D428ABC641003268EC /* UIButton+Ex.m */; };
+		04496892291CD5A200DF0E5E /* ClassStructEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04496891291CD5A200DF0E5E /* ClassStructEnum.swift */; };
 		0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461C3DC28D2C7B40071D5DC /* ToolClass.m */; };
 		04B42FB72902400700291318 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB62902400700291318 /* LoginInfo.m */; };
 		04B42FBA29024B2400291318 /* HSFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB929024B2400291318 /* HSFeedsViewController.m */; };
@@ -135,6 +136,7 @@
 		043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TCSSafe.m"; sourceTree = "<group>"; };
 		043F86D428ABC641003268EC /* UIButton+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Ex.m"; sourceTree = "<group>"; };
 		043F86D528ABC641003268EC /* UIButton+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Ex.h"; sourceTree = "<group>"; };
+		04496891291CD5A200DF0E5E /* ClassStructEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructEnum.swift; sourceTree = "<group>"; };
 		0461C3DB28D2C7B40071D5DC /* ToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolClass.h; sourceTree = "<group>"; };
 		0461C3DC28D2C7B40071D5DC /* ToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolClass.m; sourceTree = "<group>"; };
 		04B42FB52902400700291318 /* LoginInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInfo.h; sourceTree = "<group>"; };
@@ -343,6 +345,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0449688F291CD4C500DF0E5E /* TcsExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				04496891291CD5A200DF0E5E /* ClassStructEnum.swift */,
+			);
+			path = TcsExtensions;
+			sourceTree = "<group>";
+		};
 		04EC655628BF618400742E08 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,8 +575,8 @@
 		186A322324DA9A0F0066CBE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				186A322424DA9A0F0066CBE5 /* HomeVC */,
 				186A322C24DA9A0F0066CBE5 /* BaseVC */,
+				186A322424DA9A0F0066CBE5 /* HomeVC */,
 				186A323224DA9A0F0066CBE5 /* FourthVC */,
 				186A323424DA9A0F0066CBE5 /* ThridVC */,
 				186A323624DA9A0F0066CBE5 /* FifthVC */,
@@ -630,6 +640,7 @@
 		186A323424DA9A0F0066CBE5 /* ThridVC */ = {
 			isa = PBXGroup;
 			children = (
+				0449688F291CD4C500DF0E5E /* TcsExtensions */,
 				186A323524DA9A0F0066CBE5 /* ThirdVC.swift */,
 			);
 			path = ThridVC;
@@ -1016,6 +1027,7 @@
 				04EC655228BF588700742E08 /* UIButton+DelaySwizzling.m in Sources */,
 				186A31F824DA997A0066CBE5 /* ViewController.swift in Sources */,
 				18E9465A24ED11E400A9A0B8 /* BaseTableVC.m in Sources */,
+				04496892291CD5A200DF0E5E /* ClassStructEnum.swift in Sources */,
 				186A324824DA9A0F0066CBE5 /* testXIB.swift in Sources */,
 				189D071E27C365660073D004 /* LayNeedView.m in Sources */,
 				186CE651251065DB00B84E9B /* UIColor+extend.m in Sources */,

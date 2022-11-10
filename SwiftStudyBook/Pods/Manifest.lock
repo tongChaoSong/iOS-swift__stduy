@@ -20,6 +20,7 @@ PODS:
   - BGFMDB/BG (2.0.13):
     - BGFMDB/FMDB
   - BGFMDB/FMDB (2.0.13)
+  - HandyFrame (1.2.0)
   - JCore (2.2.5)
   - JPush (3.3.3):
     - JCore (< 3.0.0, >= 2.0.0)
@@ -34,6 +35,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - BGFMDB
+  - HandyFrame
   - JPush
   - Masonry
   - MBProgressHUD
@@ -42,7 +44,7 @@ DEPENDENCIES:
   - SVPullToRefresh
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://mirrors.bfsu.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - BGFMDB
     - JCore
@@ -52,10 +54,13 @@ SPEC REPOS:
     - MJExtension
     - SDWebImage
     - SVPullToRefresh
+  trunk:
+    - HandyFrame
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
+  HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
   JCore: d75c0306dc99875d323d23e5a063b3a3ef22335a
   JPush: 61b3dc8c2bdefb7c48e7ca283f9fe42e71bfe063
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -64,6 +69,6 @@ SPEC CHECKSUMS:
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
-PODFILE CHECKSUM: 8583b4dcfca6d9623bcacf45f55e18647415e2c8
+PODFILE CHECKSUM: 892681edbbee64f3d82a2e81afd9beee844f03b9
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.11.2

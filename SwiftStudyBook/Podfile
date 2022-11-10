@@ -8,4 +8,6 @@ pod 'BGFMDB'
 pod 'MBProgressHUD'
 pod 'JPush'
 pod 'SVPullToRefresh'
+pod 'HandyFrame'
+
 end
