@@ -1,0 +1,92 @@
+ $ pod --version
+1.9.3
+
+$ which pod
+/Users/user/.rbenv/shims/pod
+
+$  which gem
+/Users/user/.rbenv/shims/gem
+
+$  which ruby
+/Users/user/.rbenv/shims/ruby
+
+//进入当前目录下
+flutter build ios --simulator
+flutter run
+
+----------合并分支指定文件-------------------------------------
+//git---怎样将分支上的一个单文件合并到主分支上（master）
+git checkeout master
+git checkout --patch 分支名称 要合并的文件路径
+git add -A 文件路径
+git commit -m '注释'
+git push
+//如果不想合并只是测试 一定要回滚回来
+git reset --hard origin/master 到上一个版本
+
+----------合并分支-----------------------------------------------
+1、进入要合并的分支（如开发分支合并到master，则进入master目录）
+git checkout master
+git pull
+
+2、查看所有分支是否都pull下来了
+git branch -a
+
+3、使用merge合并开发分支。  先在自己分支合并dev。没有问题的话再去dev分支合并
+
+git merge 分支名
+
+4、查看合并之后的状态
+git status
+
+5、有冲突的话，通过IDE解决冲突；
+
+6、解决冲突之后，将冲突文件提交暂存区
+git add 冲突文件
+
+7、提交merge之后的结果
+git commit
+
+如果不是使用git commit -m “备注” ，那么git会自动将合并的结果作为备注，提交本地仓库；
+
+8、本地仓库代码提交远程仓库
+git push
+----------创建分支-------------------------------------
+
+①创建新的本地分支 
+//git checkout -b 新分支名称 如下
+git checkout -b newB
+ 
+②在本地分支开发以后，查看操作过的文件
+git status
+
+③ 添加这些文件到暂存区
+git add .
+
+④ 再次查看状态
+git status
+
+⑤ 把暂存区的代码提交到本地仓库
+//git commit -m '描述信息'
+git commit -m '这里是描述信息'
+
+⑥ 合并到master分支
+先切换到master分支
+git checkout master
+查看分支状态
+git branch
+git branch -a
+合并newB分支上的代码
+git merge newB
+
+⑦切换到本地 newB分支
+git checkout newB
+
+⑧ 将newB提交到远程仓库  【第一次要用-u 以后不需要】
+git push -u origin newB
+
+
+
+
+
+
