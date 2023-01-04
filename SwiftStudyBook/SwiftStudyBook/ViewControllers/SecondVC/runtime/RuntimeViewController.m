@@ -12,11 +12,15 @@
 #import "LoginInfo.h"
 
 @interface RuntimeViewController ()
+@property (nonatomic, strong) dispatch_source_t gcdTimer;
 
 @end
 
 @implementation RuntimeViewController
 
+-(void)dealloc{
+    [self removGcdTimer];
+}
 - (void)viewDidLoad {
 
     [super viewDidLoad];
@@ -29,7 +33,7 @@
     
 }
 -(void)initTitle{
-    self.mainTitleArr = @[@"清除数据",@"json-->model、消息转发机制",@"runtime-方式测试全局tab添加无数据图案",@"runtime-04实现自动解归档",@"runtime-万能界面跳转方法"];
+    self.mainTitleArr = @[@"清除数据",@"json-->model、消息转发机制",@"runtime-方式测试全局tab添加无数据图案",@"runtime-04实现自动解归档",@"runtime-万能界面跳转方法",@"打印成员变量",@"gcd定时器"];
 
     @WeakObj(self);
     self.mainTable.reloadBlock = ^{
@@ -89,8 +93,31 @@
             
         }
             break;
+        case 5:
+        {
+            [self printVal];
+        }
+            break;
+        case 6:
+        {
+            [self initTimer];
+            
+//            [self pauseTimer];
+//            [self removGcdTimer];
+        }
+            break;
         default:
             break;
+    }
+}
+-(void)printVal{
+    unsigned int count;
+    Ivar* ivars = class_copyIvarList([UIPageControl class], &count);
+    for (int i=0; i<count; i++) {
+        Ivar ivar = ivars[i];
+        NSString* name = [NSString stringWithUTF8String:ivar_getName(ivar)];    // 名称
+        NSString* type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];     // 类型
+        NSLog(@"成员变量：%@ -> 类型：%@",name,type);
     }
 }
 - (void)push:(NSDictionary *)params
@@ -168,6 +195,48 @@
         return (UITabBarController *)tabbarController;
     }
     return nil;
+}
+
+- (void)initTimer {
+    if (!_gcdTimer) {
+        // 创建队列
+        dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+        // 初始化timer（设定source_type，以及队列）
+        _gcdTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+        // 设定timer的开始时间
+        dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC));
+        // 如果timer的间隔时间比较大，那么可以使用dispatch_walltime来创建start，可以避免误差
+        dispatch_time_t start_0 = dispatch_walltime(0, 0);
+        // 设定timer的固定时间间隔
+        uint64_t interval = (uint64_t)(1 * NSEC_PER_SEC);
+        // 设置timer，最后一个参数为leeway，是用来设置定时器的“期望精度值”，系统会根据这个值延迟或提前触发定时器
+        dispatch_source_set_timer(_gcdTimer, start, interval, 0);
+        // 设定timer的方法调用
+        dispatch_source_set_event_handler(_gcdTimer, ^{
+            // 如果timer的方法调用是UI方面相关的操作，需要在主线程中执行（线程间通信）
+            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self changeLabelText];
+                NSLog(@"开始计时了 ==");
+            });
+        });
+        // 开启定时器
+        dispatch_resume(_gcdTimer);
+    }
+}
+//暂停
+- (void)pauseTimer {
+    if (_gcdTimer) {
+        dispatch_suspend(_gcdTimer);
+    }
+}
+//移除
+-(void)removGcdTimer{
+    if (_gcdTimer) {
+        dispatch_source_cancel(_gcdTimer);
+        _gcdTimer = nil;
+    }
+    
+    
 }
 /*
 #pragma mark - Navigation

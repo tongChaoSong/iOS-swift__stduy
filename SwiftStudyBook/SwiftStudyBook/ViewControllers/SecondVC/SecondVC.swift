@@ -193,7 +193,7 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
        
     }
     
-    let titleArr = ["GCD","weak","runtime","runloop、类簇","block","自动生成后台返回dict属性"]
+    let titleArr = ["swift-GCD","weak","runtime","runloop、类簇","block","自动生成后台返回dict属性"]
     /*
     // MARK: - Navigation
 
