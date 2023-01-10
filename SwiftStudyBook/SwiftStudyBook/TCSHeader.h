@@ -12,7 +12,7 @@
 #import "UIView+Extension.h"
 #import "ToolClass.h"
 //#import "TCSWEBHeader.h"
-
+#import <SDWebImage/SDWebImage.h>
 
 
 #endif /* TCSHeader_h */

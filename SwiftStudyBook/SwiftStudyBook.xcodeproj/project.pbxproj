@@ -10,6 +10,7 @@
 		043F86D228ABBF22003268EC /* NSArray+TCSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */; };
 		043F86D628ABC641003268EC /* UIButton+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D428ABC641003268EC /* UIButton+Ex.m */; };
 		04496892291CD5A200DF0E5E /* ClassStructEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04496891291CD5A200DF0E5E /* ClassStructEnum.swift */; };
+		046056AA296D3F9D00A3D8E0 /* ImageWithBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 046056A8296D3F9D00A3D8E0 /* ImageWithBtn.m */; };
 		0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461C3DC28D2C7B40071D5DC /* ToolClass.m */; };
 		048DA3BA2938841000C15FD7 /* UIView+ShadowRadiusSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DA3B82938841000C15FD7 /* UIView+ShadowRadiusSide.m */; };
 		04B42FB72902400700291318 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB62902400700291318 /* LoginInfo.m */; };
@@ -138,6 +139,8 @@
 		043F86D428ABC641003268EC /* UIButton+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Ex.m"; sourceTree = "<group>"; };
 		043F86D528ABC641003268EC /* UIButton+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Ex.h"; sourceTree = "<group>"; };
 		04496891291CD5A200DF0E5E /* ClassStructEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructEnum.swift; sourceTree = "<group>"; };
+		046056A8296D3F9D00A3D8E0 /* ImageWithBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageWithBtn.m; sourceTree = "<group>"; };
+		046056A9296D3F9D00A3D8E0 /* ImageWithBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageWithBtn.h; sourceTree = "<group>"; };
 		0461C3DB28D2C7B40071D5DC /* ToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolClass.h; sourceTree = "<group>"; };
 		0461C3DC28D2C7B40071D5DC /* ToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolClass.m; sourceTree = "<group>"; };
 		048DA3B82938841000C15FD7 /* UIView+ShadowRadiusSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShadowRadiusSide.m"; sourceTree = "<group>"; };
@@ -354,6 +357,15 @@
 				04496891291CD5A200DF0E5E /* ClassStructEnum.swift */,
 			);
 			path = TcsExtensions;
+			sourceTree = "<group>";
+		};
+		046056A7296D3F8800A3D8E0 /* MyThirtPart */ = {
+			isa = PBXGroup;
+			children = (
+				046056A9296D3F9D00A3D8E0 /* ImageWithBtn.h */,
+				046056A8296D3F9D00A3D8E0 /* ImageWithBtn.m */,
+			);
+			path = MyThirtPart;
 			sourceTree = "<group>";
 		};
 		04EC655628BF618400742E08 /* View */ = {
@@ -714,6 +726,7 @@
 		186A324424DA9A0F0066CBE5 /* ThirtPart */ = {
 			isa = PBXGroup;
 			children = (
+				046056A7296D3F8800A3D8E0 /* MyThirtPart */,
 				184690F025C1613F009E879B /* FNPSDWebImage */,
 				1846903325BFFB10009E879B /* FNPAFNetworking */,
 			);
@@ -1112,6 +1125,7 @@
 				18AC7D8527683B0800366326 /* CoreAnimationVC.m in Sources */,
 				18B8EA79272A459C00825B0E /* RunloopViewController.m in Sources */,
 				1846911B25C1613F009E879B /* FNPSDWebImageCodersManager.m in Sources */,
+				046056AA296D3F9D00A3D8E0 /* ImageWithBtn.m in Sources */,
 				186CE652251065DB00B84E9B /* NSData+SwitchData.m in Sources */,
 				1846912425C1613F009E879B /* FNPSDImageCache.m in Sources */,
 				04B42FB72902400700291318 /* LoginInfo.m in Sources */,
