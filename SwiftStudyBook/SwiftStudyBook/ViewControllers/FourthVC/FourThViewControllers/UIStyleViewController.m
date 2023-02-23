@@ -8,9 +8,13 @@
 
 #import "UIStyleViewController.h"
 #import "ScrollerLabel.h"
+#import "ScrollerTwoLabe.h"
 
 @interface UIStyleViewController ()
 @property(nonatomic,strong)ScrollerLabel * sclabel;
+
+@property (nonatomic, strong) ScrollerTwoLabe *labelScroll;
+
 @end
 
 @implementation UIStyleViewController
@@ -32,10 +36,19 @@
     };
     [self.view addSubview:self.sclabel];
     
+    
+    self.labelScroll = [[ScrollerTwoLabe alloc] initWithFrame:CGRectMake(30, 180, self.view.frame.size.width-60, 44)];
+    [self.view addSubview:self.labelScroll];
+    self.labelScroll.dataSource = [NSMutableArray arrayWithObjects:@"澳门", @"皇家",@"FBI",@"Warning",@"东京",@"热门",@"一拳超人", nil];
+    [self.labelScroll showNext];
 }
 -(void)dealloc{
     [self.sclabel removGcdTimer];
+    [self.labelScroll removeTimer];
+    
 }
+
+
 
 /*
 #pragma mark - Navigation

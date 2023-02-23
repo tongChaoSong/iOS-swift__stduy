@@ -18,6 +18,8 @@
 		04B42FB72902400700291318 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB62902400700291318 /* LoginInfo.m */; };
 		04B42FBA29024B2400291318 /* HSFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB929024B2400291318 /* HSFeedsViewController.m */; };
 		04E2A3EA29A764F600F7C46C /* AVSpeechSynthesizerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */; };
+		04E2A3ED29A7671B00F7C46C /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3EC29A7671B00F7C46C /* BaseView.m */; };
+		04E2A3F029A7673C00F7C46C /* ScrollerTwoLabe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3EF29A7673C00F7C46C /* ScrollerTwoLabe.m */; };
 		04EC655228BF588700742E08 /* UIButton+DelaySwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655128BF588600742E08 /* UIButton+DelaySwizzling.m */; };
 		04EC655528BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655428BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m */; };
 		04EC655828BF61AF00742E08 /* TCSTabPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655728BF61AF00742E08 /* TCSTabPlaceholderView.swift */; };
@@ -159,6 +161,10 @@
 		04B42FB929024B2400291318 /* HSFeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSFeedsViewController.m; sourceTree = "<group>"; };
 		04E2A3E829A764F600F7C46C /* AVSpeechSynthesizerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSpeechSynthesizerManger.h; sourceTree = "<group>"; };
 		04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSpeechSynthesizerManger.m; sourceTree = "<group>"; };
+		04E2A3EB29A7671B00F7C46C /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		04E2A3EC29A7671B00F7C46C /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		04E2A3EE29A7673C00F7C46C /* ScrollerTwoLabe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollerTwoLabe.h; sourceTree = "<group>"; };
+		04E2A3EF29A7673C00F7C46C /* ScrollerTwoLabe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollerTwoLabe.m; sourceTree = "<group>"; };
 		04EC655028BF588600742E08 /* UIButton+DelaySwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DelaySwizzling.h"; sourceTree = "<group>"; };
 		04EC655128BF588600742E08 /* UIButton+DelaySwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DelaySwizzling.m"; sourceTree = "<group>"; };
 		04EC655328BF60ED00742E08 /* UITableView+ReloadDataSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ReloadDataSwizzling.h"; sourceTree = "<group>"; };
@@ -366,6 +372,8 @@
 			children = (
 				041DC7A029A75A680013D4E2 /* ScrollerLabel.h */,
 				041DC7A129A75A680013D4E2 /* ScrollerLabel.m */,
+				04E2A3EE29A7673C00F7C46C /* ScrollerTwoLabe.h */,
+				04E2A3EF29A7673C00F7C46C /* ScrollerTwoLabe.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -661,6 +669,8 @@
 				18E9465624ED118200A9A0B8 /* BaseOCVC.m */,
 				18E9465824ED11E400A9A0B8 /* BaseTableVC.h */,
 				18E9465924ED11E400A9A0B8 /* BaseTableVC.m */,
+				04E2A3EB29A7671B00F7C46C /* BaseView.h */,
+				04E2A3EC29A7671B00F7C46C /* BaseView.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -1096,6 +1106,7 @@
 				04EC655828BF61AF00742E08 /* TCSTabPlaceholderView.swift in Sources */,
 				1846912325C1613F009E879B /* UIView+FNPWebCacheOperation.m in Sources */,
 				04B42FBA29024B2400291318 /* HSFeedsViewController.m in Sources */,
+				04E2A3F029A7673C00F7C46C /* ScrollerTwoLabe.m in Sources */,
 				186CE650251065DB00B84E9B /* UILabel+LeftTopAlign.m in Sources */,
 				186A325824DA9A0F0066CBE5 /* BaseExtension.swift in Sources */,
 				043F86D628ABC641003268EC /* UIButton+Ex.m in Sources */,
@@ -1125,6 +1136,7 @@
 				186CE64D251065DB00B84E9B /* NSDictionary+NilSafe.m in Sources */,
 				1846911D25C1613F009E879B /* FNPSDWebImageManager.m in Sources */,
 				186CE64F251065DB00B84E9B /* UIImage+LightColor.m in Sources */,
+				04E2A3ED29A7671B00F7C46C /* BaseView.m in Sources */,
 				1846911C25C1613F009E879B /* FNPSDWebImageGIFCoder.m in Sources */,
 				186CE659251065DB00B84E9B /* UIView+Extension.m in Sources */,
 				0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */,

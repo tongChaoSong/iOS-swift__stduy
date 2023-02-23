@@ -15,5 +15,6 @@
 #import <SDWebImage/SDWebImage.h>
 #import <YYKit/YYKit.h>
 #import "BlockHeader.h"
+#import "BaseView.h"
 
 #endif /* TCSHeader_h */
