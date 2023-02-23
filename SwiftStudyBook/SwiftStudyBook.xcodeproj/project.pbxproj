@@ -17,6 +17,7 @@
 		048DA3BA2938841000C15FD7 /* UIView+ShadowRadiusSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DA3B82938841000C15FD7 /* UIView+ShadowRadiusSide.m */; };
 		04B42FB72902400700291318 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB62902400700291318 /* LoginInfo.m */; };
 		04B42FBA29024B2400291318 /* HSFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB929024B2400291318 /* HSFeedsViewController.m */; };
+		04E2A3EA29A764F600F7C46C /* AVSpeechSynthesizerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */; };
 		04EC655228BF588700742E08 /* UIButton+DelaySwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655128BF588600742E08 /* UIButton+DelaySwizzling.m */; };
 		04EC655528BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655428BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m */; };
 		04EC655828BF61AF00742E08 /* TCSTabPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC655728BF61AF00742E08 /* TCSTabPlaceholderView.swift */; };
@@ -156,6 +157,8 @@
 		04B42FB62902400700291318 /* LoginInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInfo.m; sourceTree = "<group>"; };
 		04B42FB829024B2400291318 /* HSFeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSFeedsViewController.h; sourceTree = "<group>"; };
 		04B42FB929024B2400291318 /* HSFeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSFeedsViewController.m; sourceTree = "<group>"; };
+		04E2A3E829A764F600F7C46C /* AVSpeechSynthesizerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSpeechSynthesizerManger.h; sourceTree = "<group>"; };
+		04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSpeechSynthesizerManger.m; sourceTree = "<group>"; };
 		04EC655028BF588600742E08 /* UIButton+DelaySwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DelaySwizzling.h"; sourceTree = "<group>"; };
 		04EC655128BF588600742E08 /* UIButton+DelaySwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DelaySwizzling.m"; sourceTree = "<group>"; };
 		04EC655328BF60ED00742E08 /* UITableView+ReloadDataSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ReloadDataSwizzling.h"; sourceTree = "<group>"; };
@@ -380,6 +383,8 @@
 			children = (
 				046056A9296D3F9D00A3D8E0 /* ImageWithBtn.h */,
 				046056A8296D3F9D00A3D8E0 /* ImageWithBtn.m */,
+				04E2A3E829A764F600F7C46C /* AVSpeechSynthesizerManger.h */,
+				04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */,
 			);
 			path = MyThirtPart;
 			sourceTree = "<group>";
@@ -1150,6 +1155,7 @@
 				046056AA296D3F9D00A3D8E0 /* ImageWithBtn.m in Sources */,
 				186CE652251065DB00B84E9B /* NSData+SwitchData.m in Sources */,
 				1846912425C1613F009E879B /* FNPSDImageCache.m in Sources */,
+				04E2A3EA29A764F600F7C46C /* AVSpeechSynthesizerManger.m in Sources */,
 				04B42FB72902400700291318 /* LoginInfo.m in Sources */,
 				186A324D24DA9A0F0066CBE5 /* TableTitleVC.swift in Sources */,
 				186CE653251065DB00B84E9B /* NSString+AttributedString.m in Sources */,
