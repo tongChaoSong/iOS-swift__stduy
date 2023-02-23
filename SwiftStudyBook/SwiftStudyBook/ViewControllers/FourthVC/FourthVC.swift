@@ -13,7 +13,7 @@ class FourthVC: TableTitleVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.upaDataArr = ["圆角阴影共同存在","context上下文画布","3d筛子（CATransform3DRotate）","core Animation","setNeedsLayout，layoutIfNeeded"]
+        self.upaDataArr = ["圆角阴影共同存在","context上下文画布","3d筛子（CATransform3DRotate）","core Animation","setNeedsLayout，layoutIfNeeded","ui样式"]
         // Do any additional setup after loading the view.
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -47,6 +47,12 @@ class FourthVC: TableTitleVC {
         case 4:
             do{
                 let vc = LayIfneedViewController.init()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            break
+        case 5:
+            do{
+                let vc = UIStyleViewController.init()
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             break

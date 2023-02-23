@@ -31,6 +31,9 @@ PODS:
     - SDWebImage/Core (= 5.8.0)
   - SDWebImage/Core (5.8.0)
   - SVPullToRefresh (0.4.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
@@ -42,6 +45,7 @@ DEPENDENCIES:
   - MJExtension
   - SDWebImage
   - SVPullToRefresh
+  - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   https://mirrors.bfsu.edu.cn/git/CocoaPods/Specs.git:
@@ -56,6 +60,7 @@ SPEC REPOS:
     - SVPullToRefresh
   trunk:
     - HandyFrame
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -68,7 +73,8 @@ SPEC CHECKSUMS:
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 892681edbbee64f3d82a2e81afd9beee844f03b9
+PODFILE CHECKSUM: 0aff04e022a7dab9eb4f0acc0a83d143173c5059
 
 COCOAPODS: 1.11.2

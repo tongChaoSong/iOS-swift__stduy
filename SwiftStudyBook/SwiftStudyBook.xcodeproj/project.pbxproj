@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041DC7A229A75A680013D4E2 /* ScrollerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041DC7A129A75A680013D4E2 /* ScrollerLabel.m */; };
+		041DC7A529A75AC40013D4E2 /* UIStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041DC7A429A75AC40013D4E2 /* UIStyleViewController.m */; };
 		043F86D228ABBF22003268EC /* NSArray+TCSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */; };
 		043F86D628ABC641003268EC /* UIButton+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D428ABC641003268EC /* UIButton+Ex.m */; };
 		04496892291CD5A200DF0E5E /* ClassStructEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04496891291CD5A200DF0E5E /* ClassStructEnum.swift */; };
@@ -134,6 +136,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041DC7A029A75A680013D4E2 /* ScrollerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollerLabel.h; sourceTree = "<group>"; };
+		041DC7A129A75A680013D4E2 /* ScrollerLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollerLabel.m; sourceTree = "<group>"; };
+		041DC7A329A75AC40013D4E2 /* UIStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStyleViewController.h; sourceTree = "<group>"; };
+		041DC7A429A75AC40013D4E2 /* UIStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStyleViewController.m; sourceTree = "<group>"; };
+		041DC7A629A75C010013D4E2 /* BlockHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockHeader.h; sourceTree = "<group>"; };
 		043F86D028ABBF21003268EC /* NSArray+TCSSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+TCSSafe.h"; sourceTree = "<group>"; };
 		043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TCSSafe.m"; sourceTree = "<group>"; };
 		043F86D428ABC641003268EC /* UIButton+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Ex.m"; sourceTree = "<group>"; };
@@ -351,6 +358,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041DC79F29A75A490013D4E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041DC7A029A75A680013D4E2 /* ScrollerLabel.h */,
+				041DC7A129A75A680013D4E2 /* ScrollerLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0449688F291CD4C500DF0E5E /* TcsExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +581,7 @@
 				185CF61224E29D2C00565CA4 /* TCSPrefixHeader.pch */,
 				185CF61424E29DB300565CA4 /* TCSWEBHeader.h */,
 				185CF61324E29D7C00565CA4 /* TCSHeader.h */,
+				041DC7A629A75C010013D4E2 /* BlockHeader.h */,
 			);
 			path = SwiftStudyBook;
 			sourceTree = "<group>";
@@ -646,6 +663,7 @@
 		186A323224DA9A0F0066CBE5 /* FourthVC */ = {
 			isa = PBXGroup;
 			children = (
+				041DC79F29A75A490013D4E2 /* View */,
 				186CE6202510648600B84E9B /* FourThViewControllers */,
 				186A323324DA9A0F0066CBE5 /* FourthVC.swift */,
 			);
@@ -752,6 +770,8 @@
 				189D071A27C365260073D004 /* LayIfneedViewController.m */,
 				189D071C27C365660073D004 /* LayNeedView.h */,
 				189D071D27C365660073D004 /* LayNeedView.m */,
+				041DC7A329A75AC40013D4E2 /* UIStyleViewController.h */,
+				041DC7A429A75AC40013D4E2 /* UIStyleViewController.m */,
 			);
 			path = FourThViewControllers;
 			sourceTree = "<group>";
@@ -1053,6 +1073,7 @@
 				186A31F424DA997A0066CBE5 /* AppDelegate.swift in Sources */,
 				04EC655528BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m in Sources */,
 				1846904B25BFFB10009E879B /* FNPAFHTTPSessionManager.m in Sources */,
+				041DC7A529A75AC40013D4E2 /* UIStyleViewController.m in Sources */,
 				186CE658251065DB00B84E9B /* NSString+MD5.m in Sources */,
 				1846904A25BFFB10009E879B /* FNPAFNetworkReachabilityManager.m in Sources */,
 				1899DE7A26F2E2DB00C54B03 /* BlockViewController.m in Sources */,
@@ -1116,6 +1137,7 @@
 				048DA3BA2938841000C15FD7 /* UIView+ShadowRadiusSide.m in Sources */,
 				186A325024DA9A0F0066CBE5 /* ThirdVC.swift in Sources */,
 				186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */,
+				041DC7A229A75A680013D4E2 /* ScrollerLabel.m in Sources */,
 				1846912A25C1613F009E879B /* UIButton+FNPWebCache.m in Sources */,
 				1886CF9D2577770600EC06EB /* TestViewContext.m in Sources */,
 				1846912525C1613F009E879B /* FNPSDWebImageImageIOCoder.m in Sources */,

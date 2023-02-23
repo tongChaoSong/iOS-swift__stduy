@@ -9,5 +9,5 @@ pod 'MBProgressHUD'
 pod 'JPush'
 pod 'SVPullToRefresh'
 pod 'HandyFrame'
-
+pod 'YYKit', '~> 1.0.9'
 end

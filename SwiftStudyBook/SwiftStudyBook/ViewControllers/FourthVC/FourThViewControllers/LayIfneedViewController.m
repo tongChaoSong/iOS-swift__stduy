@@ -32,6 +32,52 @@
     [self.clickBtn addTarget:self action:@selector(chooseViewMsg:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.clickBtn];
     
+    YYImage * yyimage = [YYImage imageNamed:@"btn_pengyouquan"];
+    
+    
+    YYLabel * label = [[YYLabel alloc]initWithFrame:CGRectMake(20, CGRectGetMaxY(self.clickBtn.frame) + 20, self.clickBtn.width, 100)];
+    label.backgroundColor = [UIColor grayColor];
+    label.numberOfLines = 0;
+    label.preferredMaxLayoutWidth = label.width;
+    label.textLayout = [self createTextImage1:@"文字,文字文字,文字文字,文字文字,文字文字,文字文字,文字文字,文字," witImage:@"btn_pengyouquan" withSize:label.size];
+//    label.attributedText = [self createTextImage:@"文字,文字" witImage:@"btn_pengyouquan"];
+    [self.view addSubview:label];
+
+    
+    YYTextView * textView = [[YYTextView alloc]initWithFrame:CGRectMake(20, CGRectGetMaxY(label.frame) + 20, self.clickBtn.width, 100)];
+    textView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:textView];
+    
+    
+    
+}
+- (NSMutableAttributedString*)createTextImage:(NSString*)text witImage:(NSString*)imageName{
+    NSMutableAttributedString *scaleStr=  [[NSMutableAttributedString alloc] initWithString:text attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}];
+   //添加图片
+    NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
+    textAttachment.bounds = CGRectMake(0, 2, 12, 7); //根据图片位置进行调整
+    textAttachment.image = [UIImage imageNamed:imageName];
+    NSAttributedString *attributedImage = [NSAttributedString attributedStringWithAttachment:(NSTextAttachment *)(textAttachment)];
+   //图片插入到文字后方
+//    [scaleStr appendAttributedString:attributedImage];
+   //如果要插入到前面
+   [scaleStr insertAttributedString:attributedImage atIndex:1];
+    return scaleStr;
+}
+- (YYTextLayout *)createTextImage1:(NSString*)text witImage:(NSString*)imageName withSize:(CGSize)finalSize{
+    UIFont *font = [UIFont systemFontOfSize:14];
+    NSMutableAttributedString *textGold = [[NSMutableAttributedString alloc] initWithString:text attributes:@{NSForegroundColorAttributeName:[UIColor blackColor], NSFontAttributeName:font}];
+  //可以添加UIKit的控件及事件
+//    UIImageView *imagImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+//    imagImage.image = [UIImage imageNamed:imageName];
+    UIImage * iamge = [UIImage imageNamed:imageName];
+    NSMutableAttributedString *attachTextRecahrage = [NSMutableAttributedString attachmentStringWithContent:iamge contentMode:UIViewContentModeLeft attachmentSize:CGSizeMake(62, 22) alignToFont:font alignment:YYTextVerticalAlignmentCenter];
+    [textGold  appendAttributedString:attachTextRecahrage];
+    //如果要插入到前面
+//    [textGold insertAttributedString:attachTextRecahrage atIndex:0];
+    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(finalSize.width, finalSize.height)]; //图文混排需要的宽度及高度
+    YYTextLayout *textLayout = [YYTextLayout layoutWithContainer:container text:textGold];
+    return textLayout;
 }
 -(void)chooseViewMsg:(UIButton*)sender{
     

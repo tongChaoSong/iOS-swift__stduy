@@ -19,7 +19,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
-
+-(void)dealloc{
+    
+    NSLog(@"____当前vc已被释放____:)");
+}
 /*
 #pragma mark - Navigation
 

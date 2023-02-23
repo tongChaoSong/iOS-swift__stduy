@@ -13,6 +13,7 @@
 #import "ToolClass.h"
 //#import "TCSWEBHeader.h"
 #import <SDWebImage/SDWebImage.h>
-
+#import <YYKit/YYKit.h>
+#import "BlockHeader.h"
 
 #endif /* TCSHeader_h */
