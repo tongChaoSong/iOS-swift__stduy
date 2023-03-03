@@ -10,4 +10,9 @@ pod 'JPush'
 pod 'SVPullToRefresh'
 pod 'HandyFrame'
 pod 'YYKit', '~> 1.0.9'
+pod 'WMPlayer', '~> 5.0.0'
+pod 'ZFPlayer', '~> 4.1.4'
+pod 'ZFPlayer/AVPlayer', '~> 4.1.4'
+pod 'ZFPlayer/ControlView', '~> 4.1.4'
+
 end

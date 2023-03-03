@@ -1009,7 +1009,11 @@
 		9BE298FD94103817B942D95FBFA62F50 /* YYTextKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextKeyboardManager.h; path = YYKit/Text/Component/YYTextKeyboardManager.h; sourceTree = "<group>"; };
 		9C2F1650DE2AD47CCC9A6A42283022B2 /* UITextField+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+YYAdd.h"; path = "YYKit/Base/UIKit/UITextField+YYAdd.h"; sourceTree = "<group>"; };
 		9C31B5143C66CC6214E2BEBF942EAA7C /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/Core/SDImageTransformer.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+=======
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+>>>>>>> 测试
 		9DADAE140A4E50892BA9D764EEB3FF6B /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYKit/Text/Component/YYTextInput.h; sourceTree = "<group>"; };
 		9E0F830A835CA2D46292AC305354F9D9 /* ZFLandscapeViewController_iOS15.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZFLandscapeViewController_iOS15.h; path = ZFPlayer/Classes/Core/ZFLandscapeViewController_iOS15.h; sourceTree = "<group>"; };
 		9E0FF48239A0C28F4FF1C512221E6F86 /* YYImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = YYKit/Image/YYImageCoder.h; sourceTree = "<group>"; };
@@ -1166,7 +1170,11 @@
 		E08FACCF55AE10BA846200114E96412E /* NSArray+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+YYAdd.m"; path = "YYKit/Base/Foundation/NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		E1125E4F71E5BDF2C23A5CE7E3DC0A12 /* YYCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCache.m; path = YYKit/Cache/YYCache.m; sourceTree = "<group>"; };
 		E1A4D26FFA409E6E2771AED1A53206C7 /* HandyFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandyFrame.release.xcconfig; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		E1EC2815E145A926A6C7D705DE0EBC9C /* libPods-SwiftStudyBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftStudyBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		E1EC2815E145A926A6C7D705DE0EBC9C /* Pods-SwiftStudyBook */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-SwiftStudyBook"; path = "libPods-SwiftStudyBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> 测试
 		E227194EAEFEFF35A44792494808D2A3 /* ZFPlayerConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZFPlayerConst.h; path = ZFPlayer/Classes/Core/ZFPlayerConst.h; sourceTree = "<group>"; };
 		E325DCCD357AF9DF2F7C506424659D7E /* YYKit */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = YYKit; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A21DF66EC869B4AB16155D182AC1B5 /* UIBarButtonItem+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+YYAdd.m"; path = "YYKit/Base/UIKit/UIBarButtonItem+YYAdd.m"; sourceTree = "<group>"; };
@@ -1272,6 +1280,8 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		907AD26A9F98C723CE396A46535B55F5 /* Frameworks */ = {
+<<<<<<< HEAD
+=======
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1279,12 +1289,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		94D22344CCAEF8223D5C7DCCD9829988 /* Frameworks */ = {
+>>>>>>> 测试
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
+		94D22344CCAEF8223D5C7DCCD9829988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+=======
+>>>>>>> 测试
 		AAA854180690CE09EFAC69FD6AE20350 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1346,6 +1367,10 @@
 				49A220B75443B726B1BC7D4E45C1999F /* UIView+LayoutMethods.m */,
 				A89970BADDB2A7C330E73486B054D684 /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = HandyFrame;
+>>>>>>> 测试
 			path = HandyFrame;
 			sourceTree = "<group>";
 		};
@@ -1365,6 +1390,7 @@
 				379DC4191B77FDCB38B9F1EE18327BDF /* Resources */,
 				FF3CE5018242BE28CFE3C16E8B58C5A3 /* Support Files */,
 			);
+<<<<<<< HEAD
 			path = WMPlayer;
 			sourceTree = "<group>";
 		};
@@ -1381,6 +1407,26 @@
 		15B561B23CBB8D1CB1BFEB7AAA2BEDBC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+=======
+			name = WMPlayer;
+			path = WMPlayer;
+			sourceTree = "<group>";
+		};
+		12956DDDAF6A2EB66104EACBF8D89F2D /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				1103A7EFE61744E82D048240E26BF48B /* JPUSHService.h */,
+				0480063C396961D55809FD475935E9D7 /* Frameworks */,
+				756957B0ACBF9E3ED2BD1BAF675BA3C8 /* Support Files */,
+			);
+			name = JPush;
+			path = JPush;
+			sourceTree = "<group>";
+		};
+		15B561B23CBB8D1CB1BFEB7AAA2BEDBC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+>>>>>>> 测试
 				6913E1CDB92D7BD32A58AAA2100BD4C2 /* Masonry-dummy.m */,
 				CF080D5A58CDF12CBD3A0B4904D5BCAC /* Masonry-prefix.pch */,
 				91C20AE64BFB4A84E44A18C9A0AF0F5E /* Masonry.debug.xcconfig */,
@@ -1400,6 +1446,10 @@
 				3E3C3E73DDAF1D795E7B3E29325383D5 /* UIScrollView+SVPullToRefresh.m */,
 				64C62019393573AA4A3B4F6508762557 /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = SVPullToRefresh;
+>>>>>>> 测试
 			path = SVPullToRefresh;
 			sourceTree = "<group>";
 		};
@@ -1466,6 +1516,10 @@
 				2DA6B3E031EBE6602F6D4C8438CE0C58 /* MBProgressHUD.m */,
 				69B87B097EB0EC6AB7F53B5F3E313C99 /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = MBProgressHUD;
+>>>>>>> 测试
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1487,6 +1541,7 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AFNetworking";
+<<<<<<< HEAD
 			sourceTree = "<group>";
 		};
 		4065D05E092A0B63AEFB83D202AD099C /* JCore */ = {
@@ -1512,6 +1567,35 @@
 		52E06EC3B63A6119EF3694CE2FD0BAB7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+=======
+			sourceTree = "<group>";
+		};
+		4065D05E092A0B63AEFB83D202AD099C /* JCore */ = {
+			isa = PBXGroup;
+			children = (
+				03E8137E2B321C702A0159C4E88B741A /* Frameworks */,
+				2ED5EE8C9B2CEE72EE1E7CFC28898763 /* Support Files */,
+			);
+			name = JCore;
+			path = JCore;
+			sourceTree = "<group>";
+		};
+		474930DC171338A0C4832FFCF2766A24 /* ZFPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5EA110D613287554291B5035B6068180 /* AVPlayer */,
+				DF5F2EFC713892645408C6F93841471B /* ControlView */,
+				C9EAAF9C6788F0119050C391566E710C /* Core */,
+				52E06EC3B63A6119EF3694CE2FD0BAB7 /* Support Files */,
+			);
+			name = ZFPlayer;
+			path = ZFPlayer;
+			sourceTree = "<group>";
+		};
+		52E06EC3B63A6119EF3694CE2FD0BAB7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+>>>>>>> 测试
 				9F3B6B5850C03A74EED4545DAB7DD0DD /* ZFPlayer-dummy.m */,
 				5E89F779BF3D63DAE760EE7306797454 /* ZFPlayer-prefix.pch */,
 				2F8A9D10D609EAE9EB6750361DBCF693 /* ZFPlayer.debug.xcconfig */,
@@ -1568,6 +1652,10 @@
 				C8BAA2980A124ED6DAAEDC42C998D725 /* NSString+MJExtension.m */,
 				1E992BC34B605E540631757220EFCD52 /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = MJExtension;
+>>>>>>> 测试
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
@@ -1584,6 +1672,7 @@
 			sourceTree = "<group>";
 		};
 		70661E24A88653F6AE107516B174870D /* Security */ = {
+<<<<<<< HEAD
 			isa = PBXGroup;
 			children = (
 				2C0B1E9C807FE7D61B237694E735C61B /* AFSecurityPolicy.h */,
@@ -1595,11 +1684,25 @@
 		756957B0ACBF9E3ED2BD1BAF675BA3C8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+=======
+			isa = PBXGroup;
+			children = (
+				2C0B1E9C807FE7D61B237694E735C61B /* AFSecurityPolicy.h */,
+				6EDE6F2E9026D6DADD6BD469720FBF11 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		756957B0ACBF9E3ED2BD1BAF675BA3C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+>>>>>>> 测试
 				F265AD8549C336A97DF5428DBA88F56D /* JPush.debug.xcconfig */,
 				5A6766EFD786F766D415659678518176 /* JPush.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/JPush";
+<<<<<<< HEAD
 			sourceTree = "<group>";
 		};
 		759622F55749ACE2AB27182EED4E1EFA /* Resources */ = {
@@ -1613,6 +1716,21 @@
 		848109278578893AA92AFE554E9AA348 /* YYKit */ = {
 			isa = PBXGroup;
 			children = (
+=======
+			sourceTree = "<group>";
+		};
+		759622F55749ACE2AB27182EED4E1EFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A769E1F767DD2989F2A2658FB723F1DE /* ZFPlayer.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		848109278578893AA92AFE554E9AA348 /* YYKit */ = {
+			isa = PBXGroup;
+			children = (
+>>>>>>> 测试
 				A29877694D1F377664BC96B473227F31 /* _YYWebImageSetter.h */,
 				2C9F062F2DD6808D21E2A389C13D3D16 /* _YYWebImageSetter.m */,
 				1DB3EDE8F3E66D844776C938A7D8F768 /* CALayer+YYAdd.h */,
@@ -1777,6 +1895,10 @@
 				950F4211D599777ED4C7FF1FE24E127A /* no-arc */,
 				B7B4E6033B5D802D4646317A4D81D45C /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = YYKit;
+>>>>>>> 测试
 			path = YYKit;
 			sourceTree = "<group>";
 		};
@@ -1810,6 +1932,10 @@
 				1E105458B498AFDCD2E20CAF3909B13F /* ViewController+MASAdditions.m */,
 				15B561B23CBB8D1CB1BFEB7AAA2BEDBC /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = Masonry;
+>>>>>>> 测试
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1821,6 +1947,10 @@
 				265EE1EC1CD9EB31D65D02392C08E97E /* FMDB */,
 				D60C941E3A1E188241419A9AB944F3AC /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = BGFMDB;
+>>>>>>> 测试
 			path = BGFMDB;
 			sourceTree = "<group>";
 		};
@@ -1876,6 +2006,10 @@
 				DDA0E051BD4630681E34564BEF59CD58 /* Core */,
 				CDC485F67B3D69E94B952DCDB96CE365 /* Support Files */,
 			);
+<<<<<<< HEAD
+=======
+			name = SDWebImage;
+>>>>>>> 测试
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1890,6 +2024,10 @@
 				3FDD2EBDDA36849E2D401C1BC967DB5D /* Support Files */,
 				A338CAF55979F5D75F0ED7C078F6F368 /* UIKit */,
 			);
+<<<<<<< HEAD
+=======
+			name = AFNetworking;
+>>>>>>> 测试
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -1915,6 +2053,7 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YYKit";
+<<<<<<< HEAD
 			sourceTree = "<group>";
 		};
 		C9EAAF9C6788F0119050C391566E710C /* Core */ = {
@@ -1991,6 +2130,84 @@
 			path = "../Target Support Files/SDWebImage";
 			sourceTree = "<group>";
 		};
+=======
+			sourceTree = "<group>";
+		};
+		C9EAAF9C6788F0119050C391566E710C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C3DAC54ECE8B369496AB6A039229FC89 /* UIScrollView+ZFPlayer.h */,
+				93353BC7C2E66692D5FF5FFDFD7F6DF3 /* UIScrollView+ZFPlayer.m */,
+				A8EEAD82B9315FDAAC404D8DB73941A1 /* UIViewController+ZFPlayerRotation.m */,
+				E76693F25C53E414069F6208113E9004 /* ZFFloatView.h */,
+				2945EBD82DC1309FE2963E87E0CE87D1 /* ZFFloatView.m */,
+				823D9F1DB3EE1ECBD38E4EB8EA10EC83 /* ZFKVOController.h */,
+				3BBA10472BCA30F69FDDE00E0E7F9665 /* ZFKVOController.m */,
+				13DA5FB484BA16CB9AC6D160BB39C25A /* ZFLandscapeRotationManager.h */,
+				FE5242BF32D9F8A0F6707CEBF8613A5F /* ZFLandscapeRotationManager.m */,
+				25F5A627B04519A11866323CF4FF8134 /* ZFLandscapeRotationManager_iOS15.h */,
+				8EB81A91E45DAF152F49BAFFC3284312 /* ZFLandscapeRotationManager_iOS15.m */,
+				D827A3E4F9025A741C3B43DCDEC45420 /* ZFLandscapeRotationManager_iOS16.h */,
+				690C85145E43FB02BCA0BF4C968770B6 /* ZFLandscapeRotationManager_iOS16.m */,
+				68E0C0773DB4623414A7948113B0643C /* ZFLandscapeViewController.h */,
+				14C6C3D4BB812EDCBC957FCF9726BD79 /* ZFLandscapeViewController.m */,
+				9E0F830A835CA2D46292AC305354F9D9 /* ZFLandscapeViewController_iOS15.h */,
+				F30A6E9BD52E6F2118CB40079BA68E59 /* ZFLandscapeViewController_iOS15.m */,
+				671806508EC2142EAF4E663CED865616 /* ZFLandscapeWindow.h */,
+				24B8F3B33C19DAA63C5DF173EE00A095 /* ZFLandscapeWindow.m */,
+				CACF6EFED561520256326876C8DAAD11 /* ZFOrientationObserver.h */,
+				AD0C40401937156623393C0CD00BF1F6 /* ZFOrientationObserver.m */,
+				9A61247B2E0699CD2A5FDEAC97556799 /* ZFPersentInteractiveTransition.h */,
+				362C1431E9EB0A51E823CE524309FC09 /* ZFPersentInteractiveTransition.m */,
+				12EE97D9AECCA8F4744A5F098B679B2D /* ZFPlayer.h */,
+				E227194EAEFEFF35A44792494808D2A3 /* ZFPlayerConst.h */,
+				74FBC27221AA5F386B40AFFABF34FAEE /* ZFPlayerController.h */,
+				CB112CBBCB4583C5C598A56B4166B9A0 /* ZFPlayerController.m */,
+				28E29D589661B5A7AF2E9E6E9BFBCC0B /* ZFPlayerGestureControl.h */,
+				4A684104BC5A30F0515CECF741674C1C /* ZFPlayerGestureControl.m */,
+				BF945927FADB1A9BC378EA5D8A39E41F /* ZFPlayerLogManager.h */,
+				4BCBA68C8085CB3CA62C58DF9AA66912 /* ZFPlayerLogManager.m */,
+				B85E5D7F516C4464892A5456759855D0 /* ZFPlayerMediaControl.h */,
+				844FC2ACAA73013A17D31CFE28D5EFA3 /* ZFPlayerMediaPlayback.h */,
+				62616540EE1D89F704C584A2BF112D39 /* ZFPlayerNotification.h */,
+				00D6F7951A615D95D6D4A0BC08618776 /* ZFPlayerNotification.m */,
+				DCDB98A6670960C13BE3F5B1B77AE625 /* ZFPlayerView.h */,
+				BC3B351AA66E4A3DFF0C2A9CB221B0E1 /* ZFPlayerView.m */,
+				5B2919AE315CE79810780ADC31711522 /* ZFPortraitViewController.h */,
+				D224B010E6A228EAB86C74823BF9B8D4 /* ZFPortraitViewController.m */,
+				BC6CC8CC8F7BEBC90ED291E1D7F8118C /* ZFPresentTransition.h */,
+				4F7BB381FC6E12037E397948A28BDB25 /* ZFPresentTransition.m */,
+				883C94280AC4539A5F12161951970CA3 /* ZFReachabilityManager.h */,
+				49251ABA09EA394CE4029893871DF295 /* ZFReachabilityManager.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CA8BF5D83D2B0946B79D1E596E29F1E4 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				D199AAF01EFE950B8594C5F5619C1616 /* AFCompatibilityMacros.h */,
+				EAE4253CDEA104E5DD92702F7DD1293D /* AFHTTPSessionManager.h */,
+				45D098C2A3AA364044FE4F0175AACF0E /* AFHTTPSessionManager.m */,
+				C383BBC0718E9DCFBE65D1F611D3878A /* AFURLSessionManager.h */,
+				96CC2EE820D89505F86A65C433C51A75 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		CDC485F67B3D69E94B952DCDB96CE365 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9E4C7766728B486C6B0BA5A4B606E35 /* SDWebImage-dummy.m */,
+				A5E77D0782B95AAC3909E6E869353012 /* SDWebImage-prefix.pch */,
+				4BED7CA1EBA238AAB87846BC52A382A5 /* SDWebImage.debug.xcconfig */,
+				D1C95EFFAD9E0491A414DA15884ABC80 /* SDWebImage.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+>>>>>>> 测试
 		CEB3916E8B322EE680210DEB3F2BBAC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -3231,6 +3448,7 @@
 			name = SVPullToRefresh;
 			target = 0411A4A048244E61C56B1A7AC11C4673 /* SVPullToRefresh */;
 			targetProxy = 5E3718266B2C86B23C69790AFD9DA803 /* PBXContainerItemProxy */;
+<<<<<<< HEAD
 		};
 		122EF5C1F32FD5F2FC46A864F0CE9F03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3238,6 +3456,15 @@
 			target = AF45D4A3E6639AABC0D813F5586E46AC /* BGFMDB */;
 			targetProxy = F12B092FA86389AE2554982FE1492DA6 /* PBXContainerItemProxy */;
 		};
+=======
+		};
+		122EF5C1F32FD5F2FC46A864F0CE9F03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BGFMDB;
+			target = AF45D4A3E6639AABC0D813F5586E46AC /* BGFMDB */;
+			targetProxy = F12B092FA86389AE2554982FE1492DA6 /* PBXContainerItemProxy */;
+		};
+>>>>>>> 测试
 		1814F3AA21424D57FA95FE8083AE436D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
@@ -3255,6 +3482,7 @@
 			name = HandyFrame;
 			target = BDFD464246FDE69671AB76F54C7650FC /* HandyFrame */;
 			targetProxy = 6AAE432E7A2100F97AEB487EF86C0A07 /* PBXContainerItemProxy */;
+<<<<<<< HEAD
 		};
 		48C7B564D34FBB1032952D48B74731B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3262,6 +3490,15 @@
 			target = 5FB6AB0A09E7A2F2BE11AD6BAEFD9AED /* JPush */;
 			targetProxy = 536D671B5AE47E4C2262FD8B3749B012 /* PBXContainerItemProxy */;
 		};
+=======
+		};
+		48C7B564D34FBB1032952D48B74731B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JPush;
+			target = 5FB6AB0A09E7A2F2BE11AD6BAEFD9AED /* JPush */;
+			targetProxy = 536D671B5AE47E4C2262FD8B3749B012 /* PBXContainerItemProxy */;
+		};
+>>>>>>> 测试
 		5F6DF76236C4FB1DD52EC26103790121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
