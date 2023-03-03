@@ -12,5 +12,8 @@
 
 typedef void(^DidSlectIndex)(NSInteger index,NSString *text);
 
+typedef void(^VoidBlock)(void);
+
+typedef void(^BoolBlock)(BOOL isbool);
 
 #endif /* BlockHeader_h */

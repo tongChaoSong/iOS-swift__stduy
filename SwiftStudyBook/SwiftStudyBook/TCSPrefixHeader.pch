@@ -56,6 +56,12 @@
 #define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
+#define RATIOA(a) a
+
+#define IMG(a) [UIImage imageNamed:a]
+
+#define FONT(a) [UIFont systemFontOfSize:a]
+
 
 //对象弱引用
 #define WeakSelf __weak typeof(self) weakSelf = self;

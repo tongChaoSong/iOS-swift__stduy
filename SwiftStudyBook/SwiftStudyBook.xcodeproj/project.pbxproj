@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		046056AA296D3F9D00A3D8E0 /* ImageWithBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 046056A8296D3F9D00A3D8E0 /* ImageWithBtn.m */; };
 		0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461C3DC28D2C7B40071D5DC /* ToolClass.m */; };
 		048DA3BA2938841000C15FD7 /* UIView+ShadowRadiusSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DA3B82938841000C15FD7 /* UIView+ShadowRadiusSide.m */; };
+		04A1C9E729B0A794003910B0 /* VideoPlayCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C9E629B0A794003910B0 /* VideoPlayCustomView.m */; };
+		04A1C9EA29B0A922003910B0 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C9E929B0A922003910B0 /* SliderView.m */; };
 		04B42FB72902400700291318 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB62902400700291318 /* LoginInfo.m */; };
 		04B42FBA29024B2400291318 /* HSFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB929024B2400291318 /* HSFeedsViewController.m */; };
 		04E2A3EA29A764F600F7C46C /* AVSpeechSynthesizerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */; };
@@ -155,6 +157,10 @@
 		0461C3DC28D2C7B40071D5DC /* ToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolClass.m; sourceTree = "<group>"; };
 		048DA3B82938841000C15FD7 /* UIView+ShadowRadiusSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShadowRadiusSide.m"; sourceTree = "<group>"; };
 		048DA3B92938841000C15FD7 /* UIView+ShadowRadiusSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShadowRadiusSide.h"; sourceTree = "<group>"; };
+		04A1C9E529B0A794003910B0 /* VideoPlayCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayCustomView.h; sourceTree = "<group>"; };
+		04A1C9E629B0A794003910B0 /* VideoPlayCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayCustomView.m; sourceTree = "<group>"; };
+		04A1C9E829B0A922003910B0 /* SliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		04A1C9E929B0A922003910B0 /* SliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
 		04B42FB52902400700291318 /* LoginInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInfo.h; sourceTree = "<group>"; };
 		04B42FB62902400700291318 /* LoginInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInfo.m; sourceTree = "<group>"; };
 		04B42FB829024B2400291318 /* HSFeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSFeedsViewController.h; sourceTree = "<group>"; };
@@ -374,6 +380,10 @@
 				041DC7A129A75A680013D4E2 /* ScrollerLabel.m */,
 				04E2A3EE29A7673C00F7C46C /* ScrollerTwoLabe.h */,
 				04E2A3EF29A7673C00F7C46C /* ScrollerTwoLabe.m */,
+				04A1C9E529B0A794003910B0 /* VideoPlayCustomView.h */,
+				04A1C9E629B0A794003910B0 /* VideoPlayCustomView.m */,
+				04A1C9E829B0A922003910B0 /* SliderView.h */,
+				04A1C9E929B0A922003910B0 /* SliderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -920,6 +930,7 @@
 				186A31EC24DA997A0066CBE5 /* Sources */,
 				186A31ED24DA997A0066CBE5 /* Frameworks */,
 				186A31EE24DA997A0066CBE5 /* Resources */,
+				00FC75E8E5D5C8C1722E8368 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1047,6 +1058,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00FC75E8E5D5C8C1722E8368 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D016B0FE2E4DCA6CF01268D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1107,6 +1135,7 @@
 				1846912325C1613F009E879B /* UIView+FNPWebCacheOperation.m in Sources */,
 				04B42FBA29024B2400291318 /* HSFeedsViewController.m in Sources */,
 				04E2A3F029A7673C00F7C46C /* ScrollerTwoLabe.m in Sources */,
+				04A1C9E729B0A794003910B0 /* VideoPlayCustomView.m in Sources */,
 				186CE650251065DB00B84E9B /* UILabel+LeftTopAlign.m in Sources */,
 				186A325824DA9A0F0066CBE5 /* BaseExtension.swift in Sources */,
 				043F86D628ABC641003268EC /* UIButton+Ex.m in Sources */,
@@ -1142,6 +1171,7 @@
 				0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */,
 				186A325324DA9A0F0066CBE5 /* SecondVC.swift in Sources */,
 				1846904925BFFB10009E879B /* FNPAFURLResponseSerialization.m in Sources */,
+				04A1C9EA29B0A922003910B0 /* SliderView.m in Sources */,
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
 				1846912225C1613F009E879B /* UIView+FNPWebCache.m in Sources */,
 				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,

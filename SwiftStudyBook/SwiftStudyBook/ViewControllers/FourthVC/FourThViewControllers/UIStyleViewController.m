@@ -9,19 +9,31 @@
 #import "UIStyleViewController.h"
 #import "ScrollerLabel.h"
 #import "ScrollerTwoLabe.h"
+#import <WMPlayer.h>
+#import <ZFPlayer.h>
+#import <ZFPlayer/ZFPlayer.h>
+#import <ZFPlayer/ZFAVPlayerManager.h>
+#import "VideoPlayCustomView.h"
 
 @interface UIStyleViewController ()
 @property(nonatomic,strong)ScrollerLabel * sclabel;
 
 @property (nonatomic, strong) ScrollerTwoLabe *labelScroll;
 
+@property (nonatomic, strong) ZFPlayerController *player;
+@property (nonatomic, strong) ZFAVPlayerManager *playerManager;
+@property (nonatomic, strong) VideoPlayCustomView *customView;
+@property (nonatomic, strong) UIImageView *containerView;
 @end
 
 @implementation UIStyleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"ui样式";
     [self initView];
+    [self addVM];
+    [self addZF];
     // Do any additional setup after loading the view.
 }
 
@@ -47,8 +59,99 @@
     [self.labelScroll removeTimer];
     
 }
+-(void)addVM{
+//    播放网络视频
+    WMPlayerModel *playerModel = [WMPlayerModel new];
+    playerModel.title = @"";
+    playerModel.videoURL = [NSURL URLWithString:@"http://47.111.21.66/testVideo/test.m3u8"];
+    WMPlayer * wmPlayer = [[WMPlayer alloc]initPlayerModel:playerModel];
+    [self.view addSubview:wmPlayer];
+    [wmPlayer mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(300);
+        make.left.right.equalTo(self.view);
+        make.height.mas_equalTo(wmPlayer.mas_width).multipliedBy(9.0/16);
+    }];
+    [wmPlayer play];
+    wmPlayer.isFullscreen = true;
+    
+//    播放本地视频
+//    WMPlayerModel *playerModel = [WMPlayerModel new];
+//    playerModel.title = @"";
+//    NSURL *URL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"4k" ofType:@"mp4"]];
+//    playerModel.videoURL = [NSURL URLWithString:[URL absoluteString]];
+//    WMPlayer * wmPlayer = [WMPlayer playerWithModel:playerModel];
+//    [self.view addSubview:wmPlayer];
+//    [wmPlayer mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.trailing.top.equalTo(self.view);
+//        make.height.mas_equalTo(wmPlayer.mas_width).multipliedBy(9.0/16);
+//    }];
+//    [wmPlayer play];
+}
+-(void)addZF{
+    
+    [self.view addSubview:self.containerView];
+    self.playerManager.assetURL = [NSURL URLWithString:@"http://47.111.21.66/testVideo/test.m3u8"];
+//    ZFAVPlayerManager *manager = [[ZFAVPlayerManager alloc] init];
+////
+//    ZFPlayerController *player = [ZFPlayerController playerWithPlayerManager:playerManager containerView:containerView];
+
+}
+- (VideoPlayCustomView *)customView {
+    if (!_customView) {
+        _customView = [[VideoPlayCustomView alloc] init];
+        _customView.isTopHid = YES;
+        _customView.isFullScreenImg = NO;
+    }
+    return _customView;
+}
+- (UIImageView *)containerView {
+    if (!_containerView) {
+//        _containerView = [UIImageView new];
+        _containerView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 800, kScreenWidth, 300)];
+        _containerView.backgroundColor = [UIColor redColor];
+        _customView.clipsToBounds = YES;
+        _customView.contentMode = UIViewContentModeScaleAspectFill;
+    }
+    return _containerView;
+}
+- (ZFAVPlayerManager *)playerManager {
+    if (!_playerManager) {
+        _playerManager = [[ZFAVPlayerManager alloc] init];
+    }
+    return _playerManager;
+}
+- (ZFPlayerController *)player {
+    if (!_player) {
+        _player = [ZFPlayerController playerWithPlayerManager:self.playerManager containerView:self.containerView];
+        /// 后台是否继续播放
+        _player.pauseWhenAppResignActive = NO;
+        /// 是否支持旋转
+//        _player.allowOrentitaionRotation = NO;
+        /// 设置自定义容器
+        _player.controlView = self.customView;
+        
+        //@zf_weakify(self)
+        _player.orientationWillChange = ^(ZFPlayerController * _Nonnull player, BOOL isFullScreen) {
+//            ((AppDelegate *)[[UIApplication sharedApplication] delegate]).allowRotation = isFullScreen;
+        };
+    }
+    return _player;
+}
 
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
+//    if (self.allowRotation) { // yes
+        //横屏
+//        return UIInterfaceOrientationMaskLandscape;
+        return UIInterfaceOrientationMaskAll;
+//    } else { // no
+        //竖屏
+//        return UIInterfaceOrientationMaskPortrait;
+//    }
+}
+//- (BOOL)shouldAutorotate {
+//    return NO;
+//}
 
 /*
 #pragma mark - Navigation
