@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410ED8429BB17DA00D4D2EB /* TCSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410ED7F29BB17DA00D4D2EB /* TCSMenuView.m */; };
+		0410ED8529BB17DA00D4D2EB /* TCSMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410ED8029BB17DA00D4D2EB /* TCSMenuItem.m */; };
+		0410ED8629BB17DA00D4D2EB /* TCSTagViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410ED8229BB17DA00D4D2EB /* TCSTagViews.m */; };
 		041DC7A229A75A680013D4E2 /* ScrollerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041DC7A129A75A680013D4E2 /* ScrollerLabel.m */; };
 		041DC7A529A75AC40013D4E2 /* UIStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041DC7A429A75AC40013D4E2 /* UIStyleViewController.m */; };
 		043F86D228ABBF22003268EC /* NSArray+TCSSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */; };
@@ -19,6 +22,8 @@
 		04A1C9EA29B0A922003910B0 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C9E929B0A922003910B0 /* SliderView.m */; };
 		04B42FB72902400700291318 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB62902400700291318 /* LoginInfo.m */; };
 		04B42FBA29024B2400291318 /* HSFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B42FB929024B2400291318 /* HSFeedsViewController.m */; };
+		04B7F5A929DE75D800D28EAF /* NodeTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7F5A829DE75D800D28EAF /* NodeTabVC.m */; };
+		04B7F5AD29DE763100D28EAF /* PointListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7F5AC29DE763100D28EAF /* PointListModel.m */; };
 		04E2A3EA29A764F600F7C46C /* AVSpeechSynthesizerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */; };
 		04E2A3ED29A7671B00F7C46C /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3EC29A7671B00F7C46C /* BaseView.m */; };
 		04E2A3F029A7673C00F7C46C /* ScrollerTwoLabe.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3EF29A7673C00F7C46C /* ScrollerTwoLabe.m */; };
@@ -141,6 +146,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0410ED7D29BB17DA00D4D2EB /* TCSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSMenuView.h; sourceTree = "<group>"; };
+		0410ED7E29BB17DA00D4D2EB /* TCSMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSMenuItem.h; sourceTree = "<group>"; };
+		0410ED7F29BB17DA00D4D2EB /* TCSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSMenuView.m; sourceTree = "<group>"; };
+		0410ED8029BB17DA00D4D2EB /* TCSMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSMenuItem.m; sourceTree = "<group>"; };
+		0410ED8229BB17DA00D4D2EB /* TCSTagViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSTagViews.m; sourceTree = "<group>"; };
+		0410ED8329BB17DA00D4D2EB /* TCSTagViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSTagViews.h; sourceTree = "<group>"; };
 		041DC7A029A75A680013D4E2 /* ScrollerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollerLabel.h; sourceTree = "<group>"; };
 		041DC7A129A75A680013D4E2 /* ScrollerLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollerLabel.m; sourceTree = "<group>"; };
 		041DC7A329A75AC40013D4E2 /* UIStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStyleViewController.h; sourceTree = "<group>"; };
@@ -165,6 +176,10 @@
 		04B42FB62902400700291318 /* LoginInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInfo.m; sourceTree = "<group>"; };
 		04B42FB829024B2400291318 /* HSFeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSFeedsViewController.h; sourceTree = "<group>"; };
 		04B42FB929024B2400291318 /* HSFeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSFeedsViewController.m; sourceTree = "<group>"; };
+		04B7F5A729DE75D800D28EAF /* NodeTabVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeTabVC.h; sourceTree = "<group>"; };
+		04B7F5A829DE75D800D28EAF /* NodeTabVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeTabVC.m; sourceTree = "<group>"; };
+		04B7F5AB29DE763100D28EAF /* PointListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointListModel.h; sourceTree = "<group>"; };
+		04B7F5AC29DE763100D28EAF /* PointListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointListModel.m; sourceTree = "<group>"; };
 		04E2A3E829A764F600F7C46C /* AVSpeechSynthesizerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSpeechSynthesizerManger.h; sourceTree = "<group>"; };
 		04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSpeechSynthesizerManger.m; sourceTree = "<group>"; };
 		04E2A3EB29A7671B00F7C46C /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
@@ -373,6 +388,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0410ED7C29BB17DA00D4D2EB /* TCSMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				0410ED7D29BB17DA00D4D2EB /* TCSMenuView.h */,
+				0410ED7F29BB17DA00D4D2EB /* TCSMenuView.m */,
+				0410ED7E29BB17DA00D4D2EB /* TCSMenuItem.h */,
+				0410ED8029BB17DA00D4D2EB /* TCSMenuItem.m */,
+			);
+			path = TCSMenuView;
+			sourceTree = "<group>";
+		};
+		0410ED8129BB17DA00D4D2EB /* TCSTagViews */ = {
+			isa = PBXGroup;
+			children = (
+				0410ED8329BB17DA00D4D2EB /* TCSTagViews.h */,
+				0410ED8229BB17DA00D4D2EB /* TCSTagViews.m */,
+			);
+			path = TCSTagViews;
+			sourceTree = "<group>";
+		};
 		041DC79F29A75A490013D4E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +440,15 @@
 				04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */,
 			);
 			path = MyThirtPart;
+			sourceTree = "<group>";
+		};
+		04B7F5AA29DE762100D28EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B7F5AB29DE763100D28EAF /* PointListModel.h */,
+				04B7F5AC29DE763100D28EAF /* PointListModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		04EC655628BF618400742E08 /* View */ = {
@@ -688,6 +732,7 @@
 		186A323224DA9A0F0066CBE5 /* FourthVC */ = {
 			isa = PBXGroup;
 			children = (
+				04B7F5AA29DE762100D28EAF /* Model */,
 				041DC79F29A75A490013D4E2 /* View */,
 				186CE6202510648600B84E9B /* FourThViewControllers */,
 				186A323324DA9A0F0066CBE5 /* FourthVC.swift */,
@@ -769,6 +814,8 @@
 		186A324424DA9A0F0066CBE5 /* ThirtPart */ = {
 			isa = PBXGroup;
 			children = (
+				0410ED7C29BB17DA00D4D2EB /* TCSMenuView */,
+				0410ED8129BB17DA00D4D2EB /* TCSTagViews */,
 				046056A7296D3F8800A3D8E0 /* MyThirtPart */,
 				184690F025C1613F009E879B /* FNPSDWebImage */,
 				1846903325BFFB10009E879B /* FNPAFNetworking */,
@@ -797,6 +844,8 @@
 				189D071D27C365660073D004 /* LayNeedView.m */,
 				041DC7A329A75AC40013D4E2 /* UIStyleViewController.h */,
 				041DC7A429A75AC40013D4E2 /* UIStyleViewController.m */,
+				04B7F5A729DE75D800D28EAF /* NodeTabVC.h */,
+				04B7F5A829DE75D800D28EAF /* NodeTabVC.m */,
 			);
 			path = FourThViewControllers;
 			sourceTree = "<group>";
@@ -1160,6 +1209,7 @@
 				186A324A24DA9A0F0066CBE5 /* BaseNavController.swift in Sources */,
 				1846911A25C1613F009E879B /* FNPSDImageCacheConfig.m in Sources */,
 				186A325124DA9A0F0066CBE5 /* FifthVC.swift in Sources */,
+				0410ED8529BB17DA00D4D2EB /* TCSMenuItem.m in Sources */,
 				186CE64E251065DB00B84E9B /* GlobalVariablesClass.m in Sources */,
 				186A324B24DA9A0F0066CBE5 /* CityButton.swift in Sources */,
 				186CE64D251065DB00B84E9B /* NSDictionary+NilSafe.m in Sources */,
@@ -1167,6 +1217,7 @@
 				186CE64F251065DB00B84E9B /* UIImage+LightColor.m in Sources */,
 				04E2A3ED29A7671B00F7C46C /* BaseView.m in Sources */,
 				1846911C25C1613F009E879B /* FNPSDWebImageGIFCoder.m in Sources */,
+				04B7F5AD29DE763100D28EAF /* PointListModel.m in Sources */,
 				186CE659251065DB00B84E9B /* UIView+Extension.m in Sources */,
 				0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */,
 				186A325324DA9A0F0066CBE5 /* SecondVC.swift in Sources */,
@@ -1174,8 +1225,10 @@
 				04A1C9EA29B0A922003910B0 /* SliderView.m in Sources */,
 				186A324F24DA9A0F0066CBE5 /* FourthVC.swift in Sources */,
 				1846912225C1613F009E879B /* UIView+FNPWebCache.m in Sources */,
+				0410ED8429BB17DA00D4D2EB /* TCSMenuView.m in Sources */,
 				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,
 				1846912625C1613F009E879B /* NSData+FNPImageContentType.m in Sources */,
+				0410ED8629BB17DA00D4D2EB /* TCSTagViews.m in Sources */,
 				186CE656251065DB00B84E9B /* NSObject+UndefineKey.m in Sources */,
 				188773B925319C46004AE0FE /* View.swift in Sources */,
 				18E9465424ED0DC400A9A0B8 /* weakStudyVC.m in Sources */,
@@ -1184,6 +1237,7 @@
 				048DA3BA2938841000C15FD7 /* UIView+ShadowRadiusSide.m in Sources */,
 				186A325024DA9A0F0066CBE5 /* ThirdVC.swift in Sources */,
 				186A325724DA9A0F0066CBE5 /* BtnExtension.swift in Sources */,
+				04B7F5A929DE75D800D28EAF /* NodeTabVC.m in Sources */,
 				041DC7A229A75A680013D4E2 /* ScrollerLabel.m in Sources */,
 				1846912A25C1613F009E879B /* UIButton+FNPWebCache.m in Sources */,
 				1886CF9D2577770600EC06EB /* TestViewContext.m in Sources */,

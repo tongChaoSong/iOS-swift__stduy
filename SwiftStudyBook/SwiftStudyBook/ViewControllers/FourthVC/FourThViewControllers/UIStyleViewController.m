@@ -33,7 +33,7 @@
     self.title = @"ui样式";
     [self initView];
     [self addVM];
-    [self addZF];
+//    [self addZF];
     // Do any additional setup after loading the view.
 }
 
@@ -72,7 +72,7 @@
         make.height.mas_equalTo(wmPlayer.mas_width).multipliedBy(9.0/16);
     }];
     [wmPlayer play];
-    wmPlayer.isFullscreen = true;
+//    wmPlayer.isFullscreen = true;
     
 //    播放本地视频
 //    WMPlayerModel *playerModel = [WMPlayerModel new];

@@ -16,5 +16,6 @@
 #import "UITableView+ReloadDataSwizzling.h"
 #import "ToolClass.h"
 #import "UIStyleViewController.h"
+#import "NodeTabVC.h"
 
 
