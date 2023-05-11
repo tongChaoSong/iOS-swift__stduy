@@ -17,6 +17,7 @@
 		04496892291CD5A200DF0E5E /* ClassStructEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04496891291CD5A200DF0E5E /* ClassStructEnum.swift */; };
 		046056AA296D3F9D00A3D8E0 /* ImageWithBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 046056A8296D3F9D00A3D8E0 /* ImageWithBtn.m */; };
 		0461C3DD28D2C7B40071D5DC /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461C3DC28D2C7B40071D5DC /* ToolClass.m */; };
+		0486A3B62A0C963A0056E27B /* WaterfallMutiSectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486A3B52A0C963A0056E27B /* WaterfallMutiSectionFlowLayout.swift */; };
 		048DA3BA2938841000C15FD7 /* UIView+ShadowRadiusSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 048DA3B82938841000C15FD7 /* UIView+ShadowRadiusSide.m */; };
 		04A1C9E729B0A794003910B0 /* VideoPlayCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C9E629B0A794003910B0 /* VideoPlayCustomView.m */; };
 		04A1C9EA29B0A922003910B0 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C9E929B0A922003910B0 /* SliderView.m */; };
@@ -166,6 +167,7 @@
 		046056A9296D3F9D00A3D8E0 /* ImageWithBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageWithBtn.h; sourceTree = "<group>"; };
 		0461C3DB28D2C7B40071D5DC /* ToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolClass.h; sourceTree = "<group>"; };
 		0461C3DC28D2C7B40071D5DC /* ToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolClass.m; sourceTree = "<group>"; };
+		0486A3B52A0C963A0056E27B /* WaterfallMutiSectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallMutiSectionFlowLayout.swift; sourceTree = "<group>"; };
 		048DA3B82938841000C15FD7 /* UIView+ShadowRadiusSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShadowRadiusSide.m"; sourceTree = "<group>"; };
 		048DA3B92938841000C15FD7 /* UIView+ShadowRadiusSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShadowRadiusSide.h"; sourceTree = "<group>"; };
 		04A1C9E529B0A794003910B0 /* VideoPlayCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayCustomView.h; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		04B7F5A829DE75D800D28EAF /* NodeTabVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeTabVC.m; sourceTree = "<group>"; };
 		04B7F5AB29DE763100D28EAF /* PointListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointListModel.h; sourceTree = "<group>"; };
 		04B7F5AC29DE763100D28EAF /* PointListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointListModel.m; sourceTree = "<group>"; };
+		04B7F5AF29DEC02C00D28EAF /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		04E2A3E829A764F600F7C46C /* AVSpeechSynthesizerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSpeechSynthesizerManger.h; sourceTree = "<group>"; };
 		04E2A3E929A764F600F7C46C /* AVSpeechSynthesizerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSpeechSynthesizerManger.m; sourceTree = "<group>"; };
 		04E2A3EB29A7671B00F7C46C /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
@@ -609,6 +612,7 @@
 		186A31E724DA997A0066CBE5 = {
 			isa = PBXGroup;
 			children = (
+				04B7F5AF29DEC02C00D28EAF /* Location.gpx */,
 				186A31F224DA997A0066CBE5 /* SwiftStudyBook */,
 				186A320924DA99810066CBE5 /* SwiftStudyBookTests */,
 				186A321424DA99810066CBE5 /* SwiftStudyBookUITests */,
@@ -793,6 +797,7 @@
 		186A323D24DA9A0F0066CBE5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0486A3B52A0C963A0056E27B /* WaterfallMutiSectionFlowLayout.swift */,
 				186A323E24DA9A0F0066CBE5 /* TripCarCollectionViewCell.swift */,
 				186A323F24DA9A0F0066CBE5 /* PuBuLiuLay.swift */,
 			);
@@ -1251,6 +1256,7 @@
 				046056AA296D3F9D00A3D8E0 /* ImageWithBtn.m in Sources */,
 				186CE652251065DB00B84E9B /* NSData+SwitchData.m in Sources */,
 				1846912425C1613F009E879B /* FNPSDImageCache.m in Sources */,
+				0486A3B62A0C963A0056E27B /* WaterfallMutiSectionFlowLayout.swift in Sources */,
 				04E2A3EA29A764F600F7C46C /* AVSpeechSynthesizerManger.m in Sources */,
 				04B42FB72902400700291318 /* LoginInfo.m in Sources */,
 				186A324D24DA9A0F0066CBE5 /* TableTitleVC.swift in Sources */,

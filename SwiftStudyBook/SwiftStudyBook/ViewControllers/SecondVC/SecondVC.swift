@@ -146,7 +146,10 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
                 ToolClass.createPropetyCode(dict1);
             }
             break
-            
+        case 6:
+            let vc:SecondDetailVC = SecondDetailVC()
+            self.navigationController!.pushViewController(vc, animated: true)
+            break
             
         default:
             let vc:SecondDetailVC = SecondDetailVC()
@@ -193,7 +196,7 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
        
     }
     
-    let titleArr = ["swift-GCD","weak","runtime","runloop、类簇","block","自动生成后台返回dict属性"]
+    let titleArr = ["swift-GCD","weak","runtime","runloop、类簇","block","自动生成后台返回dict属性","瀑布流"]
     
     let titleArr2 = ["swift-GCD","weak","runtime","runloop、类簇","block","自动生成后台返回dict属性"]
     
