@@ -33,7 +33,7 @@
     self.title = @"ui样式";
     [self initView];
     [self addVM];
-//    [self addZF];
+    [self addZF];
     // Do any additional setup after loading the view.
 }
 

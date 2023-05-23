@@ -8,6 +8,8 @@
 
 #import "RunloopViewController.h"
 #import "Person.h"
+#import "TestClass.h"
+#import "SubTestClass.h"
 
 extern void _objc_autoreleasePoolPrint(void);
 @interface RunloopViewController ()
@@ -19,7 +21,7 @@ extern void _objc_autoreleasePoolPrint(void);
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"---1----%ld", CFGetRetainCount((__bridge CFTypeRef)self));
-    NSArray * arr = @[@"@autoreleasepool ",@"引用计数测试",@"类簇",@""];
+    NSArray * arr = @[@"@autoreleasepool ",@"引用计数测试",@"类簇",@"测试内方法调用实例方法"];
     self.navigationController.title = @"runloop";
     // Do any additional setup after loading the view.
     self.mainTitleArr = arr;
@@ -48,7 +50,14 @@ extern void _objc_autoreleasePoolPrint(void);
             break;
         case 3:
         {
+//            [TestClass classtest];
+//            [SubTestClass classtest];
+
+            SubTestClass * cls = [[SubTestClass alloc]init];
             
+            [cls classtest];
+            
+//            [cls init];
         }
             break;
             

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -127,6 +127,8 @@
 		18E9465724ED118200A9A0B8 /* BaseOCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465624ED118200A9A0B8 /* BaseOCVC.m */; };
 		18E9465A24ED11E400A9A0B8 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465924ED11E400A9A0B8 /* BaseTableVC.m */; };
 		5A3711F120CBD271A3000576 /* libPods-SwiftStudyBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861008AF9C5CF96FB6E0A67B /* libPods-SwiftStudyBook.a */; };
+		75923A822A1C602F00DA1B53 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 75923A812A1C602F00DA1B53 /* TestClass.m */; };
+		75923A852A1C661500DA1B53 /* SubTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 75923A842A1C661500DA1B53 /* SubTestClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -361,6 +363,10 @@
 		18E9465924ED11E400A9A0B8 /* BaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 		18FEF4C724F3AD0F000D2811 /* SwiftStudyBook-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftStudyBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		1DA3D70638DFA65DD4D714EB /* Pods-SwiftStudyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyBook.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook.release.xcconfig"; sourceTree = "<group>"; };
+		75923A802A1C602F00DA1B53 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		75923A812A1C602F00DA1B53 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		75923A832A1C661500DA1B53 /* SubTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTestClass.h; sourceTree = "<group>"; };
+		75923A842A1C661500DA1B53 /* SubTestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTestClass.m; sourceTree = "<group>"; };
 		861008AF9C5CF96FB6E0A67B /* libPods-SwiftStudyBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftStudyBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A01FF6C82694507C108D6B /* Pods-SwiftStudyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyBook.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -937,6 +943,10 @@
 				18B8EA78272A459B00825B0E /* RunloopViewController.m */,
 				043F86D028ABBF21003268EC /* NSArray+TCSSafe.h */,
 				043F86D128ABBF22003268EC /* NSArray+TCSSafe.m */,
+				75923A802A1C602F00DA1B53 /* TestClass.h */,
+				75923A812A1C602F00DA1B53 /* TestClass.m */,
+				75923A832A1C661500DA1B53 /* SubTestClass.h */,
+				75923A842A1C661500DA1B53 /* SubTestClass.m */,
 			);
 			path = runloop;
 			sourceTree = "<group>";
@@ -1168,6 +1178,7 @@
 				186A31F424DA997A0066CBE5 /* AppDelegate.swift in Sources */,
 				04EC655528BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m in Sources */,
 				1846904B25BFFB10009E879B /* FNPAFHTTPSessionManager.m in Sources */,
+				75923A822A1C602F00DA1B53 /* TestClass.m in Sources */,
 				041DC7A529A75AC40013D4E2 /* UIStyleViewController.m in Sources */,
 				186CE658251065DB00B84E9B /* NSString+MD5.m in Sources */,
 				1846904A25BFFB10009E879B /* FNPAFNetworkReachabilityManager.m in Sources */,
@@ -1256,6 +1267,7 @@
 				1846912425C1613F009E879B /* FNPSDImageCache.m in Sources */,
 				0486A3B62A0C963A0056E27B /* WaterfallMutiSectionFlowLayout.swift in Sources */,
 				04E2A3EA29A764F600F7C46C /* AVSpeechSynthesizerManger.m in Sources */,
+				75923A852A1C661500DA1B53 /* SubTestClass.m in Sources */,
 				04B42FB72902400700291318 /* LoginInfo.m in Sources */,
 				186A324D24DA9A0F0066CBE5 /* TableTitleVC.swift in Sources */,
 				186CE653251065DB00B84E9B /* NSString+AttributedString.m in Sources */,

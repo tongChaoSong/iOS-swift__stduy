@@ -36,8 +36,8 @@
             break;
         case 1:
         {
-            GCDViewController * vc = [[GCDViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+//            GCDViewController * vc = [[GCDViewController alloc]init];
+//            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 2:
