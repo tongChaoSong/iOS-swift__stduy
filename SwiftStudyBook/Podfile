@@ -1,3 +1,6 @@
+
+install! 'cocoapods', :disable_input_output_paths => true
+
 platform :ios, '8.0'
 target 'SwiftStudyBook' do
 pod 'AFNetworking'
@@ -16,3 +19,10 @@ pod 'ZFPlayer/AVPlayer', '~> 4.1.4'
 pod 'ZFPlayer/ControlView', '~> 4.1.4'
 
 end
+
+#post_install do |installer|
+#  installer.pods_project.build_configurations.each do |config|
+#      config.build_settings['CODE_SIGN_IDENTITY'] = "tcs.love.fei.SwiftStudyBook";
+#      config.build_settings['CODE_SIGN_IDENTITY[sdk=*]'] = "tcs.love.fei.SwiftStudyBook";
+#  end
+#end

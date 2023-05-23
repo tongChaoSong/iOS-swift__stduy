@@ -61,7 +61,7 @@ DEPENDENCIES:
   - ZFPlayer/ControlView (~> 4.1.4)
 
 SPEC REPOS:
-  https://mirrors.bfsu.edu.cn/git/CocoaPods/Specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - BGFMDB
     - JCore
@@ -78,7 +78,7 @@ SPEC REPOS:
     - ZFPlayer
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
   BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
   HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
   JCore: d75c0306dc99875d323d23e5a063b3a3ef22335a
@@ -92,6 +92,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZFPlayer: 5cf39e8d9f0c2394a014b0db4767b5b5a6bffe13
 
-PODFILE CHECKSUM: 5695779ae8856dffb42c96aab1860839590a8d98
+PODFILE CHECKSUM: 6e5415f05b6796884315f61f821a6ba064633e91
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1
