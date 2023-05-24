@@ -17,5 +17,8 @@
 #import "BlockHeader.h"
 #import "BaseView.h"
 #import <Masonry.h>
+#import <WebKit/WKWebView.h>
+#import <WebKit/WebKit.h>
+
 
 #endif /* TCSHeader_h */

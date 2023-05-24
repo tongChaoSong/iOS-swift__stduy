@@ -106,6 +106,8 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         case 0:
             do{
                 let vc = GCDViewController()
+                vc.title = titleArr[indexPath.row]
+
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
@@ -115,6 +117,8 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         case 1:
             do{
                 let vc = weakStudyVC()
+                vc.title = titleArr[indexPath.row]
+
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
@@ -122,6 +126,8 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         case 2:
             do{
                 let vc = RuntimeViewController()
+                vc.title = titleArr[indexPath.row]
+
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
@@ -129,12 +135,15 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
         case 3:
             do{
                 let vc = RunloopViewController()
+                vc.title = titleArr[indexPath.row]
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
         case 4:
             do{
                 let vc = BlockViewController()
+                vc.title = titleArr[indexPath.row]
+
                 self.navigationController!.pushViewController(vc, animated: true)
             }
             break
@@ -148,11 +157,14 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
             break
         case 6:
             let vc:SecondDetailVC = SecondDetailVC()
+            vc.title = titleArr[indexPath.row]
+
             self.navigationController!.pushViewController(vc, animated: true)
             break
             
         default:
             let vc:SecondDetailVC = SecondDetailVC()
+
             self.navigationController!.pushViewController(vc, animated: true)
             break
         }

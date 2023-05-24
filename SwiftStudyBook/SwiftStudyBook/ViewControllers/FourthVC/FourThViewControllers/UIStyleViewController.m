@@ -15,7 +15,8 @@
 #import <ZFPlayer/ZFAVPlayerManager.h>
 #import "VideoPlayCustomView.h"
 
-@interface UIStyleViewController ()
+
+@interface UIStyleViewController ()<WKNavigationDelegate>
 @property(nonatomic,strong)ScrollerLabel * sclabel;
 
 @property (nonatomic, strong) ScrollerTwoLabe *labelScroll;
@@ -24,6 +25,9 @@
 @property (nonatomic, strong) ZFAVPlayerManager *playerManager;
 @property (nonatomic, strong) VideoPlayCustomView *customView;
 @property (nonatomic, strong) UIImageView *containerView;
+
+@property (nonatomic,strong) WKWebView *mainWkWeb;
+
 @end
 
 @implementation UIStyleViewController
@@ -31,10 +35,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"ui样式";
-    [self initView];
-    [self addVM];
-    [self addZF];
+    WKWebView *webView1 =[[WKWebView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://47.111.21.66:18080/videoPlayer/index.html"]];
+        [webView1 loadRequest:request];
+        [self.view addSubview:webView1];
+//    [self initView];
+//    [self addweb];
+//    [self addVM];
+//    [self addZF];
     // Do any additional setup after loading the view.
+}
+-(void)addweb{
+    WKWebViewConfiguration * webConfig = [WKWebViewConfiguration new];
+    WKUserContentController *userController = [WKUserContentController new];
+//        NSString *js = @" $('meta[name=description]').remove(); $('head').append( '<meta name=\"viewport\" content=\"width=device-width, initial-scale=1,user-scalable=no\">' );";
+//        WKUserScript *script = [[WKUserScript alloc] initWithSource:js injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:NO];
+//        [userController addUserScript:script];
+    webConfig.dataDetectorTypes = WKDataDetectorTypeAll;
+    webConfig.userContentController = userController;
+    webConfig.mediaPlaybackRequiresUserAction = NO;//把手动播放设置NO ios(8.0, 9.0)
+    webConfig.allowsInlineMediaPlayback = YES;//是否允许内联(YES)或使用本机全屏控制器(NO)，默认是NO。
+    webConfig.mediaPlaybackAllowsAirPlay = YES;
+    
+    _mainWkWeb = [[WKWebView alloc] initWithFrame:CGRectMake(0, 300, SCREEN_WIDTH, 300) configuration:webConfig];
+//    _mainWkWeb = [[WKWebView alloc] initWithFrame:CGRectMake(0, 300, SCREEN_WIDTH, 300)];
+
+    
+    _mainWkWeb.userInteractionEnabled = YES;
+    _mainWkWeb.backgroundColor = [UIColor clearColor];
+//    _mainWkWeb.backgroundColor = [toolClass colorWithHexString:@"#F6F6F6" alpha:1];
+    _mainWkWeb.navigationDelegate = self;
+//    [wkWebview stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('body')[0].style.background='#F6F7F3'"];
+//    [_mainWkWeb evaluateJavaScript:@"document.getElementsByTagName('body')[0].style.background='#F6F7F3'" completionHandler:nil];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://47.111.21.66:18080/videoPlayer/index.html"]];
+//    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html"];
+//    NSURLRequest * request = [NSURLRequest requestWithURL:fileURL];
+    [self.mainWkWeb loadRequest:request];
+    [self.view addSubview: _mainWkWeb];
+
 }
 
 -(void)initView{
@@ -148,6 +187,33 @@
         //竖屏
 //        return UIInterfaceOrientationMaskPortrait;
 //    }
+}
+/**
+ *页面开始加载时调用
+ */
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
+    NSLog(@"网页开始加载");
+    
+}
+
+/**
+ *页面加载失败时调用
+ */
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation {
+    NSLog(@"网页加载失败");
+    
+}
+/**
+ *页面加载完成之后调用
+ */
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    NSLog(@"页面加载完成之后调用");
+
+}
+
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
+{
+    NSLog(@"didReceiveScriptMessage==%@",message.name);
 }
 //- (BOOL)shouldAutorotate {
 //    return NO;

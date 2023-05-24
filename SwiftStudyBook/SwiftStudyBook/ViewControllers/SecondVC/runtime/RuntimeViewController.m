@@ -33,7 +33,7 @@
     
 }
 -(void)initTitle{
-    self.mainTitleArr = @[@"清除数据",@"json-->model、消息转发机制",@"runtime-方式测试全局tab添加无数据图案",@"runtime-04实现自动解归档",@"runtime-万能界面跳转方法",@"打印成员变量",@"gcd定时器"];
+    self.mainTitleArr = @[@"清除数据",@"json-->model、消息转发机制",@"runtime-方式测试全局tab添加无数据图案",@"runtime-04实现自动解归档",@"runtime-万能界面跳转方法",@"打印成员变量",@"gcd定时器",@"iOS底层探究-alloc/init做了什么？https://www.jianshu.com/p/0a795b4b894d"];
 
     @WeakObj(self);
     self.mainTable.reloadBlock = ^{
@@ -106,6 +106,20 @@
 //            [self removGcdTimer];
         }
             break;
+        case 7:
+        {
+            NSLog(@"一句话概括就是alloc做了三件事1. cls->instanceSize(extraBytes);计算对象需要多大内存空间。2.调用calloc函数申请内存并返回内存的指针地址。3.obj->initInstanceIsa 将 cls类 与 obj指针（即isa） 关联。 init做了一件事就是返回当前对象。");
+            // 这个规则肯定事先跟服务端沟通好，跳转对应的界面需要对应的参数
+            NSDictionary *userInfo = @{
+                @"class": @"BaseWkWebvc",
+                @"property": @{
+                    @"url": @"https://www.jianshu.com/p/0a795b4b894d",
+                }
+            };
+            [self push:userInfo];
+        }
+            break;
+            
         default:
             break;
     }

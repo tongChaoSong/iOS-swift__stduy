@@ -127,6 +127,7 @@
 		18E9465724ED118200A9A0B8 /* BaseOCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465624ED118200A9A0B8 /* BaseOCVC.m */; };
 		18E9465A24ED11E400A9A0B8 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9465924ED11E400A9A0B8 /* BaseTableVC.m */; };
 		5A3711F120CBD271A3000576 /* libPods-SwiftStudyBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861008AF9C5CF96FB6E0A67B /* libPods-SwiftStudyBook.a */; };
+		755C647A2A1E156F002DB1D0 /* BaseWkWebvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 755C64792A1E156F002DB1D0 /* BaseWkWebvc.m */; };
 		75923A822A1C602F00DA1B53 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 75923A812A1C602F00DA1B53 /* TestClass.m */; };
 		75923A852A1C661500DA1B53 /* SubTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 75923A842A1C661500DA1B53 /* SubTestClass.m */; };
 /* End PBXBuildFile section */
@@ -363,6 +364,8 @@
 		18E9465924ED11E400A9A0B8 /* BaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 		18FEF4C724F3AD0F000D2811 /* SwiftStudyBook-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftStudyBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		1DA3D70638DFA65DD4D714EB /* Pods-SwiftStudyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyBook.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyBook/Pods-SwiftStudyBook.release.xcconfig"; sourceTree = "<group>"; };
+		755C64782A1E156F002DB1D0 /* BaseWkWebvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWkWebvc.h; sourceTree = "<group>"; };
+		755C64792A1E156F002DB1D0 /* BaseWkWebvc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWkWebvc.m; sourceTree = "<group>"; };
 		75923A802A1C602F00DA1B53 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		75923A812A1C602F00DA1B53 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		75923A832A1C661500DA1B53 /* SubTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTestClass.h; sourceTree = "<group>"; };
@@ -735,6 +738,8 @@
 				18E9465924ED11E400A9A0B8 /* BaseTableVC.m */,
 				04E2A3EB29A7671B00F7C46C /* BaseView.h */,
 				04E2A3EC29A7671B00F7C46C /* BaseView.m */,
+				755C64782A1E156F002DB1D0 /* BaseWkWebvc.h */,
+				755C64792A1E156F002DB1D0 /* BaseWkWebvc.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -1218,6 +1223,7 @@
 				1846912825C1613F009E879B /* FNPSDWebImageCoder.m in Sources */,
 				043F86D228ABBF22003268EC /* NSArray+TCSSafe.m in Sources */,
 				1886CF9A2577691C00EC06EB /* LayerViewController.m in Sources */,
+				755C647A2A1E156F002DB1D0 /* BaseWkWebvc.m in Sources */,
 				1846904725BFFB10009E879B /* FNPAFSecurityPolicy.m in Sources */,
 				186A325424DA9A0F0066CBE5 /* TripCarCollectionViewCell.swift in Sources */,
 				186A324A24DA9A0F0066CBE5 /* BaseNavController.swift in Sources */,
