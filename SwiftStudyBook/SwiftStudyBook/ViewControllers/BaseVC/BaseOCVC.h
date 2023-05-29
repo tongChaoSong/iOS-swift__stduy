@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
+//#import "BlockHeader.h"
+typedef void(^TCSRouterBlock) (id backData);
 
 @interface BaseOCVC : UIViewController
+//@property (nonatomic,copy)VoidBlock tcs_RouterBlock;
 
+@property (nonatomic,strong)TCSRouterBlock tcs_RouterBlock;
 @end
 
-NS_ASSUME_NONNULL_END

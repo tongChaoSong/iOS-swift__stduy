@@ -15,5 +15,7 @@ typedef void(^DidSlectIndex)(NSInteger index,NSString *text);
 typedef void(^VoidBlock)(void);
 
 typedef void(^BoolBlock)(BOOL isbool);
+//路由交互数据block
+//typedef void(^TCSRouterBlock) (id backData);
 
 #endif /* BlockHeader_h */

@@ -81,14 +81,12 @@
         case 4:
         {
             // 这个规则肯定事先跟服务端沟通好，跳转对应的界面需要对应的参数
-            NSDictionary *userInfo = @{
-                @"class": @"HSFeedsViewController",
-                @"property": @{
-                    @"ID": @"123",
-                    @"type": @"12"
-                }
-            };
-            [self push:userInfo];
+            
+            
+//            [self push:userInfo];
+            [RouteToolClass pushViewControllerName:@"TestLocationRouteVC" param:@{@"age": @"66666",@"maintitle": @"ale"} animated:true routerBlock:^(id backData) {
+                NSLog(@"页面返回的值是==%@",backData);
+            }];
 
             
         }

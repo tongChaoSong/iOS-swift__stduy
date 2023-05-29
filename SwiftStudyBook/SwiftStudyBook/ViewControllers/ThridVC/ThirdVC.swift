@@ -13,9 +13,9 @@ class ThirdVC: TableTitleVC {
 //
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.upaDataArr = ["swift--struct、Class、enum","swift使用ocruntime的table默认图显示","9"]
+        self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension"]
         self.mainTable.reloadBlock = {() -> Void in
-            self.upaDataArr = ["swift--struct、Class、enum","swift使用ocruntime的table默认图显示","9"]
+            self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension、mutating"]
         };
        
         // Do any additional setup after loading the view.
@@ -36,6 +36,9 @@ class ThirdVC: TableTitleVC {
             break
         case 2:
             do {
+                let vc = KeywordsVC.init();
+                vc.title = (self.upaDataArr![indexPath.row] as! String);
+                self.navigationController?.pushViewController(vc, animated: true);
                 
             }
             break
@@ -76,7 +79,9 @@ class ThirdVC: TableTitleVC {
         let student8 = Student3(chinese: 90, math: 80, english: 70)
         let student9 = Student4()
         var student10 = Student4(stringScore: "70,80,90")
+        print("未改变了struct值 == student10 == \(student10.math)");
         student10.changeMath(num: 20);
+        print("改变了struct值 == student10 == \(student10.math)");
         // -----------class
         //s1值会变动  复制指针
         var s1 = Person1()

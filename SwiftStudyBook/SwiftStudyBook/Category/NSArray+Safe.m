@@ -49,13 +49,17 @@
 
 #pragma MARK -  - (id)objectAtIndex:
 - (id)emptyArray_objectAtIndex:(NSUInteger)index{
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
     return nil;
+    
 }
 
 - (id)arrayI_objectAtIndex:(NSUInteger)index{
     if(index < self.count){
         return [self arrayI_objectAtIndex:index];
     }
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
+
     return nil;
 }
 
@@ -63,6 +67,8 @@
     if(index < self.count){
         return [self arrayM_objectAtIndex:index];
     }
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
+
     return nil;
 }
 
@@ -70,11 +76,15 @@
     if(index < self.count){
         return [self singleObjectArrayI_objectAtIndex:index];
     }
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
+
     return nil;
 }
 
 #pragma MARK -  - (id)objectAtIndexedSubscript:
 - (id)emptyArray_objectAtIndexedSubscript:(NSUInteger)index{
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
+
     return nil;
 }
 
@@ -82,6 +92,8 @@
     if(index < self.count){
         return [self arrayI_objectAtIndex:index];
     }
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
+
     return nil;
 }
 
@@ -89,6 +101,8 @@
     if(index < self.count){
         return [self arrayM_objectAtIndex:index];
     }
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
+
     return nil;
 }
 
@@ -96,6 +110,8 @@
     if(index < self.count){
         return [self singleObjectArrayI_objectAtIndexedSubscript:index];
     }
+    NSLog(@"数组越界值时: 元素类型为 nil, %s",__FUNCTION__);
+
     return nil;
 }
 

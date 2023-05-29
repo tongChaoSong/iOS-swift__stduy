@@ -38,6 +38,7 @@ extension ThirdVC{
         var chinese: Int = 50
         var math: Int = 50
         var english: Int = 50
+
         init() {}
         init(chinese: Int, math: Int, english: Int) {
             self.chinese = chinese

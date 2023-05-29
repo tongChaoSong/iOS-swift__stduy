@@ -17,7 +17,7 @@ pod 'WMPlayer', '~> 5.0.0'
 pod 'ZFPlayer', '~> 4.1.4'
 pod 'ZFPlayer/AVPlayer', '~> 4.1.4'
 pod 'ZFPlayer/ControlView', '~> 4.1.4'
-
+pod 'CTMediator', '~> 48'
 end
 
 #post_install do |installer|

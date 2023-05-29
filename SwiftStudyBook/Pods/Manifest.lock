@@ -20,6 +20,7 @@ PODS:
   - BGFMDB/BG (2.0.13):
     - BGFMDB/FMDB
   - BGFMDB/FMDB (2.0.13)
+  - CTMediator (48)
   - HandyFrame (1.2.0)
   - JCore (2.2.5)
   - JPush (3.3.3):
@@ -47,6 +48,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - BGFMDB
+  - CTMediator (~> 48)
   - HandyFrame
   - JPush
   - Masonry
@@ -72,6 +74,7 @@ SPEC REPOS:
     - SDWebImage
     - SVPullToRefresh
   trunk:
+    - CTMediator
     - HandyFrame
     - WMPlayer
     - YYKit
@@ -80,6 +83,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
   BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
+  CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
   HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
   JCore: d75c0306dc99875d323d23e5a063b3a3ef22335a
   JPush: 61b3dc8c2bdefb7c48e7ca283f9fe42e71bfe063
@@ -92,6 +96,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZFPlayer: 5cf39e8d9f0c2394a014b0db4767b5b5a6bffe13
 
-PODFILE CHECKSUM: 6e5415f05b6796884315f61f821a6ba064633e91
+PODFILE CHECKSUM: a0b9c7dcef88852de3101a5ac27c2ef522edf2ee
 
 COCOAPODS: 1.12.1

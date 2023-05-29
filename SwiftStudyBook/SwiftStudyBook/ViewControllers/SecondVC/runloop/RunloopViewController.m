@@ -46,6 +46,16 @@ extern void _objc_autoreleasePoolPrint(void);
             [self testArray];
             [self testDictionary];
             [self testString];
+            
+            NSDictionary *userInfo = @{
+                @"class": @"BaseWkWebvc",
+                @"property": @{
+                    @"url": @"https://www.jianshu.com/p/86ef3ca9810d",
+                }
+            };
+            
+            [RouteToolClass push:userInfo];
+        
         }
             break;
         case 3:
