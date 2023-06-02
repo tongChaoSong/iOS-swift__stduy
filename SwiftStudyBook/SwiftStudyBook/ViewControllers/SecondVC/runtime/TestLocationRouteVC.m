@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = [NSString stringWithFormat:@"age==%@ maintitle==%@",self.age,self.maintitle];
     NSLog(@"age==%@ maintitle==%@",self.age,self.maintitle);
     // Do any additional setup after loading the view.
     self.mainTitleArr = @[@"1",@"2",@"3",@"5"];

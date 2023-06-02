@@ -834,6 +834,8 @@
 				0461C3DC28D2C7B40071D5DC /* ToolClass.m */,
 				75AE0DDD2A20970D0046E941 /* RouteToolClass.h */,
 				75AE0DDE2A20970D0046E941 /* RouteToolClass.m */,
+				186CE63F251065DB00B84E9B /* GlobalVariablesClass.h */,
+				186CE630251065DB00B84E9B /* GlobalVariablesClass.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -917,8 +919,6 @@
 				186CE62F251065DB00B84E9B /* NSDictionary+NilSafe.m */,
 				186CE62B251065DB00B84E9B /* NSData+SwitchData.h */,
 				186CE63A251065DB00B84E9B /* NSData+SwitchData.m */,
-				186CE63F251065DB00B84E9B /* GlobalVariablesClass.h */,
-				186CE630251065DB00B84E9B /* GlobalVariablesClass.m */,
 				186CE647251065DB00B84E9B /* Swzzling.h */,
 				04EC655328BF60ED00742E08 /* UITableView+ReloadDataSwizzling.h */,
 				04EC655428BF60ED00742E08 /* UITableView+ReloadDataSwizzling.m */,

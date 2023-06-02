@@ -17,5 +17,5 @@
 #import "ToolClass.h"
 #import "UIStyleViewController.h"
 #import "NodeTabVC.h"
-
+#import "CTMediator.h"
 
