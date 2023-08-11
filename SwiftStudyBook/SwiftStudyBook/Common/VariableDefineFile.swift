@@ -22,7 +22,11 @@ let swiftMrg = SCREEN_WIDTH / 750 * 28
 let SCALE_W = SCREEN_WIDTH/375
 let SCALE_H = SCREEN_HEIGHT/667
 
-
+let GetAppInfo = Bundle.main.infoDictionary
+/// 当前app版本号
+let GetAppCurrentVersion = Bundle.main.object(forInfoDictionaryKey:"CFBundleShortVersionString")
+/// 获取设备系统号
+let GetSystemVersion = UIDevice.current.systemVersion// iPhone设备
 
 // MARK: - 其他 -
 /**
