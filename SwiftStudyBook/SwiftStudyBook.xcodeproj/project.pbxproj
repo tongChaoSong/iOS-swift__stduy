@@ -193,6 +193,7 @@
 		75A9AF642A8613C900446719 /* UITextField+SP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A9AF612A8613C900446719 /* UITextField+SP.swift */; };
 		75A9AF652A8613C900446719 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A9AF622A8613C900446719 /* TextField.swift */; };
 		75A9AF662A8613C900446719 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A9AF632A8613C900446719 /* Input.swift */; };
+		75A9AF682A861F7A00446719 /* LsqDecoderTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A9AF672A861F7A00446719 /* LsqDecoderTool.swift */; };
 		75AE0DDF2A20970D0046E941 /* RouteToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AE0DDE2A20970D0046E941 /* RouteToolClass.m */; };
 		75CEEFCF2A244CC8001FD61B /* TestLocationRouteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CEEFCE2A244CC8001FD61B /* TestLocationRouteVC.m */; };
 /* End PBXBuildFile section */
@@ -500,6 +501,7 @@
 		75A9AF612A8613C900446719 /* UITextField+SP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+SP.swift"; sourceTree = "<group>"; };
 		75A9AF622A8613C900446719 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		75A9AF632A8613C900446719 /* Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		75A9AF672A861F7A00446719 /* LsqDecoderTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LsqDecoderTool.swift; sourceTree = "<group>"; };
 		75AE0DDD2A20970D0046E941 /* RouteToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteToolClass.h; sourceTree = "<group>"; };
 		75AE0DDE2A20970D0046E941 /* RouteToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteToolClass.m; sourceTree = "<group>"; };
 		75CEEFCD2A244CC8001FD61B /* TestLocationRouteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocationRouteVC.h; sourceTree = "<group>"; };
@@ -958,6 +960,7 @@
 				75A9AF602A8613C900446719 /* UITextField */,
 				75A9AEC82A860CEC00446719 /* Extension */,
 				186A324124DA9A0F0066CBE5 /* VariableDefineFile.swift */,
+				75A9AF672A861F7A00446719 /* LsqDecoderTool.swift */,
 				186A324324DA9A0F0066CBE5 /* BaseExtension.swift */,
 				75A9AF5C2A860E8700446719 /* RunTime+SP.swift */,
 				75A9AF5D2A860E8700446719 /* UIButton+SP.swift */,
@@ -1819,6 +1822,7 @@
 				186CE652251065DB00B84E9B /* NSData+SwitchData.m in Sources */,
 				75A9AF442A860CED00446719 /* Int+SP.swift in Sources */,
 				1846912425C1613F009E879B /* FNPSDImageCache.m in Sources */,
+				75A9AF682A861F7A00446719 /* LsqDecoderTool.swift in Sources */,
 				75A9AF432A860CED00446719 /* ShopAndGoodsView.swift in Sources */,
 				0486A3B62A0C963A0056E27B /* WaterfallMutiSectionFlowLayout.swift in Sources */,
 				75CEEFCF2A244CC8001FD61B /* TestLocationRouteVC.m in Sources */,

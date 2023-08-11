@@ -24,6 +24,10 @@ class HomeVC: BaseViewController {
         self.view.backgroundColor = UIColor.purple
         // Do any additional setup after loading the view.
     
+        let txt:TextField = TextField.init(frame: CGRect.init(x: 0, y: kApplicationStatusBarHeight, width: SCREEN_WIDTH, height: kApplicationStatusBarHeight))
+//        txt.wordLimit = 10
+        txt.backgroundColor = Color.assist
+        self.view.addSubview(txt)
         loadData()
 //        self.upaDataArr = ["struct、Class、enum","runtime方式测试全局tab添加无数据图案","9"];
 

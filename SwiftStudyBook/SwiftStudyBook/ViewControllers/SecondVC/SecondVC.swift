@@ -78,7 +78,12 @@ class SecondVC: BaseViewController,UICollectionViewDelegate,UICollectionViewData
     
     func createUI() -> Void {
     
+       
         self.view.addSubview(self.mainColletion)
+        
+//        let top:ShopAndGoodsView = ShopAndGoodsView.init(frame: CGRect.init(x: 0, y: kApplicationStatusBarHeight, width: SCREEN_WIDTH, height: kApplicationStatusBarHeight))
+//        top.types = .good
+//        self.view.addSubview(top)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

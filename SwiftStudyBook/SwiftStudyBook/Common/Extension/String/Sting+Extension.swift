@@ -543,4 +543,23 @@ extension String{
     }
     
 }
-
+//转换string 拼音
+extension String{
+    func transformToPinYin()->String{
+        let mutableString = NSMutableString(string: self)
+        CFStringTransform(mutableString, nil, kCFStringTransformToLatin, false)
+        CFStringTransform(mutableString, nil, kCFStringTransformStripDiacritics, false)
+        let string = String(mutableString)
+        
+        let array = string.components(separatedBy: " ")
+        
+        let mutableStr:NSMutableString = NSMutableString.init()
+        
+        for nStr in array {
+            
+            mutableStr.append(String(nStr.prefix(1)))
+        }
+        return mutableStr as String
+        
+    }
+}
