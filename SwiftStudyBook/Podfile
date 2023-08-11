@@ -1,23 +1,43 @@
 
 install! 'cocoapods', :disable_input_output_paths => true
 
-platform :ios, '8.0'
+platform :ios, '11.0'
 target 'SwiftStudyBook' do
-pod 'AFNetworking'
-pod 'SDWebImage'
-pod 'Masonry'
-pod 'MJExtension'
-pod 'BGFMDB'
-pod 'MBProgressHUD'
-pod 'JPush'
-pod 'SVPullToRefresh'
-pod 'HandyFrame'
-pod 'YYKit', '~> 1.0.9'
-pod 'WMPlayer', '~> 5.0.0'
-pod 'ZFPlayer', '~> 4.1.4'
-pod 'ZFPlayer/AVPlayer', '~> 4.1.4'
-pod 'ZFPlayer/ControlView', '~> 4.1.4'
-pod 'CTMediator', '~> 48'
+  pod 'AFNetworking'
+  pod 'SDWebImage'
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'BGFMDB'
+  pod 'MBProgressHUD'
+  pod 'JPush'
+  pod 'SVPullToRefresh'
+  pod 'HandyFrame'
+  pod 'YYKit', '~> 1.0.9'
+  pod 'WMPlayer', '~> 5.0.0'
+  pod 'ZFPlayer', '~> 4.1.4'
+  pod 'ZFPlayer/AVPlayer', '~> 4.1.4'
+  pod 'ZFPlayer/ControlView', '~> 4.1.4'
+  pod 'CTMediator', '~> 48'
+  
+
+  pod 'Moya'                    #网络请求
+  pod 'ObjectMapper'             #转模型
+  pod 'SwiftyJSON'
+  
+  # json解析  没有下载这个第三方
+  # pod 'KakaJSON'
+  
+  # 图片加载器 只是用于第三方图片轮播器加载网络图片(PageControl)   没有下载这个第三方
+  # pod 'SDWebImage', '~> 4.0'
+  
+  pod 'SnapKit', '~> 5.0.0'
+  
+  pod 'Kingfisher'             #网络图片加载
+  pod 'MJRefresh'
+  pod 'SwiftMessages'          #顶部消息弹窗
+  pod 'PGDatePicker'           #时间选择器 github.com/xiaozhuxiong121/PGDatePicker/blob/master/Swift.md
+#  pod 'Charts'   #图表工具
+  pod 'JTAppleCalendar', '~> 7.1'   #日历选择器
 end
 
 #post_install do |installer|

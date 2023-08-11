@@ -13,7 +13,7 @@ class GCDViewController: TableTitleVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.upaDataArr = ["GCD 任务和队列-0","死锁-1","主队列+异步任务-2","串行队列+同步任务(不在主线程)-3","串行队列+异步任务-4","并发队列+同步任务-5","并发队列+异步任务（最大并发数64)-6","GCD 栅栏-7","GCD group-8","信号量 semaphore-9","延时任务-10","DispatchWorkItem-11","线程常驻"]
+        self.upaDataArr = ["GCD 任务和队列-0","死锁-1","主队列+异步任务-2","串行队列+同步任务(不在主线程)-3","串行队列+异步任务-4","并发队列+同步任务-5","并发队列+异步任务（最大并发数64)-6","GCD 栅栏-7","GCD group-8","信号量 semaphore-9","延时任务-10","DispatchWorkItem-11","线程常驻","总揽打开多线程编程文档"]
         // Do any additional setup after loading the view.
     }
     

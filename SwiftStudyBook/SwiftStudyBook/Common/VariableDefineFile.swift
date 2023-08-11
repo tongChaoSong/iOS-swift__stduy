@@ -26,6 +26,7 @@ let SCALE_H = SCREEN_HEIGHT/667
 enum LsqError: Error {
     case message(String)
     case msg
+    
 }
 struct LsqDecoder {
     //TODO:转换模型

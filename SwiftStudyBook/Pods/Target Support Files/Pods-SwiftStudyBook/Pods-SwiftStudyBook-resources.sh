@@ -97,10 +97,16 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/PGDatePicker/PGDatePicker/PGDatePicker.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages/SwiftMessages.bundle"
   install_resource "${PODS_ROOT}/WMPlayer/WMPlayer/WMPlayer.bundle"
   install_resource "${PODS_ROOT}/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPlayer.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/PGDatePicker/PGDatePicker/PGDatePicker.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages/SwiftMessages.bundle"
   install_resource "${PODS_ROOT}/WMPlayer/WMPlayer/WMPlayer.bundle"
   install_resource "${PODS_ROOT}/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPlayer.bundle"
 fi

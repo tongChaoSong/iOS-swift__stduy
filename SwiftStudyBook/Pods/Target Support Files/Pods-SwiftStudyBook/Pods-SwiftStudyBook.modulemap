@@ -1,0 +1,6 @@
+module Pods_SwiftStudyBook {
+  umbrella header "Pods-SwiftStudyBook-umbrella.h"
+
+  export *
+  module * { export * }
+}

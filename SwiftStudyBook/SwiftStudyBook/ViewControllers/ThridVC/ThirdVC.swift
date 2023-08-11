@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+class testmode{
+    var subTitle: String = ""
+}
 class ThirdVC: TableTitleVC {
 
 //
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension"]
+        self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension","struct深拷贝、Class浅拷贝"]
         self.mainTable.reloadBlock = {() -> Void in
             self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension、mutating"]
         };
@@ -39,6 +41,24 @@ class ThirdVC: TableTitleVC {
                 let vc = KeywordsVC.init();
                 vc.title = (self.upaDataArr![indexPath.row] as! String);
                 self.navigationController?.pushViewController(vc, animated: true);
+                
+            }
+            break
+        case 3:
+            do {
+                var mo = testmode.init()
+                mo.subTitle = "2444"
+                print("dkjfkdjfkj=1==\(mo.subTitle)")
+                var mo1:testmode = mo
+                mo1.subTitle = "88888"
+                print("dkjfkdjfkj=2==\(mo.subTitle)")
+                withUnsafePointer(to: &mo) { ptr in
+                    print("mo的指针地址===\(ptr)")
+                }
+                withUnsafePointer(to: &mo1) { ptr in
+                    print("mo1的指针地址===\(ptr)")
+                }
+                
                 
             }
             break
