@@ -49,6 +49,7 @@ PODS:
     - SwiftMessages/App (= 9.0.6)
   - SwiftMessages/App (9.0.6)
   - SwiftyJSON (5.0.1)
+  - Toast-Swift (5.0.1)
   - WMPlayer (5.0.0):
     - Masonry
   - YYKit (1.0.9):
@@ -82,6 +83,7 @@ DEPENDENCIES:
   - SVPullToRefresh
   - SwiftMessages
   - SwiftyJSON
+  - Toast-Swift
   - WMPlayer (~> 5.0.0)
   - YYKit (~> 1.0.9)
   - ZFPlayer (~> 4.1.4)
@@ -113,6 +115,7 @@ SPEC REPOS:
     - SnapKit
     - SwiftMessages
     - SwiftyJSON
+    - Toast-Swift
     - WMPlayer
     - YYKit
     - ZFPlayer
@@ -140,10 +143,11 @@ SPEC CHECKSUMS:
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   WMPlayer: a914f80ed5dca7cd9e3a94ec07a2b02eec8c15c0
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZFPlayer: 5cf39e8d9f0c2394a014b0db4767b5b5a6bffe13
 
-PODFILE CHECKSUM: 8f6c53f74bdff2cd49377973dea9c008c6ae1beb
+PODFILE CHECKSUM: 21fe0a78beaf0eade5afd0efbca7a17758f566f1
 
 COCOAPODS: 1.12.1

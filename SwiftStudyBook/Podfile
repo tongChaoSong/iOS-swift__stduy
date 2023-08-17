@@ -23,6 +23,7 @@ target 'SwiftStudyBook' do
   pod 'Moya'                    #网络请求
   pod 'ObjectMapper'             #转模型
   pod 'SwiftyJSON'
+  pod 'Toast-Swift' #swift弹窗
   
   # json解析  没有下载这个第三方
   # pod 'KakaJSON'

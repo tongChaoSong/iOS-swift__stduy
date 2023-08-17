@@ -15,7 +15,7 @@ class ThirdVC: TableTitleVC {
 //
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension","struct深拷贝、Class浅拷贝"]
+        self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension","struct深拷贝、Class浅拷贝","escaping."]
         self.mainTable.reloadBlock = {() -> Void in
             self.upaDataArr = ["swift--struct、Class、enum、mutating","swift使用ocruntime的table默认图显示","关键字where、extension、mutating"]
         };
@@ -60,6 +60,13 @@ class ThirdVC: TableTitleVC {
                 }
                 
                 
+            }
+            break
+        case 4:
+            do {
+                self.view.makeToast("逃逸闭包 = escaping")
+                self.view.makeToast("逃逸闭包 = escaping")
+
             }
             break
         default:

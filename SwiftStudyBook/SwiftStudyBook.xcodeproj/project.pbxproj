@@ -194,6 +194,7 @@
 		75A9AF652A8613C900446719 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A9AF622A8613C900446719 /* TextField.swift */; };
 		75A9AF662A8613C900446719 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A9AF632A8613C900446719 /* Input.swift */; };
 		75A9AF682A861F7A00446719 /* LsqDecoderTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A9AF672A861F7A00446719 /* LsqDecoderTool.swift */; };
+		75AAAB592A8DBAD3006CC54E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AAAB582A8DBAD3006CC54E /* Toast.swift */; };
 		75AE0DDF2A20970D0046E941 /* RouteToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AE0DDE2A20970D0046E941 /* RouteToolClass.m */; };
 		75CEEFCF2A244CC8001FD61B /* TestLocationRouteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CEEFCE2A244CC8001FD61B /* TestLocationRouteVC.m */; };
 /* End PBXBuildFile section */
@@ -502,6 +503,7 @@
 		75A9AF622A8613C900446719 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		75A9AF632A8613C900446719 /* Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		75A9AF672A861F7A00446719 /* LsqDecoderTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LsqDecoderTool.swift; sourceTree = "<group>"; };
+		75AAAB582A8DBAD3006CC54E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		75AE0DDD2A20970D0046E941 /* RouteToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteToolClass.h; sourceTree = "<group>"; };
 		75AE0DDE2A20970D0046E941 /* RouteToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteToolClass.m; sourceTree = "<group>"; };
 		75CEEFCD2A244CC8001FD61B /* TestLocationRouteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocationRouteVC.h; sourceTree = "<group>"; };
@@ -977,6 +979,7 @@
 		186A324424DA9A0F0066CBE5 /* ThirtPart */ = {
 			isa = PBXGroup;
 			children = (
+				75AAAB572A8DBAC1006CC54E /* Other */,
 				0410ED7C29BB17DA00D4D2EB /* TCSMenuView */,
 				0410ED8129BB17DA00D4D2EB /* TCSTagViews */,
 				046056A7296D3F8800A3D8E0 /* MyThirtPart */,
@@ -1473,6 +1476,14 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		75AAAB572A8DBAC1006CC54E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				75AAAB582A8DBAD3006CC54E /* Toast.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		CA4D39E7EA04E4AEA272290E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1787,6 +1798,7 @@
 				0410ED8429BB17DA00D4D2EB /* TCSMenuView.m in Sources */,
 				185CF61024E29B4600565CA4 /* testOCvc.m in Sources */,
 				1846912625C1613F009E879B /* NSData+FNPImageContentType.m in Sources */,
+				75AAAB592A8DBAD3006CC54E /* Toast.swift in Sources */,
 				0410ED8629BB17DA00D4D2EB /* TCSTagViews.m in Sources */,
 				186CE656251065DB00B84E9B /* NSObject+UndefineKey.m in Sources */,
 				75A9AF422A860CED00446719 /* UILabelLayout.swift in Sources */,
