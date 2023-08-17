@@ -17,8 +17,8 @@ class BaseTabBarViewController: UITabBarController {
     }
     
     func createUI() -> Void {
-        let titleArr = ["首页","底层","常用","视图","个人"]
-        let selectTitleArr = ["首页","底层","常用","视图","个人"]
+        let titleArr = ["首页","oc","swift","ocui","个人"]
+        let selectTitleArr = ["首页","OC","SWIFT","ocUI-","个人"]
 
         let homeVC = HomeVC()
         homeVC.navigationController?.title = "首页"
@@ -35,7 +35,8 @@ class BaseTabBarViewController: UITabBarController {
     
         for (idex,basevc) in vcArr.enumerated() {
             let vc:BaseViewController = basevc
-            let baseNav:BaseNavController = BaseNavController(rootViewController: vc)
+            let extractedExpr: BaseNavController = BaseNavController(rootViewController: vc)
+            let baseNav:BaseNavController = extractedExpr
             self.addChild(baseNav)
             let title:String = titleArr[idex]
             let seletTitle:String = selectTitleArr[idex]
@@ -44,9 +45,14 @@ class BaseTabBarViewController: UITabBarController {
 
             baseNav.hidesBottomBarWhenPushed = false
             baseNav.tabBarItem.title = title
+            self.tabBar.selectedItem?.title = seletTitle
+//            let noratt =  NSAttributedString.init(string: title,attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 16)]);
+//
+//            let selectatt = NSAttributedString.init(string: title,attributes: [NSAttributedString.Key.foregroundColor: UIColor.blue,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 16)]);
+        
             baseNav.tabBarItem.image = UIImage.init(named: "icon_xiaoma");
-            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20)], for: .normal)
-            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.yellow,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 20)], for: .selected)
+            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 16)], for: .normal)
+            baseNav.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.blue,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 16)], for: .selected)
 
 
 

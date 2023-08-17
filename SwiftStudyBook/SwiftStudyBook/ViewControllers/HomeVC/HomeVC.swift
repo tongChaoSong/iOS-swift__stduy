@@ -17,13 +17,33 @@ class HomeVC: BaseViewController {
         set{
             self.nameStr = newValue
         }
+       
+    }
+    var counter:Int = 0 {
+        willSet(newTo){
+            print("计数器==\(newTo)")
+        }
+        didSet{
+            
+            if (counter > oldValue){
+                print("新增数==\(counter - oldValue)")
+            }
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.counter = 100
+        self.counter = 800
         self.view.backgroundColor = UIColor.purple
         // Do any additional setup after loading the view.
     
+        var model:teachModel = teachModel()
+        
+        var stmodel = stteachModel.init(name: "1",name1: "2",name2: "3",name3: "3")
+        print("11======\(stmodel.name)")
+        stmodel.name = "0000"
+        print("22======\(stmodel.name)")
         let txt:TextField = TextField.init(frame: CGRect.init(x: 0, y: kApplicationStatusBarHeight, width: SCREEN_WIDTH, height: kApplicationStatusBarHeight))
 //        txt.wordLimit = 10
         txt.backgroundColor = Color.assist
@@ -33,7 +53,9 @@ class HomeVC: BaseViewController {
 
 //        testData()
     }
-    
+    class func changeMathclass(num1:Int,time1:Int){
+        
+    }
     func loadData() -> Void {
         let jsonString =
         """

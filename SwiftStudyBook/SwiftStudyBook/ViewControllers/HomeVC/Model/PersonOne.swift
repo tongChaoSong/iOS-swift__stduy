@@ -36,6 +36,26 @@ class PersonOne: Codable {
 class Dog: Codable {
     var name: String?
 }
+
+class teachModel {
+    var name: String?
+    var name1: String?
+
+    var name2: String?
+
+    var name3: String?
+
+}
+
+struct stteachModel {
+    var name: String?
+    var name1: String?
+
+    var name2: String?
+
+    var name3: String?
+
+}
 //let jsonString =
 //"""
 //{
